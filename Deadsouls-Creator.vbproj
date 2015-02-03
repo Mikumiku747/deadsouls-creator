@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Selmes, Daniel\MainApplicationWindow.Designer.vb">
+      <DependentUpon>MainApplicationWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selmes, Daniel\MainApplicationWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Testing Stuff\ExampleListboxDesign.Designer.vb">
       <DependentUpon>ExampleListboxDesign.vb</DependentUpon>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Selmes, Daniel\MainApplicationWindow.resx">
+      <DependentUpon>MainApplicationWindow.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Testing Stuff\ExampleListboxDesign.resx">
       <DependentUpon>ExampleListboxDesign.vb</DependentUpon>
     </EmbeddedResource>
@@ -115,7 +124,15 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Chin, Daniel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCrossIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

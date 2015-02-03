@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Deadsouls_Creator.ExampleListboxDesign
+            Me.MainForm = Global.Deadsouls_Creator.MainApplicationWindow
         End Sub
     End Class
 End Namespace

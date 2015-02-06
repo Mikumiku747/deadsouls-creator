@@ -44,6 +44,8 @@ Partial Class MainApplicationWindow
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PublishDomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OnlineHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportABugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditRoomButton = New System.Windows.Forms.Button()
         Me.EditNPCButton = New System.Windows.Forms.Button()
@@ -200,9 +202,22 @@ Partial Class MainApplicationWindow
         '
         'HelpToolStripMenuItem
         '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineHelpToolStripMenuItem, Me.ReportABugToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'OnlineHelpToolStripMenuItem
+        '
+        Me.OnlineHelpToolStripMenuItem.Name = "OnlineHelpToolStripMenuItem"
+        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.OnlineHelpToolStripMenuItem.Text = "Online Help..."
+        '
+        'ReportABugToolStripMenuItem
+        '
+        Me.ReportABugToolStripMenuItem.Name = "ReportABugToolStripMenuItem"
+        Me.ReportABugToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ReportABugToolStripMenuItem.Text = "Report a bug"
         '
         'TableLayoutPanel1
         '
@@ -236,6 +251,7 @@ Partial Class MainApplicationWindow
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(784, 437)
         Me.TableLayoutPanel1.TabIndex = 1
         '
@@ -465,4 +481,6 @@ Partial Class MainApplicationWindow
     Friend WithEvents ArmourListBox As System.Windows.Forms.ListBox
     Friend WithEvents StatusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents WindowStatusString As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents OnlineHelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReportABugToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

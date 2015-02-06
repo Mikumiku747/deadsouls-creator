@@ -76,6 +76,12 @@
     <Compile Include="Selmes, Daniel\MainApplicationWindow.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Selmes, Daniel\RoomEditor.Designer.vb">
+      <DependentUpon>RoomEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selmes, Daniel\RoomEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Testing Stuff\ExampleListboxDesign.Designer.vb">
       <DependentUpon>ExampleListboxDesign.vb</DependentUpon>
     </Compile>
@@ -101,6 +107,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Selmes, Daniel\MainApplicationWindow.resx">
       <DependentUpon>MainApplicationWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selmes, Daniel\RoomEditor.resx">
+      <DependentUpon>RoomEditor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Testing Stuff\ExampleListboxDesign.resx">
       <DependentUpon>ExampleListboxDesign.vb</DependentUpon>

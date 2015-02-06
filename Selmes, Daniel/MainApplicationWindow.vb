@@ -16,7 +16,8 @@
     Private Sub EditRoomButton_Click(sender As Object, e As EventArgs) Handles EditRoomButton.Click
         If RoomsListBox.SelectedItem = "Build new room..." Then
             'Create a new room
-            MsgBox("Creating a new room in room editor...")
+            Dim roomeditor As New RoomEditor()
+            roomeditor.Show()
         Else
             'Open the selected room in the room editor
             MsgBox("Opening file " + RoomsListBox.SelectedItem.ToString() + " in room editor...")

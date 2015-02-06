@@ -1,6 +1,11 @@
 # Daniel Selmes  - Development Log Book
 
-### 3-02-14 Beginning Development
+### 3-02-14 Beginning development
 Today we started development. I set up a github repo, which should make it easy for everybody to have the latest version of the software we're making. I also began some of the design for the main application window. This window is supposed to be where the user manages thier files and for the domain and can save and load domains that they are currently working on. I have the basic layout done, but there's lots to improve on. I also made a small start on a set of icons for the application to use, to give visual hints as to what each UI element does. 
 
 I learned that Visual Studio is pretty picky with keeping track of project files, and that if you don't move and delete stuff from inside Visual Studio, it ususally can't find the files it's looking for. I think there may also be some wierd side effects with github and Visual studio, but I'll have to look into that some more. 
+
+### 6-02-14 Continued work on the interface
+Today I did a ton of work on the interfaces, I pretty much finished up the main window, as well as getting a little bit of the navigation code done, and then started on the room editor. There are a lot of settings that can be very widely configured, such as exits, enters, and object description. I'll need to think up some kind of UI element or dialog that can let the user easily edit properties of an item. I'll also need to get the program to eventually compile these into proper C files.
+
+I learned quite a bit about the customizable options of rooms and the different ways that you can present information to the mudlib. Mappings are a moderately complex data type that is very good for asscociating bits of information together with objects and properties of a room, and I'll need to find a way to effectively present them to the end user. It would also be good to have some kind of integrated functionality for functionals, which allow the user to write small custom functions that describe a room. 

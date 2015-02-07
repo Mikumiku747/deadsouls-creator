@@ -103,6 +103,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="DialogsAndMiscForms\MappingEditorMS.Designer.vb">
+      <DependentUpon>MappingEditorMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogsAndMiscForms\MappingEditorMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Selmes, Daniel\MainApplicationWindow.resx">
@@ -119,6 +125,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogsAndMiscForms\MappingEditorMS.resx">
+      <DependentUpon>MappingEditorMS.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

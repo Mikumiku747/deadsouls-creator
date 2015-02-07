@@ -30,6 +30,8 @@ Partial Class MainApplicationWindow
         Me.NewFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshFilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenInExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -62,8 +64,6 @@ Partial Class MainApplicationWindow
         Me.ArmourListBox = New System.Windows.Forms.ListBox()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -118,6 +118,20 @@ Partial Class MainApplicationWindow
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(154, 6)
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.AboutToolStripMenuItem.Text = "About..."
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'DomainToolStripMenuItem
         '
@@ -197,13 +211,13 @@ Partial Class MainApplicationWindow
         '
         Me.OnlineHelpToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
         Me.OnlineHelpToolStripMenuItem.Name = "OnlineHelpToolStripMenuItem"
-        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.OnlineHelpToolStripMenuItem.Text = "Online Help..."
         '
         'ReportABugToolStripMenuItem
         '
         Me.ReportABugToolStripMenuItem.Name = "ReportABugToolStripMenuItem"
-        Me.ReportABugToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ReportABugToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.ReportABugToolStripMenuItem.Text = "Report a bug"
         '
         'TableLayoutPanel1
@@ -238,7 +252,6 @@ Partial Class MainApplicationWindow
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(784, 437)
         Me.TableLayoutPanel1.TabIndex = 1
         '
@@ -346,7 +359,7 @@ Partial Class MainApplicationWindow
         '
         Me.RoomsListBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RoomsListBox.FormattingEnabled = True
-        Me.RoomsListBox.Items.AddRange(New Object() {"Build new room..."})
+        Me.RoomsListBox.Items.AddRange(New Object() {"Build new room...", "daniel/room/test.c"})
         Me.RoomsListBox.Location = New System.Drawing.Point(3, 52)
         Me.RoomsListBox.Name = "RoomsListBox"
         Me.RoomsListBox.Size = New System.Drawing.Size(150, 360)
@@ -407,20 +420,6 @@ Partial Class MainApplicationWindow
         Me.WindowStatusString.Name = "WindowStatusString"
         Me.WindowStatusString.Size = New System.Drawing.Size(107, 17)
         Me.WindowStatusString.Text = "Dead Souls Creator"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.AboutToolStripMenuItem.Text = "About..."
-        '
-        'QuitToolStripMenuItem
-        '
-        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
-        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'MainApplicationWindow
         '

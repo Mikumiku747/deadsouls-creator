@@ -20,7 +20,9 @@
             roomeditor.Show()
         Else
             'Open the selected room in the room editor
-            MsgBox("Opening file " + RoomsListBox.SelectedItem.ToString() + " in room editor...")
+            Dim roomeditor As New RoomEditor()
+            roomeditor.CurrentFile = RoomsListBox.SelectedItem
+            roomeditor.Show()
         End If
     End Sub
 

@@ -25,12 +25,12 @@ Partial Class MappingEditorMS
         Me.KeysListBox = New System.Windows.Forms.ListBox()
         Me.KeysListBoxContainer = New System.Windows.Forms.GroupBox()
         Me.ValueGroupBox = New System.Windows.Forms.GroupBox()
+        Me.ValueTextBox = New System.Windows.Forms.TextBox()
+        Me.ValueTextBoxLabel = New System.Windows.Forms.Label()
+        Me.KeysTextBox = New System.Windows.Forms.TextBox()
+        Me.KeysTextBoxLabel = New System.Windows.Forms.Label()
         Me.AddButton = New System.Windows.Forms.Button()
         Me.RemoveButton = New System.Windows.Forms.Button()
-        Me.KeysTextBoxLabel = New System.Windows.Forms.Label()
-        Me.KeysTextBox = New System.Windows.Forms.TextBox()
-        Me.ValueTextBoxLabel = New System.Windows.Forms.Label()
-        Me.ValueTextBox = New System.Windows.Forms.TextBox()
         Me.KeysListBoxContainer.SuspendLayout()
         Me.ValueGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -67,6 +67,39 @@ Partial Class MappingEditorMS
         Me.ValueGroupBox.TabStop = False
         Me.ValueGroupBox.Text = "Value Editor"
         '
+        'ValueTextBox
+        '
+        Me.ValueTextBox.Location = New System.Drawing.Point(10, 71)
+        Me.ValueTextBox.Multiline = True
+        Me.ValueTextBox.Name = "ValueTextBox"
+        Me.ValueTextBox.Size = New System.Drawing.Size(234, 140)
+        Me.ValueTextBox.TabIndex = 3
+        '
+        'ValueTextBoxLabel
+        '
+        Me.ValueTextBoxLabel.AutoSize = True
+        Me.ValueTextBoxLabel.Location = New System.Drawing.Point(7, 55)
+        Me.ValueTextBoxLabel.Name = "ValueTextBoxLabel"
+        Me.ValueTextBoxLabel.Size = New System.Drawing.Size(34, 13)
+        Me.ValueTextBoxLabel.TabIndex = 2
+        Me.ValueTextBoxLabel.Text = "Value"
+        '
+        'KeysTextBox
+        '
+        Me.KeysTextBox.Location = New System.Drawing.Point(10, 32)
+        Me.KeysTextBox.Name = "KeysTextBox"
+        Me.KeysTextBox.Size = New System.Drawing.Size(234, 20)
+        Me.KeysTextBox.TabIndex = 1
+        '
+        'KeysTextBoxLabel
+        '
+        Me.KeysTextBoxLabel.AutoSize = True
+        Me.KeysTextBoxLabel.Location = New System.Drawing.Point(7, 15)
+        Me.KeysTextBoxLabel.Name = "KeysTextBoxLabel"
+        Me.KeysTextBoxLabel.Size = New System.Drawing.Size(30, 13)
+        Me.KeysTextBoxLabel.TabIndex = 0
+        Me.KeysTextBoxLabel.Text = "Keys"
+        '
         'AddButton
         '
         Me.AddButton.Location = New System.Drawing.Point(218, 236)
@@ -84,39 +117,6 @@ Partial Class MappingEditorMS
         Me.RemoveButton.TabIndex = 4
         Me.RemoveButton.Text = "Remove"
         Me.RemoveButton.UseVisualStyleBackColor = True
-        '
-        'KeysTextBoxLabel
-        '
-        Me.KeysTextBoxLabel.AutoSize = True
-        Me.KeysTextBoxLabel.Location = New System.Drawing.Point(7, 15)
-        Me.KeysTextBoxLabel.Name = "KeysTextBoxLabel"
-        Me.KeysTextBoxLabel.Size = New System.Drawing.Size(30, 13)
-        Me.KeysTextBoxLabel.TabIndex = 0
-        Me.KeysTextBoxLabel.Text = "Keys"
-        '
-        'KeysTextBox
-        '
-        Me.KeysTextBox.Location = New System.Drawing.Point(10, 32)
-        Me.KeysTextBox.Name = "KeysTextBox"
-        Me.KeysTextBox.Size = New System.Drawing.Size(234, 20)
-        Me.KeysTextBox.TabIndex = 1
-        '
-        'ValueTextBoxLabel
-        '
-        Me.ValueTextBoxLabel.AutoSize = True
-        Me.ValueTextBoxLabel.Location = New System.Drawing.Point(7, 55)
-        Me.ValueTextBoxLabel.Name = "ValueTextBoxLabel"
-        Me.ValueTextBoxLabel.Size = New System.Drawing.Size(34, 13)
-        Me.ValueTextBoxLabel.TabIndex = 2
-        Me.ValueTextBoxLabel.Text = "Value"
-        '
-        'ValueTextBox
-        '
-        Me.ValueTextBox.Location = New System.Drawing.Point(10, 71)
-        Me.ValueTextBox.Multiline = True
-        Me.ValueTextBox.Name = "ValueTextBox"
-        Me.ValueTextBox.Size = New System.Drawing.Size(234, 140)
-        Me.ValueTextBox.TabIndex = 3
         '
         'MappingEditorMS
         '

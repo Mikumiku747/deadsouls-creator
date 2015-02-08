@@ -21,4 +21,15 @@
     Private Sub NightDescriptionEnabledCheckbox_CheckedChanged(sender As Object, e As EventArgs) Handles NightDescriptionEnabledCheckbox.CheckedChanged
         NightDescriptionTextBox.Enabled = NightDescriptionEnabledCheckbox.Checked
     End Sub
+
+    Private Sub EditItemsButton_Click(sender As Object, e As EventArgs) Handles EditItemsButton.Click
+        Dim mappingEditor As New MappingEditorMS
+        mappingEditor.dialogValue = LPCParsing.GetBetween(My.Computer.FileSystem.ReadAllText(CurrentFile), "SetItems(", ");")
+        mappingEditor.Text = "Edit Items"
+        mappingEditor.KeysListBoxContainer.Text = "Item Aliases"
+        mappingEditor.ValueGroupBox.Text = "Item Description"
+        mappingEditor.KeysTextBoxLabel.Text = "Item Names (Seperated by commas)"
+        mappingEditor.ValueTextBoxLabel.Text = "Item Description"
+        mappingEditor.ShowDialog()
+    End Sub
 End Class

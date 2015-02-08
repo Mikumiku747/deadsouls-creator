@@ -359,7 +359,7 @@ Partial Class MainApplicationWindow
         '
         Me.RoomsListBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RoomsListBox.FormattingEnabled = True
-        Me.RoomsListBox.Items.AddRange(New Object() {"Build new room...", "daniel/room/test.c"})
+        Me.RoomsListBox.Items.AddRange(New Object() {"Build new room...", "daniel\room\test.c", "town\room\bridge.c"})
         Me.RoomsListBox.Location = New System.Drawing.Point(3, 52)
         Me.RoomsListBox.Name = "RoomsListBox"
         Me.RoomsListBox.Size = New System.Drawing.Size(150, 360)

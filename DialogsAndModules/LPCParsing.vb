@@ -179,9 +179,25 @@
     End Function
 
     Function DeQuote(source As String)
-        Dim stripped As String = StripWhitepace(source)
-        stripped = stripped.Replace(vbNewLine, "")
-        Return stripped.Replace("""", "")
+        Dim insideLiteral As Boolean = False
+        Dim startOfLiteral As Integer = False
+        Dim endOfLiteral As Integer = False
+        Dim result As String = ""
+        For i As Integer = 0 To source.Length - 1
+            Dim letter = source.Substring(i, 1)
+            If Not (insideLiteral) Then
+                If letter = """" Then
+                    insideLiteral = True
+                    startOfLiteral = i
+                End If
+            Else
+                If letter = """" Then
+                    endOfLiteral = i
+                    result = source.Substring(startOfLiteral, endOfLiteral)
+                End If
+            End If
+        Next
+        Return result
     End Function
 
     Function LPCArrayToCSV(array As String)

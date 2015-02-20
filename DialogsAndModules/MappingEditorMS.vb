@@ -23,9 +23,7 @@
         'Clean off the values
         Dim valuesStripped = values
         For i As Integer = 0 To values.length - 1
-            valuesStripped(i) = values(i).replace(vbNewLine, "")
-            valuesStripped(i) = valuesStripped(i).replace("""", "")
-            valuesStripped(i) = LPCParsing.StripWhitepace(valuesStripped(i))
+            valuesStripped(i) = LPCParsing.DeQuote(valuesStripped(i))
         Next
         cleanValues = valuesStripped.Cast(Of String)().ToList()
 
@@ -37,5 +35,13 @@
         KeysTextBox.Text = KeysListBox.SelectedItem
         Dim targetIndex As Integer = cleanKeys.IndexOf(KeysListBox.SelectedItem)
         ValueTextBox.Text = cleanValues(targetIndex)
+    End Sub
+
+    Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
+        For Each key In cleanKeys
+            If key.Contains(",") Then
+                MsgBox(LPCParsing.CSVToLPCArray(key))
+            End If
+        Next
     End Sub
 End Class

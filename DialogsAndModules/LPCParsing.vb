@@ -1,19 +1,47 @@
 ﻿Module LPCParsing
 
     ''' <summary>
+    ''' A simple exception class specifically for functions in this module. 
+    ''' </summary>
+    ''' <remarks>Apart from being a different type, this is near identical to a normal exception.</remarks>
+    Public Class StringNotFoundException
+        Inherits Exception
+
+        Public Sub New()
+        End Sub
+
+        Public Sub New(message As String)
+            MyBase.New(message)
+        End Sub
+
+        Public Sub New(message As String, inner As Exception)
+            MyBase.New(message, inner)
+        End Sub
+    End Class
+
+    ''' <summary>
     ''' Searches through the source string and returns the substring between start and end.
     ''' </summary>
     ''' <param name="source">The string to search through</param>
     ''' <param name="start">The start of your target string</param>
     ''' <param name="end_">The end of your target string</param>
     ''' <returns>The substring between start and end_</returns>
-    ''' <remarks>The result doesn't include the start and end strings.</remarks>
+    ''' <remarks>The result doesn't include the start and end strings. Will throw an exception if
+    ''' it can't find the start or end string.</remarks>
     Public Function GetBetween(source As String, start As String, end_ As String)
         Dim s_len = start.Length
         Dim result As String
         Dim startIndex = source.IndexOf(start) + s_len
+        'MsgBox(startIndex)
+        If startIndex = start.Length - 1 Then
+            Throw New StringNotFoundException("Failed to find the desired start string.")
+        End If
         Dim toBeSearched = source.Substring(startIndex)
         Dim endIndex = toBeSearched.IndexOf(end_)
+        'MsgBox(endIndex)
+        If endIndex = end_.Length - 1 Then
+            Throw New StringNotFoundException("Failed to find the desired end string.")
+        End If
         result = source.Substring(startIndex, endIndex)
         Return result
     End Function
@@ -178,26 +206,39 @@
         Return withoutStart
     End Function
 
+    ''' <summary>
+    ''' Extracts the literals from a snippet of code.
+    ''' </summary>
+    ''' <param name="source">The code to get a literal out of.</param>
+    ''' <returns>All the literals in the code block concatenated together.</returns>
+    ''' <remarks>will simply grab everything between a pair of quotes.</remarks>
     Function DeQuote(source As String)
+        'MsgBox("Dequoting this:" + vbNewLine + source)
         Dim insideLiteral As Boolean = False
         Dim startOfLiteral As Integer = False
         Dim endOfLiteral As Integer = False
         Dim result As String = ""
         For i As Integer = 0 To source.Length - 1
             Dim letter = source.Substring(i, 1)
-            If Not (insideLiteral) Then
+            If insideLiteral Then
                 If letter = """" Then
-                    insideLiteral = True
-                    startOfLiteral = i
+                    endOfLiteral = i
+                    insideLiteral = False
+                    result = result + source.Substring(startOfLiteral, endOfLiteral - startOfLiteral)
                 End If
             Else
                 If letter = """" Then
-                    endOfLiteral = i
-                    result = source.Substring(startOfLiteral, endOfLiteral)
+                    startOfLiteral = i + 1
+                    insideLiteral = True
                 End If
             End If
         Next
+        'MsgBox("Result" + vbNewLine + result)
         Return result
+    End Function
+
+    Function ReQuote(literal As String)
+        Return """" + literal + """"
     End Function
 
     Function LPCArrayToCSV(array As String)
@@ -208,6 +249,29 @@
         Dim result = arrayClean.Replace("""", "")
         result = result.Replace(",", ", ")
         Return result
+    End Function
+
+    Function CSVToLPCArray(csv As String)
+        Dim items() As String = csv.Split(",")
+        Dim processedItems As List(Of String) = New List(Of String)
+        For Each item In items
+            Dim processedItem As String = item
+            'If processedItem.Substring(0, 1) = " " Then
+            '    processedItem = item.Substring(1)
+            'End If
+            processedItem = ReQuote(processedItem)
+            processedItems.Add(processedItem)
+            'MsgBox(processedItem)
+        Next
+        'MsgBox("Items gathered:")
+        For Each item In processedItems
+            'MsgBox(item)
+        Next
+        Dim results As String = ""
+        For Each item In processedItems
+            results = results + item + ","
+        Next
+        Return "{(" + results.Substring(0, results.Length - 1) + "})"
     End Function
 
     '//TODO: Add some more functions so it's super easy to compile the new LPC file and Parse the old one.

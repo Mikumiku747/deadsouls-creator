@@ -25,12 +25,14 @@ Partial Class MappingEditorMS
         Me.KeysListBox = New System.Windows.Forms.ListBox()
         Me.KeysListBoxContainer = New System.Windows.Forms.GroupBox()
         Me.ValueGroupBox = New System.Windows.Forms.GroupBox()
+        Me.RemoveButton = New System.Windows.Forms.Button()
         Me.ValueTextBox = New System.Windows.Forms.TextBox()
+        Me.AddButton = New System.Windows.Forms.Button()
         Me.ValueTextBoxLabel = New System.Windows.Forms.Label()
         Me.KeysTextBox = New System.Windows.Forms.TextBox()
         Me.KeysTextBoxLabel = New System.Windows.Forms.Label()
-        Me.AddButton = New System.Windows.Forms.Button()
-        Me.RemoveButton = New System.Windows.Forms.Button()
+        Me.SaveButton = New System.Windows.Forms.Button()
+        Me.CancelButton = New System.Windows.Forms.Button()
         Me.KeysListBoxContainer.SuspendLayout()
         Me.ValueGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -56,7 +58,9 @@ Partial Class MappingEditorMS
         '
         'ValueGroupBox
         '
+        Me.ValueGroupBox.Controls.Add(Me.RemoveButton)
         Me.ValueGroupBox.Controls.Add(Me.ValueTextBox)
+        Me.ValueGroupBox.Controls.Add(Me.AddButton)
         Me.ValueGroupBox.Controls.Add(Me.ValueTextBoxLabel)
         Me.ValueGroupBox.Controls.Add(Me.KeysTextBox)
         Me.ValueGroupBox.Controls.Add(Me.KeysTextBoxLabel)
@@ -67,13 +71,31 @@ Partial Class MappingEditorMS
         Me.ValueGroupBox.TabStop = False
         Me.ValueGroupBox.Text = "Value Editor"
         '
+        'RemoveButton
+        '
+        Me.RemoveButton.Location = New System.Drawing.Point(132, 188)
+        Me.RemoveButton.Name = "RemoveButton"
+        Me.RemoveButton.Size = New System.Drawing.Size(112, 23)
+        Me.RemoveButton.TabIndex = 4
+        Me.RemoveButton.Text = "Remove"
+        Me.RemoveButton.UseVisualStyleBackColor = True
+        '
         'ValueTextBox
         '
         Me.ValueTextBox.Location = New System.Drawing.Point(10, 71)
         Me.ValueTextBox.Multiline = True
         Me.ValueTextBox.Name = "ValueTextBox"
-        Me.ValueTextBox.Size = New System.Drawing.Size(234, 140)
+        Me.ValueTextBox.Size = New System.Drawing.Size(234, 111)
         Me.ValueTextBox.TabIndex = 3
+        '
+        'AddButton
+        '
+        Me.AddButton.Location = New System.Drawing.Point(10, 188)
+        Me.AddButton.Name = "AddButton"
+        Me.AddButton.Size = New System.Drawing.Size(116, 23)
+        Me.AddButton.TabIndex = 3
+        Me.AddButton.Text = "Add"
+        Me.AddButton.UseVisualStyleBackColor = True
         '
         'ValueTextBoxLabel
         '
@@ -100,31 +122,31 @@ Partial Class MappingEditorMS
         Me.KeysTextBoxLabel.TabIndex = 0
         Me.KeysTextBoxLabel.Text = "Keys"
         '
-        'AddButton
+        'SaveButton
         '
-        Me.AddButton.Location = New System.Drawing.Point(218, 236)
-        Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(120, 23)
-        Me.AddButton.TabIndex = 3
-        Me.AddButton.Text = "Add"
-        Me.AddButton.UseVisualStyleBackColor = True
+        Me.SaveButton.Location = New System.Drawing.Point(353, 236)
+        Me.SaveButton.Name = "SaveButton"
+        Me.SaveButton.Size = New System.Drawing.Size(118, 23)
+        Me.SaveButton.TabIndex = 6
+        Me.SaveButton.Text = "Save"
+        Me.SaveButton.UseVisualStyleBackColor = True
         '
-        'RemoveButton
+        'CancelButton
         '
-        Me.RemoveButton.Location = New System.Drawing.Point(344, 236)
-        Me.RemoveButton.Name = "RemoveButton"
-        Me.RemoveButton.Size = New System.Drawing.Size(127, 23)
-        Me.RemoveButton.TabIndex = 4
-        Me.RemoveButton.Text = "Remove"
-        Me.RemoveButton.UseVisualStyleBackColor = True
+        Me.CancelButton.Location = New System.Drawing.Point(221, 236)
+        Me.CancelButton.Name = "CancelButton"
+        Me.CancelButton.Size = New System.Drawing.Size(126, 23)
+        Me.CancelButton.TabIndex = 5
+        Me.CancelButton.Text = "Cancel"
+        Me.CancelButton.UseVisualStyleBackColor = True
         '
         'MappingEditorMS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(483, 269)
-        Me.Controls.Add(Me.RemoveButton)
-        Me.Controls.Add(Me.AddButton)
+        Me.Controls.Add(Me.SaveButton)
+        Me.Controls.Add(Me.CancelButton)
         Me.Controls.Add(Me.ValueGroupBox)
         Me.Controls.Add(Me.KeysListBoxContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -147,4 +169,6 @@ Partial Class MappingEditorMS
     Friend WithEvents KeysTextBoxLabel As System.Windows.Forms.Label
     Friend WithEvents AddButton As System.Windows.Forms.Button
     Friend WithEvents RemoveButton As System.Windows.Forms.Button
+    Friend WithEvents SaveButton As System.Windows.Forms.Button
+    Friend WithEvents CancelButton As System.Windows.Forms.Button
 End Class

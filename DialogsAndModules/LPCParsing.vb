@@ -175,6 +175,15 @@
         Return {finalKeys, finalValues}
     End Function
 
+    Function CompileMapping(keys As String(), values As String())
+        Debug.Assert(keys.Length = values.Length, "Key/Value length mismatch!", "Please make sure the number of keys and values is the same.")
+        Dim result As String = "(["
+        For i As Integer = 0 To keys.Length - 1
+            result = result + keys(i) + ":" + values(i) + ", "
+        Next
+        Return result + "])"
+    End Function
+
     ''' <summary>
     ''' Takes a string and removes all spaces, tabs, and new-liney things before and after any meaningful data
     ''' </summary>

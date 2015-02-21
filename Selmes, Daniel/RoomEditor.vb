@@ -31,5 +31,7 @@
         mappingEditor.KeysTextBoxLabel.Text = "Item Names (Seperated by commas)"
         mappingEditor.ValueTextBoxLabel.Text = "Item Description"
         mappingEditor.ShowDialog()
+        MsgBox(mappingEditor.dialogValue)
+        mappingEditor.Close()
     End Sub
 End Class

@@ -32,7 +32,7 @@ Partial Class MappingEditorMS
         Me.KeysTextBox = New System.Windows.Forms.TextBox()
         Me.KeysTextBoxLabel = New System.Windows.Forms.Label()
         Me.SaveButton = New System.Windows.Forms.Button()
-        Me.CancelButton = New System.Windows.Forms.Button()
+        Me.CancelButton_ = New System.Windows.Forms.Button()
         Me.KeysListBoxContainer.SuspendLayout()
         Me.ValueGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -131,14 +131,14 @@ Partial Class MappingEditorMS
         Me.SaveButton.Text = "Save"
         Me.SaveButton.UseVisualStyleBackColor = True
         '
-        'CancelButton
+        'CancelButton_
         '
-        Me.CancelButton.Location = New System.Drawing.Point(221, 236)
-        Me.CancelButton.Name = "CancelButton"
-        Me.CancelButton.Size = New System.Drawing.Size(126, 23)
-        Me.CancelButton.TabIndex = 5
-        Me.CancelButton.Text = "Cancel"
-        Me.CancelButton.UseVisualStyleBackColor = True
+        Me.CancelButton_.Location = New System.Drawing.Point(221, 236)
+        Me.CancelButton_.Name = "CancelButton_"
+        Me.CancelButton_.Size = New System.Drawing.Size(126, 23)
+        Me.CancelButton_.TabIndex = 5
+        Me.CancelButton_.Text = "Cancel"
+        Me.CancelButton_.UseVisualStyleBackColor = True
         '
         'MappingEditorMS
         '
@@ -146,7 +146,7 @@ Partial Class MappingEditorMS
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(483, 269)
         Me.Controls.Add(Me.SaveButton)
-        Me.Controls.Add(Me.CancelButton)
+        Me.Controls.Add(Me.CancelButton_)
         Me.Controls.Add(Me.ValueGroupBox)
         Me.Controls.Add(Me.KeysListBoxContainer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -170,5 +170,5 @@ Partial Class MappingEditorMS
     Friend WithEvents AddButton As System.Windows.Forms.Button
     Friend WithEvents RemoveButton As System.Windows.Forms.Button
     Friend WithEvents SaveButton As System.Windows.Forms.Button
-    Friend WithEvents CancelButton As System.Windows.Forms.Button
+    Friend WithEvents CancelButton_ As System.Windows.Forms.Button
 End Class

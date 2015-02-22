@@ -21,7 +21,7 @@
         Else
             'Open the selected room in the room editor
             Dim roomeditor As New RoomEditor()
-            roomeditor.CurrentFile = "C:\ds\lib\domains\" + RoomsListBox.SelectedItem
+            roomeditor.filePath = "C:\ds\lib\domains\" + RoomsListBox.SelectedItem
             roomeditor.Show()
         End If
     End Sub

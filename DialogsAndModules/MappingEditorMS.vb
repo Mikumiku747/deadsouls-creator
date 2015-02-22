@@ -61,7 +61,7 @@
             If keys(i).Contains(",") Then
                 keysConverted(i) = LPCParsing.CSVToLPCArray(keys(i))
             Else
-                keysConverted(i) = keys(i)
+                keysConverted(i) = ReQuote(keys(i))
             End If
         Next
         'Re-quote the values
@@ -70,7 +70,6 @@
             valuesConverted(i) = LPCParsing.ReQuote(values(i))
         Next
         'Compile the array back up
-        MsgBox(LPCParsing.CompileMapping(keysConverted, valuesConverted))
         dialogValue = LPCParsing.CompileMapping(keysConverted, valuesConverted)
         Me.Hide()
     End Sub
@@ -100,7 +99,7 @@
         KeysListBox.SetSelected(KeysListBox.Items.Count - 1, True)
     End Sub
 
-    Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
+    Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton_.Click
         dialogValue = "CANCEL"
         Me.Hide()
     End Sub

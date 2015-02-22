@@ -1,12 +1,16 @@
 ﻿Public Class RoomEditor
-    Public CurrentFile As String
+    Public filePath As String
+    Public file As String
 
     Private Sub RoomEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         'Set the current file
-        If CurrentFile = "" Then
+        If filePath = "" Then
             Me.Text = "Dead Souls Room Editor"
+            file = My.Computer.FileSystem.ReadAllText("C:\ds\lib\domains\town\room\bridge.c")
         Else
-            Me.Text = CurrentFile + " - Dead Souls Room Editor"
+            Me.Text = filePath + " - Dead Souls Room Editor"
+            file = My.Computer.FileSystem.ReadAllText(filePath)
         End If
     End Sub
 
@@ -24,14 +28,25 @@
 
     Private Sub EditItemsButton_Click(sender As Object, e As EventArgs) Handles EditItemsButton.Click
         Dim mappingEditor As New MappingEditorMS
-        mappingEditor.dialogValue = LPCParsing.GetBetween(My.Computer.FileSystem.ReadAllText(CurrentFile), "SetItems(", ");")
-        mappingEditor.Text = "Edit Items"
-        mappingEditor.KeysListBoxContainer.Text = "Item Aliases"
-        mappingEditor.ValueGroupBox.Text = "Item Description"
-        mappingEditor.KeysTextBoxLabel.Text = "Item Names (Seperated by commas)"
-        mappingEditor.ValueTextBoxLabel.Text = "Item Description"
+        Try
+            mappingEditor.dialogValue = LPCParsing.GetBetween(file, "SetItems(", ");")
+            mappingEditor.Text = "Edit Items"
+            mappingEditor.KeysListBoxContainer.Text = "Item Aliases"
+            mappingEditor.ValueGroupBox.Text = "Item Description"
+            mappingEditor.KeysTextBoxLabel.Text = "Item Names (Seperated by commas)"
+            mappingEditor.ValueTextBoxLabel.Text = "Item Description"
+        Catch ex As LPCParsing.StringNotFoundException
+            If MsgBox("There are no items in this room yet. Do you want to create an item list?", MsgBoxStyle.YesNo, "Confirm") = MsgBoxResult.Yes Then
+                Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
+                file = file.Substring(0, innerCreate) + vbNewLine + "SetItems( ([""""default value"""":""""description here""""]) );" + vbNewLine + file.Substring(innerCreate)
+                mappingEditor.dialogValue = LPCParsing.GetBetween(file, "SetItems(", ");")
+            Else
+                Return
+            End If
+        End Try
         mappingEditor.ShowDialog()
-        MsgBox(mappingEditor.dialogValue)
+        file = SetBetween(file, "SetItems(", ");", mappingEditor.dialogValue)
         mappingEditor.Close()
+        
     End Sub
 End Class

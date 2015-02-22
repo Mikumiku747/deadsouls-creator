@@ -181,7 +181,15 @@
         For i As Integer = 0 To keys.Length - 1
             result = result + keys(i) + ":" + values(i) + ", "
         Next
-        Return result + "])"
+        result = result + "])"
+        Dim lastComma As Integer = result.LastIndexOf(",")
+        Dim lastColon As Integer = result.LastIndexOf(":")
+        If lastComma > lastColon Then
+            'MsgBox("getting rid of the extra comma")
+            Return result.Substring(0, lastComma) + result.Substring(lastComma + 1)
+        Else
+            Return result
+        End If
     End Function
 
     ''' <summary>
@@ -280,7 +288,7 @@
         For Each item In processedItems
             results = results + item + ","
         Next
-        Return "{(" + results.Substring(0, results.Length - 1) + "})"
+        Return "({" + results.Substring(0, results.Length - 1) + "})"
     End Function
 
     '//TODO: Add some more functions so it's super easy to compile the new LPC file and Parse the old one.

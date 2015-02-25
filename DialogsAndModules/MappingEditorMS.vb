@@ -1,4 +1,9 @@
-﻿Public Class MappingEditorMS
+﻿''' <summary>
+''' Multiple-Single mapping editor dialog
+''' </summary>
+''' <remarks>Meant to be used as a dialog for editing LPC Mappings, spcefically, ones that 
+''' map arrays of strings to single strings.</remarks>
+Public Class MappingEditorMS
 
     Public dialogValue As String
     Dim cleanKeys As List(Of String)
@@ -13,7 +18,7 @@
         Dim values = CType(keysAndValues(1), String())
         'Clean off the keys
         Dim keysStripped = keys
-        For i As Integer = 0 To keysStripped.length - 1
+        For i As Integer = 0 To keysStripped.Length - 1
             keysStripped(i) = LPCParsing.StripWhitepace(keys(i))
             If keysStripped(i).StartsWith("({") Then
                 keysStripped(i) = LPCParsing.LPCArrayToCSV(keysStripped(i))
@@ -24,7 +29,7 @@
         cleanKeys = keysStripped.Cast(Of String)().ToList()
         'Clean off the values
         Dim valuesStripped = values
-        For i As Integer = 0 To values.length - 1
+        For i As Integer = 0 To values.Length - 1
             valuesStripped(i) = LPCParsing.DeQuote(valuesStripped(i))
         Next
         cleanValues = valuesStripped.Cast(Of String)().ToList()
@@ -104,7 +109,7 @@
         Me.Hide()
     End Sub
 
-    
+
     Private Sub MappingEditorMS_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Hide()
     End Sub

@@ -83,6 +83,7 @@ Partial Class FileEditor
         Me.TextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox.Size = New System.Drawing.Size(384, 321)
         Me.TextBox.TabIndex = 1
+        Me.TextBox.WordWrap = False
         '
         'TextMenu
         '

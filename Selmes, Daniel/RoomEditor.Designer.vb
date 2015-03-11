@@ -89,7 +89,10 @@ Partial Class RoomEditor
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditSearchesButton = New System.Windows.Forms.Button()
         Me.SearchesTextBox = New System.Windows.Forms.TextBox()
+<<<<<<< HEAD
         Me.SaveRoomAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+=======
+>>>>>>> origin/master
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -148,8 +151,13 @@ Partial Class RoomEditor
         'SaveRoomToolStripMenuItem
         '
         Me.SaveRoomToolStripMenuItem.Name = "SaveRoomToolStripMenuItem"
+<<<<<<< HEAD
         Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.SaveRoomToolStripMenuItem.Text = "Save room"
+=======
+        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveRoomToolStripMenuItem.Text = "Save room..."
+>>>>>>> origin/master
         '
         'ToolStripSeparator1
         '
@@ -841,12 +849,15 @@ Partial Class RoomEditor
         Me.SearchesTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SearchesTextBox.TabIndex = 1
         '
+<<<<<<< HEAD
         'SaveRoomAsToolStripMenuItem
         '
         Me.SaveRoomAsToolStripMenuItem.Name = "SaveRoomAsToolStripMenuItem"
         Me.SaveRoomAsToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.SaveRoomAsToolStripMenuItem.Text = "Save room as..."
         '
+=======
+>>>>>>> origin/master
         'RoomEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)

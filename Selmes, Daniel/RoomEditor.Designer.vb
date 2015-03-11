@@ -55,12 +55,13 @@ Partial Class RoomEditor
         Me.EditObjectsButton = New System.Windows.Forms.Button()
         Me.ObjectsTextBox = New System.Windows.Forms.TextBox()
         Me.RoomDescriptionGroupBox = New System.Windows.Forms.GroupBox()
-        Me.NightDescriptionTextBox = New System.Windows.Forms.TextBox()
-        Me.NightDescriptionEnabledCheckbox = New System.Windows.Forms.CheckBox()
-        Me.LongDescriptionBox = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ShortDescriptionBox = New System.Windows.Forms.TextBox()
+        Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.NightDescriptionTextBox = New System.Windows.Forms.TextBox()
+        Me.ShortDescriptionBox = New System.Windows.Forms.TextBox()
+        Me.NightDescriptionEnabledCheckbox = New System.Windows.Forms.CheckBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LongDescriptionBox = New System.Windows.Forms.TextBox()
         Me.RoomSettingsGroupBox = New System.Windows.Forms.GroupBox()
         Me.TownTextBox = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -88,7 +89,6 @@ Partial Class RoomEditor
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditSearchesButton = New System.Windows.Forms.Button()
         Me.SearchesTextBox = New System.Windows.Forms.TextBox()
-        Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -103,6 +103,7 @@ Partial Class RoomEditor
         Me.ObjectsGroupBox.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.RoomDescriptionGroupBox.SuspendLayout()
+        Me.TableLayoutPanel10.SuspendLayout()
         Me.RoomSettingsGroupBox.SuspendLayout()
         CType(Me.LightLevelTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GravityTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,7 +114,6 @@ Partial Class RoomEditor
         Me.TableLayoutPanel4.SuspendLayout()
         Me.SearchesGroupBox.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
-        Me.TableLayoutPanel10.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip
@@ -135,37 +135,37 @@ Partial Class RoomEditor
         'NewRoomToolStripMenuItem
         '
         Me.NewRoomToolStripMenuItem.Name = "NewRoomToolStripMenuItem"
-        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NewRoomToolStripMenuItem.Text = "New room"
         '
         'OpenRoomToolStripMenuItem
         '
         Me.OpenRoomToolStripMenuItem.Name = "OpenRoomToolStripMenuItem"
-        Me.OpenRoomToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.OpenRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenRoomToolStripMenuItem.Text = "Open room..."
         '
         'SaveRoomToolStripMenuItem
         '
         Me.SaveRoomToolStripMenuItem.Name = "SaveRoomToolStripMenuItem"
-        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveRoomToolStripMenuItem.Text = "Save room..."
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(141, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'CloseFileToolStripMenuItem
         '
         Me.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem"
-        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CloseFileToolStripMenuItem.Text = "Close file"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'EditToolStripMenuItem
@@ -464,6 +464,39 @@ Partial Class RoomEditor
         Me.RoomDescriptionGroupBox.TabStop = False
         Me.RoomDescriptionGroupBox.Text = "Description"
         '
+        'TableLayoutPanel10
+        '
+        Me.TableLayoutPanel10.ColumnCount = 1
+        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel10.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel10.Controls.Add(Me.NightDescriptionTextBox, 0, 5)
+        Me.TableLayoutPanel10.Controls.Add(Me.ShortDescriptionBox, 0, 1)
+        Me.TableLayoutPanel10.Controls.Add(Me.NightDescriptionEnabledCheckbox, 0, 4)
+        Me.TableLayoutPanel10.Controls.Add(Me.Label2, 0, 2)
+        Me.TableLayoutPanel10.Controls.Add(Me.LongDescriptionBox, 0, 3)
+        Me.TableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel10.Location = New System.Drawing.Point(3, 16)
+        Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
+        Me.TableLayoutPanel10.RowCount = 6
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24.0!))
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel10.Size = New System.Drawing.Size(294, 232)
+        Me.TableLayoutPanel10.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(288, 16)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Short description"
+        '
         'NightDescriptionTextBox
         '
         Me.NightDescriptionTextBox.Dock = System.Windows.Forms.DockStyle.Fill
@@ -474,6 +507,14 @@ Partial Class RoomEditor
         Me.NightDescriptionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.NightDescriptionTextBox.Size = New System.Drawing.Size(288, 67)
         Me.NightDescriptionTextBox.TabIndex = 5
+        '
+        'ShortDescriptionBox
+        '
+        Me.ShortDescriptionBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ShortDescriptionBox.Location = New System.Drawing.Point(3, 19)
+        Me.ShortDescriptionBox.Name = "ShortDescriptionBox"
+        Me.ShortDescriptionBox.Size = New System.Drawing.Size(288, 20)
+        Me.ShortDescriptionBox.TabIndex = 1
         '
         'NightDescriptionEnabledCheckbox
         '
@@ -486,16 +527,6 @@ Partial Class RoomEditor
         Me.NightDescriptionEnabledCheckbox.Text = "Night Description"
         Me.NightDescriptionEnabledCheckbox.UseVisualStyleBackColor = True
         '
-        'LongDescriptionBox
-        '
-        Me.LongDescriptionBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LongDescriptionBox.Location = New System.Drawing.Point(3, 59)
-        Me.LongDescriptionBox.Multiline = True
-        Me.LongDescriptionBox.Name = "LongDescriptionBox"
-        Me.LongDescriptionBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.LongDescriptionBox.Size = New System.Drawing.Size(288, 67)
-        Me.LongDescriptionBox.TabIndex = 3
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -506,23 +537,15 @@ Partial Class RoomEditor
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Long description"
         '
-        'ShortDescriptionBox
+        'LongDescriptionBox
         '
-        Me.ShortDescriptionBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ShortDescriptionBox.Location = New System.Drawing.Point(3, 19)
-        Me.ShortDescriptionBox.Name = "ShortDescriptionBox"
-        Me.ShortDescriptionBox.Size = New System.Drawing.Size(288, 20)
-        Me.ShortDescriptionBox.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(288, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Short description"
+        Me.LongDescriptionBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LongDescriptionBox.Location = New System.Drawing.Point(3, 59)
+        Me.LongDescriptionBox.Multiline = True
+        Me.LongDescriptionBox.Name = "LongDescriptionBox"
+        Me.LongDescriptionBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.LongDescriptionBox.Size = New System.Drawing.Size(288, 67)
+        Me.LongDescriptionBox.TabIndex = 3
         '
         'RoomSettingsGroupBox
         '
@@ -817,29 +840,6 @@ Partial Class RoomEditor
         Me.SearchesTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SearchesTextBox.TabIndex = 1
         '
-        'TableLayoutPanel10
-        '
-        Me.TableLayoutPanel10.ColumnCount = 1
-        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel10.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel10.Controls.Add(Me.NightDescriptionTextBox, 0, 5)
-        Me.TableLayoutPanel10.Controls.Add(Me.ShortDescriptionBox, 0, 1)
-        Me.TableLayoutPanel10.Controls.Add(Me.NightDescriptionEnabledCheckbox, 0, 4)
-        Me.TableLayoutPanel10.Controls.Add(Me.Label2, 0, 2)
-        Me.TableLayoutPanel10.Controls.Add(Me.LongDescriptionBox, 0, 3)
-        Me.TableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel10.Location = New System.Drawing.Point(3, 16)
-        Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
-        Me.TableLayoutPanel10.RowCount = 6
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.Size = New System.Drawing.Size(294, 232)
-        Me.TableLayoutPanel10.TabIndex = 6
-        '
         'RoomEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -874,6 +874,8 @@ Partial Class RoomEditor
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         Me.RoomDescriptionGroupBox.ResumeLayout(False)
+        Me.TableLayoutPanel10.ResumeLayout(False)
+        Me.TableLayoutPanel10.PerformLayout()
         Me.RoomSettingsGroupBox.ResumeLayout(False)
         Me.RoomSettingsGroupBox.PerformLayout()
         CType(Me.LightLevelTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -888,8 +890,6 @@ Partial Class RoomEditor
         Me.SearchesGroupBox.ResumeLayout(False)
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel5.PerformLayout()
-        Me.TableLayoutPanel10.ResumeLayout(False)
-        Me.TableLayoutPanel10.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

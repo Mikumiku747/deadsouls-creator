@@ -64,6 +64,7 @@ Partial Class MainApplicationWindow
         Me.ArmourListBox = New System.Windows.Forms.ListBox()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ITEMEDITORToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -71,7 +72,7 @@ Partial Class MainApplicationWindow
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DomainToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DomainToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem, Me.ITEMEDITORToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Size = New System.Drawing.Size(784, 24)
@@ -421,6 +422,12 @@ Partial Class MainApplicationWindow
         Me.WindowStatusString.Size = New System.Drawing.Size(107, 17)
         Me.WindowStatusString.Text = "Dead Souls Creator"
         '
+        'ITEMEDITORToolStripMenuItem
+        '
+        Me.ITEMEDITORToolStripMenuItem.Name = "ITEMEDITORToolStripMenuItem"
+        Me.ITEMEDITORToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
+        Me.ITEMEDITORToolStripMenuItem.Text = "ITEMEDITOR"
+        '
         'MainApplicationWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -483,4 +490,5 @@ Partial Class MainApplicationWindow
     Friend WithEvents WindowStatusString As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents OnlineHelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportABugToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ITEMEDITORToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -86,6 +86,12 @@
     <Compile Include="DialogsAndModules\StringPrompt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Selmes, Daniel\ItemEditor.Designer.vb">
+      <DependentUpon>ItemEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selmes, Daniel\ItemEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Selmes, Daniel\MainApplicationWindow.Designer.vb">
       <DependentUpon>MainApplicationWindow.vb</DependentUpon>
     </Compile>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\StringPrompt.resx">
       <DependentUpon>StringPrompt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selmes, Daniel\ItemEditor.resx">
+      <DependentUpon>ItemEditor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Selmes, Daniel\MainApplicationWindow.resx">
       <DependentUpon>MainApplicationWindow.vb</DependentUpon>

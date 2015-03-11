@@ -66,4 +66,8 @@
         End If
     End Sub
 
+    Private Sub ITEMEDITORToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ITEMEDITORToolStripMenuItem.Click
+        Dim itemeditor As New ItemEditor
+        itemeditor.Show()
+    End Sub
 End Class

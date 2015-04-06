@@ -27,6 +27,7 @@ Partial Class RoomEditor
         Me.NewRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveRoomAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CloseFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -89,10 +90,6 @@ Partial Class RoomEditor
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditSearchesButton = New System.Windows.Forms.Button()
         Me.SearchesTextBox = New System.Windows.Forms.TextBox()
-<<<<<<< HEAD
-        Me.SaveRoomAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-=======
->>>>>>> origin/master
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -139,42 +136,43 @@ Partial Class RoomEditor
         'NewRoomToolStripMenuItem
         '
         Me.NewRoomToolStripMenuItem.Name = "NewRoomToolStripMenuItem"
-        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.NewRoomToolStripMenuItem.Text = "New room"
         '
         'OpenRoomToolStripMenuItem
         '
         Me.OpenRoomToolStripMenuItem.Name = "OpenRoomToolStripMenuItem"
-        Me.OpenRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.OpenRoomToolStripMenuItem.Text = "Open room..."
         '
         'SaveRoomToolStripMenuItem
         '
         Me.SaveRoomToolStripMenuItem.Name = "SaveRoomToolStripMenuItem"
-<<<<<<< HEAD
         Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.SaveRoomToolStripMenuItem.Text = "Save room"
-=======
-        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveRoomToolStripMenuItem.Text = "Save room..."
->>>>>>> origin/master
+        '
+        'SaveRoomAsToolStripMenuItem
+        '
+        Me.SaveRoomAsToolStripMenuItem.Name = "SaveRoomAsToolStripMenuItem"
+        Me.SaveRoomAsToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.SaveRoomAsToolStripMenuItem.Text = "Save room as..."
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(150, 6)
         '
         'CloseFileToolStripMenuItem
         '
         Me.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem"
-        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.CloseFileToolStripMenuItem.Text = "Close file"
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'EditToolStripMenuItem
@@ -849,15 +847,6 @@ Partial Class RoomEditor
         Me.SearchesTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SearchesTextBox.TabIndex = 1
         '
-<<<<<<< HEAD
-        'SaveRoomAsToolStripMenuItem
-        '
-        Me.SaveRoomAsToolStripMenuItem.Name = "SaveRoomAsToolStripMenuItem"
-        Me.SaveRoomAsToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.SaveRoomAsToolStripMenuItem.Text = "Save room as..."
-        '
-=======
->>>>>>> origin/master
         'RoomEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)

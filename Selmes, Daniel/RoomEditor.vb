@@ -191,8 +191,4 @@
             file = file.Substring(0, innerCreate) + vbNewLine + "SetClimate(" + ReQuote(selected) + ");" + vbNewLine + file.Substring(innerCreate)
         End Try
     End Sub
-
-    Private Sub WindowStatusString_Click(sender As Object, e As EventArgs) Handles WindowStatusString.Click
-
-    End Sub
 End Class

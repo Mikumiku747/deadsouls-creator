@@ -30,9 +30,13 @@
         If NPCListBox.SelectedItem = "Make new NPC..." Then
             'Create a new NPC
             MsgBox("Creating a new NPC in NPC editor...")
+            Dim editor As New NPCEditor
+            NPCEditor.Show()
         Else
             'Open the selected NPC in the NPC editor
             MsgBox("Opening file " + NPCListBox.SelectedItem.ToString() + " in NPC editor...")
+            Dim editor As New NPCEditor
+            NPCEditor.Show()
         End If
     End Sub
 

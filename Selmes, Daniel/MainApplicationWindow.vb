@@ -15,6 +15,8 @@
         ShopkeeperListBox.SelectedItem = "Make new merchant..."
         WeaponsListBox.SelectedItem = "Forge new weapon..."
         ArmourListBox.SelectedItem = "Forge new armour..."
+        ItemListBox.SelectedItem = "Craft new item..."
+
     End Sub
 
     Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
@@ -78,13 +80,18 @@
         End If
     End Sub
 
-    Private Sub ITEMEDITORToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ITEMEDITORToolStripMenuItem.Click
-        Dim itemeditor As New ItemEditor
-        itemeditor.Show()
-    End Sub
-
     Private Sub DeadsoulsInstallationPathToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeadsoulsInstallationPathToolStripMenuItem.Click
         Dim path_dialog As New ds_path_dialog
         path_dialog.ShowDialog()
+    End Sub
+
+    Private Sub EditItemButton_Click(sender As Object, e As EventArgs) Handles EditItemButton.Click
+        If ItemListBox.SelectedItem = "Craft new item..." Then
+            'Create new item
+            MsgBox("Creating new item in item editor...")
+        Else
+            'Open the selected item in the armour editor
+            MsgBox("Opening file " + ItemListBox.SelectedItem.ToString() + " in item editor...")
+        End If
     End Sub
 End Class

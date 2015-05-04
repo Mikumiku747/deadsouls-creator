@@ -24,15 +24,11 @@ Partial Class MainApplicationWindow
     Private Sub InitializeComponent()
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewDomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenDomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.NewFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.DomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshFilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenInExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenRoomEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenNPCEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,10 +36,8 @@ Partial Class MainApplicationWindow
         Me.OpenWeaponEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenArmourEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PublishDomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportABugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ITEMEDITORToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditRoomButton = New System.Windows.Forms.Button()
         Me.EditNPCButton = New System.Windows.Forms.Button()
@@ -62,11 +56,14 @@ Partial Class MainApplicationWindow
         Me.ArmourListBox = New System.Windows.Forms.ListBox()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OnlineHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeadsoulsInstallationPathToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManageDomainsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.EditItemButton = New System.Windows.Forms.Button()
+        Me.ItemListBox = New System.Windows.Forms.ListBox()
         Me.MenuStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -74,57 +71,40 @@ Partial Class MainApplicationWindow
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DomainToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem, Me.ITEMEDITORToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DomainToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(784, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(934, 24)
         Me.MenuStrip.TabIndex = 0
         Me.MenuStrip.Text = "Menu"
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewDomainToolStripMenuItem, Me.OpenDomainToolStripMenuItem, Me.ToolStripSeparator1, Me.NewFileToolStripMenuItem, Me.OpenFileToolStripMenuItem, Me.ToolStripSeparator2, Me.AboutToolStripMenuItem, Me.QuitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewFileToolStripMenuItem, Me.OpenFileToolStripMenuItem, Me.ToolStripSeparator2, Me.AboutToolStripMenuItem, Me.QuitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'NewDomainToolStripMenuItem
-        '
-        Me.NewDomainToolStripMenuItem.Name = "NewDomainToolStripMenuItem"
-        Me.NewDomainToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.NewDomainToolStripMenuItem.Text = "New Domain..."
-        '
-        'OpenDomainToolStripMenuItem
-        '
-        Me.OpenDomainToolStripMenuItem.Name = "OpenDomainToolStripMenuItem"
-        Me.OpenDomainToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.OpenDomainToolStripMenuItem.Text = "Open Domain..."
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(154, 6)
-        '
         'NewFileToolStripMenuItem
         '
         Me.NewFileToolStripMenuItem.Name = "NewFileToolStripMenuItem"
-        Me.NewFileToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.NewFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NewFileToolStripMenuItem.Text = "New File..."
         '
         'OpenFileToolStripMenuItem
         '
         Me.OpenFileToolStripMenuItem.Name = "OpenFileToolStripMenuItem"
-        Me.OpenFileToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.OpenFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenFileToolStripMenuItem.Text = "Open File..."
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(154, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
         'DomainToolStripMenuItem
         '
-        Me.DomainToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshFilesToolStripMenuItem, Me.OpenInExplorerToolStripMenuItem})
+        Me.DomainToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManageDomainsToolStripMenuItem, Me.RefreshFilesToolStripMenuItem})
         Me.DomainToolStripMenuItem.Name = "DomainToolStripMenuItem"
         Me.DomainToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.DomainToolStripMenuItem.Text = "Domain"
@@ -132,18 +112,12 @@ Partial Class MainApplicationWindow
         'RefreshFilesToolStripMenuItem
         '
         Me.RefreshFilesToolStripMenuItem.Name = "RefreshFilesToolStripMenuItem"
-        Me.RefreshFilesToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.RefreshFilesToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.RefreshFilesToolStripMenuItem.Text = "Refresh files"
-        '
-        'OpenInExplorerToolStripMenuItem
-        '
-        Me.OpenInExplorerToolStripMenuItem.Name = "OpenInExplorerToolStripMenuItem"
-        Me.OpenInExplorerToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.OpenInExplorerToolStripMenuItem.Text = "Open in explorer"
         '
         'ToolsToolStripMenuItem
         '
-        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenRoomEditorToolStripMenuItem, Me.OpenNPCEditorToolStripMenuItem, Me.OpenShopkeeperEditorToolStripMenuItem, Me.OpenWeaponEditorToolStripMenuItem, Me.OpenArmourEditorToolStripMenuItem, Me.ToolStripSeparator3, Me.PublishDomainToolStripMenuItem, Me.ToolStripSeparator4, Me.DeadsoulsInstallationPathToolStripMenuItem})
+        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenRoomEditorToolStripMenuItem, Me.OpenNPCEditorToolStripMenuItem, Me.OpenShopkeeperEditorToolStripMenuItem, Me.OpenWeaponEditorToolStripMenuItem, Me.OpenArmourEditorToolStripMenuItem, Me.ToolStripSeparator3, Me.DeadsoulsInstallationPathToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
         Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
         Me.ToolsToolStripMenuItem.Text = "Tools"
@@ -183,12 +157,6 @@ Partial Class MainApplicationWindow
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(222, 6)
         '
-        'PublishDomainToolStripMenuItem
-        '
-        Me.PublishDomainToolStripMenuItem.Name = "PublishDomainToolStripMenuItem"
-        Me.PublishDomainToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
-        Me.PublishDomainToolStripMenuItem.Text = "Publish domain..."
-        '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OnlineHelpToolStripMenuItem, Me.ReportABugToolStripMenuItem})
@@ -199,23 +167,21 @@ Partial Class MainApplicationWindow
         'ReportABugToolStripMenuItem
         '
         Me.ReportABugToolStripMenuItem.Name = "ReportABugToolStripMenuItem"
-        Me.ReportABugToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.ReportABugToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ReportABugToolStripMenuItem.Text = "Report a bug"
-        '
-        'ITEMEDITORToolStripMenuItem
-        '
-        Me.ITEMEDITORToolStripMenuItem.Name = "ITEMEDITORToolStripMenuItem"
-        Me.ITEMEDITORToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
-        Me.ITEMEDITORToolStripMenuItem.Text = "ITEMEDITOR"
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 5
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.ColumnCount = 6
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
+        Me.TableLayoutPanel1.Controls.Add(Me.ItemListBox, 5, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.EditItemButton, 5, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Label6, 5, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.EditRoomButton, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.EditNPCButton, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.EditShopkeeperButton, 2, 1)
@@ -240,7 +206,7 @@ Partial Class MainApplicationWindow
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(784, 437)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(934, 437)
         Me.TableLayoutPanel1.TabIndex = 1
         '
         'EditRoomButton
@@ -248,7 +214,7 @@ Partial Class MainApplicationWindow
         Me.EditRoomButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditRoomButton.Location = New System.Drawing.Point(3, 23)
         Me.EditRoomButton.Name = "EditRoomButton"
-        Me.EditRoomButton.Size = New System.Drawing.Size(150, 23)
+        Me.EditRoomButton.Size = New System.Drawing.Size(149, 23)
         Me.EditRoomButton.TabIndex = 0
         Me.EditRoomButton.Text = "Open in Room Editor"
         Me.EditRoomButton.UseVisualStyleBackColor = True
@@ -256,9 +222,9 @@ Partial Class MainApplicationWindow
         'EditNPCButton
         '
         Me.EditNPCButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EditNPCButton.Location = New System.Drawing.Point(159, 23)
+        Me.EditNPCButton.Location = New System.Drawing.Point(158, 23)
         Me.EditNPCButton.Name = "EditNPCButton"
-        Me.EditNPCButton.Size = New System.Drawing.Size(150, 23)
+        Me.EditNPCButton.Size = New System.Drawing.Size(149, 23)
         Me.EditNPCButton.TabIndex = 1
         Me.EditNPCButton.Text = "Open in NPC editor"
         Me.EditNPCButton.UseVisualStyleBackColor = True
@@ -266,9 +232,9 @@ Partial Class MainApplicationWindow
         'EditShopkeeperButton
         '
         Me.EditShopkeeperButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EditShopkeeperButton.Location = New System.Drawing.Point(315, 23)
+        Me.EditShopkeeperButton.Location = New System.Drawing.Point(313, 23)
         Me.EditShopkeeperButton.Name = "EditShopkeeperButton"
-        Me.EditShopkeeperButton.Size = New System.Drawing.Size(150, 23)
+        Me.EditShopkeeperButton.Size = New System.Drawing.Size(149, 23)
         Me.EditShopkeeperButton.TabIndex = 2
         Me.EditShopkeeperButton.Text = "Open in Merchant Editor"
         Me.EditShopkeeperButton.UseVisualStyleBackColor = True
@@ -276,9 +242,9 @@ Partial Class MainApplicationWindow
         'EditWeaponButton
         '
         Me.EditWeaponButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EditWeaponButton.Location = New System.Drawing.Point(471, 23)
+        Me.EditWeaponButton.Location = New System.Drawing.Point(468, 23)
         Me.EditWeaponButton.Name = "EditWeaponButton"
-        Me.EditWeaponButton.Size = New System.Drawing.Size(150, 23)
+        Me.EditWeaponButton.Size = New System.Drawing.Size(149, 23)
         Me.EditWeaponButton.TabIndex = 3
         Me.EditWeaponButton.Text = "Open in Weapon Editor"
         Me.EditWeaponButton.UseVisualStyleBackColor = True
@@ -286,9 +252,9 @@ Partial Class MainApplicationWindow
         'EditArmourButton
         '
         Me.EditArmourButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EditArmourButton.Location = New System.Drawing.Point(627, 23)
+        Me.EditArmourButton.Location = New System.Drawing.Point(623, 23)
         Me.EditArmourButton.Name = "EditArmourButton"
-        Me.EditArmourButton.Size = New System.Drawing.Size(154, 23)
+        Me.EditArmourButton.Size = New System.Drawing.Size(149, 23)
         Me.EditArmourButton.TabIndex = 4
         Me.EditArmourButton.Text = "Open in Armour Editor"
         Me.EditArmourButton.UseVisualStyleBackColor = True
@@ -299,7 +265,7 @@ Partial Class MainApplicationWindow
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label1.Location = New System.Drawing.Point(3, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(150, 13)
+        Me.Label1.Size = New System.Drawing.Size(149, 13)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Rooms"
         '
@@ -307,9 +273,9 @@ Partial Class MainApplicationWindow
         '
         Me.Label2.AutoSize = True
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label2.Location = New System.Drawing.Point(159, 7)
+        Me.Label2.Location = New System.Drawing.Point(158, 7)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(150, 13)
+        Me.Label2.Size = New System.Drawing.Size(149, 13)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "NPCs"
         '
@@ -317,9 +283,9 @@ Partial Class MainApplicationWindow
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label3.Location = New System.Drawing.Point(315, 7)
+        Me.Label3.Location = New System.Drawing.Point(313, 7)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(150, 13)
+        Me.Label3.Size = New System.Drawing.Size(149, 13)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Merchants"
         '
@@ -327,9 +293,9 @@ Partial Class MainApplicationWindow
         '
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label4.Location = New System.Drawing.Point(471, 7)
+        Me.Label4.Location = New System.Drawing.Point(468, 7)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 13)
+        Me.Label4.Size = New System.Drawing.Size(149, 13)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Weapons"
         '
@@ -337,9 +303,9 @@ Partial Class MainApplicationWindow
         '
         Me.Label5.AutoSize = True
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label5.Location = New System.Drawing.Point(627, 7)
+        Me.Label5.Location = New System.Drawing.Point(623, 7)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(154, 13)
+        Me.Label5.Size = New System.Drawing.Size(149, 13)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Armour"
         '
@@ -350,7 +316,7 @@ Partial Class MainApplicationWindow
         Me.RoomsListBox.Items.AddRange(New Object() {"Build new room...", "daniel\room\test.c", "town\room\bridge.c", "cave\room\freezer.c", "town\room\road0.c"})
         Me.RoomsListBox.Location = New System.Drawing.Point(3, 52)
         Me.RoomsListBox.Name = "RoomsListBox"
-        Me.RoomsListBox.Size = New System.Drawing.Size(150, 360)
+        Me.RoomsListBox.Size = New System.Drawing.Size(149, 360)
         Me.RoomsListBox.TabIndex = 10
         '
         'NPCListBox
@@ -358,9 +324,9 @@ Partial Class MainApplicationWindow
         Me.NPCListBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.NPCListBox.FormattingEnabled = True
         Me.NPCListBox.Items.AddRange(New Object() {"Make new NPC..."})
-        Me.NPCListBox.Location = New System.Drawing.Point(159, 52)
+        Me.NPCListBox.Location = New System.Drawing.Point(158, 52)
         Me.NPCListBox.Name = "NPCListBox"
-        Me.NPCListBox.Size = New System.Drawing.Size(150, 360)
+        Me.NPCListBox.Size = New System.Drawing.Size(149, 360)
         Me.NPCListBox.TabIndex = 11
         '
         'ShopkeeperListBox
@@ -368,9 +334,9 @@ Partial Class MainApplicationWindow
         Me.ShopkeeperListBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ShopkeeperListBox.FormattingEnabled = True
         Me.ShopkeeperListBox.Items.AddRange(New Object() {"Make new merchant..."})
-        Me.ShopkeeperListBox.Location = New System.Drawing.Point(315, 52)
+        Me.ShopkeeperListBox.Location = New System.Drawing.Point(313, 52)
         Me.ShopkeeperListBox.Name = "ShopkeeperListBox"
-        Me.ShopkeeperListBox.Size = New System.Drawing.Size(150, 360)
+        Me.ShopkeeperListBox.Size = New System.Drawing.Size(149, 360)
         Me.ShopkeeperListBox.TabIndex = 12
         '
         'WeaponsListBox
@@ -378,9 +344,9 @@ Partial Class MainApplicationWindow
         Me.WeaponsListBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WeaponsListBox.FormattingEnabled = True
         Me.WeaponsListBox.Items.AddRange(New Object() {"Forge new weapon..."})
-        Me.WeaponsListBox.Location = New System.Drawing.Point(471, 52)
+        Me.WeaponsListBox.Location = New System.Drawing.Point(468, 52)
         Me.WeaponsListBox.Name = "WeaponsListBox"
-        Me.WeaponsListBox.Size = New System.Drawing.Size(150, 360)
+        Me.WeaponsListBox.Size = New System.Drawing.Size(149, 360)
         Me.WeaponsListBox.TabIndex = 13
         '
         'ArmourListBox
@@ -388,18 +354,18 @@ Partial Class MainApplicationWindow
         Me.ArmourListBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ArmourListBox.FormattingEnabled = True
         Me.ArmourListBox.Items.AddRange(New Object() {"Forge new armour..."})
-        Me.ArmourListBox.Location = New System.Drawing.Point(627, 52)
+        Me.ArmourListBox.Location = New System.Drawing.Point(623, 52)
         Me.ArmourListBox.Name = "ArmourListBox"
-        Me.ArmourListBox.Size = New System.Drawing.Size(154, 360)
+        Me.ArmourListBox.Size = New System.Drawing.Size(149, 360)
         Me.ArmourListBox.TabIndex = 14
         '
         'StatusStrip
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.StatusStrip, 5)
+        Me.TableLayoutPanel1.SetColumnSpan(Me.StatusStrip, 6)
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WindowStatusString})
         Me.StatusStrip.Location = New System.Drawing.Point(0, 415)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(784, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(934, 22)
         Me.StatusStrip.TabIndex = 15
         Me.StatusStrip.Text = "StatusStrip"
         '
@@ -409,30 +375,25 @@ Partial Class MainApplicationWindow
         Me.WindowStatusString.Size = New System.Drawing.Size(107, 17)
         Me.WindowStatusString.Text = "Dead Souls Creator"
         '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(222, 6)
-        '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AboutToolStripMenuItem.Text = "About..."
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'OnlineHelpToolStripMenuItem
         '
         Me.OnlineHelpToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
         Me.OnlineHelpToolStripMenuItem.Name = "OnlineHelpToolStripMenuItem"
-        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OnlineHelpToolStripMenuItem.Text = "Online Help..."
         '
         'DeadsoulsInstallationPathToolStripMenuItem
@@ -441,11 +402,47 @@ Partial Class MainApplicationWindow
         Me.DeadsoulsInstallationPathToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.DeadsoulsInstallationPathToolStripMenuItem.Text = "Deadsouls Installation Path..."
         '
+        'ManageDomainsToolStripMenuItem
+        '
+        Me.ManageDomainsToolStripMenuItem.Name = "ManageDomainsToolStripMenuItem"
+        Me.ManageDomainsToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.ManageDomainsToolStripMenuItem.Text = "Manage Domains"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label6.Location = New System.Drawing.Point(778, 7)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(153, 13)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = "Items"
+        '
+        'EditItemButton
+        '
+        Me.EditItemButton.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.EditItemButton.Location = New System.Drawing.Point(778, 23)
+        Me.EditItemButton.Name = "EditItemButton"
+        Me.EditItemButton.Size = New System.Drawing.Size(153, 23)
+        Me.EditItemButton.TabIndex = 17
+        Me.EditItemButton.Text = "Open in Item Editor"
+        Me.EditItemButton.UseVisualStyleBackColor = True
+        '
+        'ItemListBox
+        '
+        Me.ItemListBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ItemListBox.FormattingEnabled = True
+        Me.ItemListBox.Items.AddRange(New Object() {"Craft new item..."})
+        Me.ItemListBox.Location = New System.Drawing.Point(778, 52)
+        Me.ItemListBox.Name = "ItemListBox"
+        Me.ItemListBox.Size = New System.Drawing.Size(153, 360)
+        Me.ItemListBox.TabIndex = 18
+        '
         'MainApplicationWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.ClientSize = New System.Drawing.Size(934, 461)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.MenuStrip)
         Me.MainMenuStrip = Me.MenuStrip
@@ -463,9 +460,6 @@ Partial Class MainApplicationWindow
     End Sub
     Friend WithEvents MenuStrip As System.Windows.Forms.MenuStrip
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents NewDomainToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OpenDomainToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents NewFileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenFileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
@@ -473,7 +467,6 @@ Partial Class MainApplicationWindow
     Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DomainToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RefreshFilesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents OpenInExplorerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenRoomEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenNPCEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -481,7 +474,6 @@ Partial Class MainApplicationWindow
     Friend WithEvents OpenWeaponEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenArmourEditorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents PublishDomainToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents EditRoomButton As System.Windows.Forms.Button
@@ -503,7 +495,9 @@ Partial Class MainApplicationWindow
     Friend WithEvents WindowStatusString As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents OnlineHelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportABugToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ITEMEDITORToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents DeadsoulsInstallationPathToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManageDomainsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ItemListBox As ListBox
+    Friend WithEvents EditItemButton As Button
+    Friend WithEvents Label6 As Label
 End Class

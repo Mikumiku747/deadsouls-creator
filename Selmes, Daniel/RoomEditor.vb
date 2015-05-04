@@ -189,6 +189,7 @@
         Catch exex As LPCParsing.StringNotFoundException
             Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
             file = file.Substring(0, innerCreate) + vbNewLine + "SetClimate(" + ReQuote(selected) + ");" + vbNewLine + file.Substring(innerCreate)
+            LPCParsing.SetBetween(file, "SetTemperature(", ");", "32 degrees")
         End Try
     End Sub
 End Class

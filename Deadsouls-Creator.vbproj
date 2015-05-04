@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogsAndModules\ds_path_dialog.Designer.vb">
+      <DependentUpon>ds_path_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogsAndModules\ds_path_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogsAndModules\FileEditor.Designer.vb">
       <DependentUpon>FileEditor.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DialogsAndModules\ds_path_dialog.resx">
+      <DependentUpon>ds_path_dialog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\FileEditor.resx">
       <DependentUpon>FileEditor.vb</DependentUpon>
     </EmbeddedResource>

@@ -1,6 +1,14 @@
 ﻿Public Class MainApplicationWindow
 
     Private Sub MainApplicationWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Check deadsouls installation path
+        If My.Settings.deadsouls_installation_path = "" Then
+            Dim path_dialog As New ds_path_dialog
+            path_dialog.ShowDialog()
+        End If
+
+        Debug.Print("Deadsouls Path: " & My.Settings.deadsouls_installation_path)
+
         'Select the "create new [thing]" option by default for all the file lists
         RoomsListBox.SelectedItem = "Build new room..."
         NPCListBox.SelectedItem = "Make new NPC..."
@@ -8,7 +16,7 @@
         WeaponsListBox.SelectedItem = "Forge new weapon..."
         ArmourListBox.SelectedItem = "Forge new armour..."
     End Sub
-    
+
     Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
         Close()
     End Sub
@@ -73,5 +81,10 @@
     Private Sub ITEMEDITORToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ITEMEDITORToolStripMenuItem.Click
         Dim itemeditor As New ItemEditor
         itemeditor.Show()
+    End Sub
+
+    Private Sub DeadsoulsInstallationPathToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeadsoulsInstallationPathToolStripMenuItem.Click
+        Dim path_dialog As New ds_path_dialog
+        path_dialog.ShowDialog()
     End Sub
 End Class

@@ -30,8 +30,6 @@ Partial Class MainApplicationWindow
         Me.NewFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshFilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenInExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,8 +42,8 @@ Partial Class MainApplicationWindow
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PublishDomainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OnlineHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportABugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ITEMEDITORToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditRoomButton = New System.Windows.Forms.Button()
         Me.EditNPCButton = New System.Windows.Forms.Button()
@@ -64,7 +62,11 @@ Partial Class MainApplicationWindow
         Me.ArmourListBox = New System.Windows.Forms.ListBox()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ITEMEDITORToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OnlineHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeadsoulsInstallationPathToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -120,20 +122,6 @@ Partial Class MainApplicationWindow
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(154, 6)
         '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.AboutToolStripMenuItem.Text = "About..."
-        '
-        'QuitToolStripMenuItem
-        '
-        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
-        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.QuitToolStripMenuItem.Text = "Quit"
-        '
         'DomainToolStripMenuItem
         '
         Me.DomainToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshFilesToolStripMenuItem, Me.OpenInExplorerToolStripMenuItem})
@@ -155,50 +143,50 @@ Partial Class MainApplicationWindow
         '
         'ToolsToolStripMenuItem
         '
-        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenRoomEditorToolStripMenuItem, Me.OpenNPCEditorToolStripMenuItem, Me.OpenShopkeeperEditorToolStripMenuItem, Me.OpenWeaponEditorToolStripMenuItem, Me.OpenArmourEditorToolStripMenuItem, Me.ToolStripSeparator3, Me.PublishDomainToolStripMenuItem})
+        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenRoomEditorToolStripMenuItem, Me.OpenNPCEditorToolStripMenuItem, Me.OpenShopkeeperEditorToolStripMenuItem, Me.OpenWeaponEditorToolStripMenuItem, Me.OpenArmourEditorToolStripMenuItem, Me.ToolStripSeparator3, Me.PublishDomainToolStripMenuItem, Me.ToolStripSeparator4, Me.DeadsoulsInstallationPathToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
         Me.ToolsToolStripMenuItem.Text = "Tools"
         '
         'OpenRoomEditorToolStripMenuItem
         '
         Me.OpenRoomEditorToolStripMenuItem.Name = "OpenRoomEditorToolStripMenuItem"
-        Me.OpenRoomEditorToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.OpenRoomEditorToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.OpenRoomEditorToolStripMenuItem.Text = "Open Room Editor"
         '
         'OpenNPCEditorToolStripMenuItem
         '
         Me.OpenNPCEditorToolStripMenuItem.Name = "OpenNPCEditorToolStripMenuItem"
-        Me.OpenNPCEditorToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.OpenNPCEditorToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.OpenNPCEditorToolStripMenuItem.Text = "Open NPC Editor"
         '
         'OpenShopkeeperEditorToolStripMenuItem
         '
         Me.OpenShopkeeperEditorToolStripMenuItem.Name = "OpenShopkeeperEditorToolStripMenuItem"
-        Me.OpenShopkeeperEditorToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.OpenShopkeeperEditorToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.OpenShopkeeperEditorToolStripMenuItem.Text = "Open Shopkeeper Editor"
         '
         'OpenWeaponEditorToolStripMenuItem
         '
         Me.OpenWeaponEditorToolStripMenuItem.Name = "OpenWeaponEditorToolStripMenuItem"
-        Me.OpenWeaponEditorToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.OpenWeaponEditorToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.OpenWeaponEditorToolStripMenuItem.Text = "Open Weapon Editor"
         '
         'OpenArmourEditorToolStripMenuItem
         '
         Me.OpenArmourEditorToolStripMenuItem.Name = "OpenArmourEditorToolStripMenuItem"
-        Me.OpenArmourEditorToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.OpenArmourEditorToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.OpenArmourEditorToolStripMenuItem.Text = "Open Armour Editor"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(199, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(222, 6)
         '
         'PublishDomainToolStripMenuItem
         '
         Me.PublishDomainToolStripMenuItem.Name = "PublishDomainToolStripMenuItem"
-        Me.PublishDomainToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.PublishDomainToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.PublishDomainToolStripMenuItem.Text = "Publish domain..."
         '
         'HelpToolStripMenuItem
@@ -208,18 +196,17 @@ Partial Class MainApplicationWindow
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
-        'OnlineHelpToolStripMenuItem
-        '
-        Me.OnlineHelpToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
-        Me.OnlineHelpToolStripMenuItem.Name = "OnlineHelpToolStripMenuItem"
-        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
-        Me.OnlineHelpToolStripMenuItem.Text = "Online Help..."
-        '
         'ReportABugToolStripMenuItem
         '
         Me.ReportABugToolStripMenuItem.Name = "ReportABugToolStripMenuItem"
         Me.ReportABugToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.ReportABugToolStripMenuItem.Text = "Report a bug"
+        '
+        'ITEMEDITORToolStripMenuItem
+        '
+        Me.ITEMEDITORToolStripMenuItem.Name = "ITEMEDITORToolStripMenuItem"
+        Me.ITEMEDITORToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.ITEMEDITORToolStripMenuItem.Text = "ITEMEDITOR"
         '
         'TableLayoutPanel1
         '
@@ -422,11 +409,37 @@ Partial Class MainApplicationWindow
         Me.WindowStatusString.Size = New System.Drawing.Size(107, 17)
         Me.WindowStatusString.Text = "Dead Souls Creator"
         '
-        'ITEMEDITORToolStripMenuItem
+        'ToolStripSeparator4
         '
-        Me.ITEMEDITORToolStripMenuItem.Name = "ITEMEDITORToolStripMenuItem"
-        Me.ITEMEDITORToolStripMenuItem.Size = New System.Drawing.Size(86, 20)
-        Me.ITEMEDITORToolStripMenuItem.Text = "ITEMEDITOR"
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(222, 6)
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.AboutToolStripMenuItem.Text = "About..."
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
+        '
+        'OnlineHelpToolStripMenuItem
+        '
+        Me.OnlineHelpToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
+        Me.OnlineHelpToolStripMenuItem.Name = "OnlineHelpToolStripMenuItem"
+        Me.OnlineHelpToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.OnlineHelpToolStripMenuItem.Text = "Online Help..."
+        '
+        'DeadsoulsInstallationPathToolStripMenuItem
+        '
+        Me.DeadsoulsInstallationPathToolStripMenuItem.Name = "DeadsoulsInstallationPathToolStripMenuItem"
+        Me.DeadsoulsInstallationPathToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
+        Me.DeadsoulsInstallationPathToolStripMenuItem.Text = "Deadsouls Installation Path..."
         '
         'MainApplicationWindow
         '
@@ -491,4 +504,6 @@ Partial Class MainApplicationWindow
     Friend WithEvents OnlineHelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportABugToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ITEMEDITORToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents DeadsoulsInstallationPathToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -175,6 +175,12 @@
         Return {finalKeys, finalValues}
     End Function
 
+    ''' <summary>
+    ''' Compiles a mapping into a single string from two arrays of keys and values
+    ''' </summary>
+    ''' <param name="keys">An array of strings to use as the keys</param>
+    ''' <param name="values">An array of strings with the corresponsing values for the keys</param>
+    ''' <returns>A string with the keys and values as an LPC Array.</returns>
     Function CompileMapping(keys As String(), values As String())
         Debug.Assert(keys.Length = values.Length, "Key/Value length mismatch!", "Please make sure the number of keys and values is the same.")
         Dim result As String = "(["
@@ -254,10 +260,20 @@
         Return result
     End Function
 
+    ''' <summary>
+    ''' Puts quotes back onto a string
+    ''' </summary>
+    ''' <param name="literal">The literal to be enclosed in quotes</param>
+    ''' <returns>The string with double quotes around it.</returns>
     Function ReQuote(literal As String)
         Return """" + literal + """"
     End Function
 
+    ''' <summary>
+    ''' Converts an LPC array to a comma seperated list of values
+    ''' </summary>
+    ''' <param name="array">A string of an LPC Array, to be converted to a CSV</param>
+    ''' <returns>a string with the LPC array in CSV form</returns>
     Function LPCArrayToCSV(array As String)
         'Get rid of whitespace and surrounding array syntax
         Dim arrayClean As String = StripWhitepace(array)
@@ -268,6 +284,11 @@
         Return result
     End Function
 
+    ''' <summary>
+    ''' Takes a string of a CSV and turns it into a string of an LPC array
+    ''' </summary>
+    ''' <param name="csv">A string of a CSV to be turned into an LPC array</param>
+    ''' <returns>A string of an LPC Array, withe the contents of the CSV array</returns>
     Function CSVToLPCArray(csv As String)
         Dim items() As String = csv.Split(",")
         Dim processedItems As List(Of String) = New List(Of String)

@@ -1,144 +1,155 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
+  <HelpKINode Title="CompileMapping method" Url="html/3075228c-515b-75fc-67da-00dca7a9f2b7.htm" />
+  <HelpKINode Title="CSVToLPCArray method" Url="html/43177c1b-95de-3940-0d14-8f7dc3f8ae35.htm" />
   <HelpKINode Title="Deadsouls_Creator namespace" Url="html/912d392b-caeb-aaa9-a211-568c76e311d0.htm" />
   <HelpKINode Title="Deadsouls_Creator.ds_path_dialog class" Url="html/4e8c022b-080a-b920-5fdd-838c29633dd6.htm" />
   <HelpKINode Title="Deadsouls_Creator.ExampleListboxDesign class" Url="html/a6505c71-9615-60bf-e972-13765bc068fa.htm" />
   <HelpKINode Title="Deadsouls_Creator.FileEditor class" Url="html/34963bd7-24cf-3c33-c08f-7f5afb124498.htm" />
   <HelpKINode Title="Deadsouls_Creator.ItemEditor class" Url="html/4e712f74-b2f3-b100-c4c1-132a80fd48ec.htm" />
+  <HelpKINode Title="Deadsouls_Creator.LPCParsing class" Url="html/dc384b9b-60ef-a962-c0ba-816732a758eb.htm" />
+  <HelpKINode Title="Deadsouls_Creator.LPCParsing.StringNotFoundException class" Url="html/f5a3eabc-4cdb-95d3-303d-f8dcecd731c8.htm" />
   <HelpKINode Title="Deadsouls_Creator.MainApplicationWindow class" Url="html/89ededa1-fe25-3483-d1c6-f2001573404f.htm" />
   <HelpKINode Title="Deadsouls_Creator.MappingEditorMS class" Url="html/1e6d4893-892f-1cf6-e44c-063e52844e07.htm" />
   <HelpKINode Title="Deadsouls_Creator.NPCEditor class" Url="html/20dd4904-d5c0-ae7c-a5d5-e7423942c07e.htm" />
   <HelpKINode Title="Deadsouls_Creator.RoomEditor class" Url="html/4a757790-17a6-ac1d-f18a-2f7da8f39731.htm" />
   <HelpKINode Title="Deadsouls_Creator.StringPrompt class" Url="html/90f4b3b5-51dd-a93b-e048-7e22bba412a0.htm" />
   <HelpKINode Title="Deadsouls_Creator.TextFilterTesting class" Url="html/7d77a5a3-3770-5e11-08bc-2e9d1a560156.htm" />
+  <HelpKINode Title="DeQuote method" Url="html/bff94f00-5738-4f6b-052b-0d09b25108ab.htm" />
   <HelpKINode Title="dialogValue field">
     <HelpKINode Title="FileEditor.dialogValue Field" Url="html/b1267848-6838-b56e-a1b5-1bc908692a2b.htm" />
     <HelpKINode Title="MappingEditorMS.dialogValue Field" Url="html/371ec764-86fb-33e3-2e3d-5156831f337b.htm" />
     <HelpKINode Title="StringPrompt.dialogValue Field" Url="html/e52e8924-e601-1161-0901-901c667df1e8.htm" />
   </HelpKINode>
   <HelpKINode Title="Dispose method">
-    <HelpKINode Title="ds_path_dialog.Dispose Method " Url="html/70ad2186-af69-6f01-8e18-0fb55c48e75f.htm" />
-    <HelpKINode Title="ExampleListboxDesign.Dispose Method " Url="html/7cfb852c-617d-6874-1887-b81c2ed59a3b.htm" />
-    <HelpKINode Title="FileEditor.Dispose Method " Url="html/a9e058e6-d191-c6e2-4ea1-8dea95fad255.htm" />
-    <HelpKINode Title="ItemEditor.Dispose Method " Url="html/2e716fc5-0d63-a628-dc66-9c6284a6f363.htm" />
-    <HelpKINode Title="MainApplicationWindow.Dispose Method " Url="html/7f6d7297-be2e-3a12-76af-c1b41526c8b1.htm" />
-    <HelpKINode Title="MappingEditorMS.Dispose Method " Url="html/fa4d58f0-5e23-7a04-8e51-f2791515cd37.htm" />
-    <HelpKINode Title="NPCEditor.Dispose Method " Url="html/30311d8a-0648-1ef9-bca0-f206e0612dcf.htm" />
-    <HelpKINode Title="RoomEditor.Dispose Method " Url="html/f1ed8e27-2e4b-c3d6-decd-616ebd1d8a2a.htm" />
-    <HelpKINode Title="StringPrompt.Dispose Method " Url="html/e73c4cd6-1b6e-1214-bcf7-d7bf45b94cdc.htm" />
-    <HelpKINode Title="TextFilterTesting.Dispose Method " Url="html/28201069-1891-7ccc-7d9c-b2f49ea775cd.htm" />
+    <HelpKINode Title="ds_path_dialog.Dispose Method " Url="html/8eb7620e-8b9e-81f7-de27-dd83f40c82a4.htm" />
+    <HelpKINode Title="ExampleListboxDesign.Dispose Method " Url="html/707cb8f1-a633-1e4a-3382-7330c5ff9d8f.htm" />
+    <HelpKINode Title="FileEditor.Dispose Method " Url="html/db5014dd-1de7-017b-9eb1-da95cb4a8f9d.htm" />
+    <HelpKINode Title="ItemEditor.Dispose Method " Url="html/c814f0b3-919b-bba0-0dc8-e3a76e2b3dd3.htm" />
+    <HelpKINode Title="MainApplicationWindow.Dispose Method " Url="html/cbafb268-1359-8aba-aca2-9f2c027dadce.htm" />
+    <HelpKINode Title="MappingEditorMS.Dispose Method " Url="html/e46b40e5-a621-b4cc-b675-325a35a44450.htm" />
+    <HelpKINode Title="NPCEditor.Dispose Method " Url="html/db2f7bcb-c75d-e4a6-0412-fde5cd6385da.htm" />
+    <HelpKINode Title="RoomEditor.Dispose Method " Url="html/a904e08f-d2d0-4661-d4fa-56c325a23f24.htm" />
+    <HelpKINode Title="StringPrompt.Dispose Method " Url="html/f809397a-7490-0926-7631-40d5e4cd9c27.htm" />
+    <HelpKINode Title="TextFilterTesting.Dispose Method " Url="html/00d96005-2f5a-0dd3-7084-3dd7564b4f93.htm" />
   </HelpKINode>
   <HelpKINode Title="ds_path_dialog class">
     <HelpKINode Title="ds_path_dialog Class" Url="html/4e8c022b-080a-b920-5fdd-838c29633dd6.htm" />
     <HelpKINode Title="about ds_path_dialog class" Url="html/4e8c022b-080a-b920-5fdd-838c29633dd6.htm" />
     <HelpKINode Title="constructor" Url="html/09cf9b1d-4b7b-24c2-4786-bb5edf445787.htm" />
-    <HelpKINode Title="events" Url="html/438fc22f-c4a8-6a7c-0643-cf2c47ef1f9d.htm" />
     <HelpKINode Title="methods" Url="html/9b3752a5-9ef7-2cbd-1c0d-4fd85517aae3.htm" />
-    <HelpKINode Title="properties" Url="html/458010e5-2d8b-cb43-f80d-b02c52edccf0.htm" />
   </HelpKINode>
-  <HelpKINode Title="ds_path_dialog.Dispose method" Url="html/70ad2186-af69-6f01-8e18-0fb55c48e75f.htm" />
+  <HelpKINode Title="ds_path_dialog.Dispose method" Url="html/8eb7620e-8b9e-81f7-de27-dd83f40c82a4.htm" />
   <HelpKINode Title="ds_path_dialog.ds_path_dialog constructor" Url="html/09cf9b1d-4b7b-24c2-4786-bb5edf445787.htm" />
   <HelpKINode Title="ExampleListboxDesign class">
     <HelpKINode Title="ExampleListboxDesign Class" Url="html/a6505c71-9615-60bf-e972-13765bc068fa.htm" />
     <HelpKINode Title="about ExampleListboxDesign class" Url="html/a6505c71-9615-60bf-e972-13765bc068fa.htm" />
     <HelpKINode Title="constructor" Url="html/09b2e6b0-c1ba-7a87-dc6c-a0a17de7bc7d.htm" />
-    <HelpKINode Title="events" Url="html/bc9c3b3e-c9b4-8b4c-2ac3-a2b49e9f3b93.htm" />
     <HelpKINode Title="methods" Url="html/1137a079-9560-382e-b392-98bcca3f6665.htm" />
-    <HelpKINode Title="properties" Url="html/21442f47-45fc-ac97-77df-7bca8666ade6.htm" />
   </HelpKINode>
-  <HelpKINode Title="ExampleListboxDesign.Dispose method" Url="html/7cfb852c-617d-6874-1887-b81c2ed59a3b.htm" />
+  <HelpKINode Title="ExampleListboxDesign.Dispose method" Url="html/707cb8f1-a633-1e4a-3382-7330c5ff9d8f.htm" />
   <HelpKINode Title="ExampleListboxDesign.ExampleListboxDesign constructor" Url="html/09b2e6b0-c1ba-7a87-dc6c-a0a17de7bc7d.htm" />
   <HelpKINode Title="file field" Url="html/db8000e9-279a-2ed2-6d80-402145615adf.htm" />
   <HelpKINode Title="FileEditor class">
     <HelpKINode Title="FileEditor Class" Url="html/34963bd7-24cf-3c33-c08f-7f5afb124498.htm" />
     <HelpKINode Title="about FileEditor class" Url="html/34963bd7-24cf-3c33-c08f-7f5afb124498.htm" />
     <HelpKINode Title="constructor" Url="html/77913e88-61d0-3635-e1e6-a2254ae042ee.htm" />
-    <HelpKINode Title="events" Url="html/3996d88c-2234-7f8f-9579-d1df54d61561.htm" />
     <HelpKINode Title="fields" Url="html/53fc51dd-2c80-7151-2ea1-14da26d04041.htm" />
     <HelpKINode Title="methods" Url="html/5b18ee41-7a21-d14a-d426-d60107a0342e.htm" />
-    <HelpKINode Title="properties" Url="html/1973b5b6-4b59-2a35-6ae8-2a0c10cfa605.htm" />
   </HelpKINode>
   <HelpKINode Title="FileEditor.dialogValue field" Url="html/b1267848-6838-b56e-a1b5-1bc908692a2b.htm" />
-  <HelpKINode Title="FileEditor.Dispose method" Url="html/a9e058e6-d191-c6e2-4ea1-8dea95fad255.htm" />
+  <HelpKINode Title="FileEditor.Dispose method" Url="html/db5014dd-1de7-017b-9eb1-da95cb4a8f9d.htm" />
   <HelpKINode Title="FileEditor.FileEditor constructor" Url="html/77913e88-61d0-3635-e1e6-a2254ae042ee.htm" />
   <HelpKINode Title="FileEditor.tempValue field" Url="html/523c7005-2710-3237-01ba-5032aafd29fb.htm" />
   <HelpKINode Title="filePath field" Url="html/db9ec08a-f7fa-2a29-90aa-628f18f4093f.htm" />
+  <HelpKINode Title="GetBetween method" Url="html/7ef4c5e1-042a-434e-fa34-51672ad58040.htm" />
   <HelpKINode Title="ItemEditor class">
     <HelpKINode Title="ItemEditor Class" Url="html/4e712f74-b2f3-b100-c4c1-132a80fd48ec.htm" />
     <HelpKINode Title="about ItemEditor class" Url="html/4e712f74-b2f3-b100-c4c1-132a80fd48ec.htm" />
     <HelpKINode Title="constructor" Url="html/679e917f-5dd0-b5ed-175c-cc7c6205f5a5.htm" />
-    <HelpKINode Title="events" Url="html/1e187e86-fff0-177c-a509-aca35be91d99.htm" />
     <HelpKINode Title="methods" Url="html/e658feac-3608-5e8c-1eae-0a1a3972d12c.htm" />
-    <HelpKINode Title="properties" Url="html/4decf543-a8f0-d241-12e1-bddf5326f80e.htm" />
   </HelpKINode>
-  <HelpKINode Title="ItemEditor.Dispose method" Url="html/2e716fc5-0d63-a628-dc66-9c6284a6f363.htm" />
+  <HelpKINode Title="ItemEditor.Dispose method" Url="html/c814f0b3-919b-bba0-0dc8-e3a76e2b3dd3.htm" />
   <HelpKINode Title="ItemEditor.ItemEditor constructor" Url="html/679e917f-5dd0-b5ed-175c-cc7c6205f5a5.htm" />
+  <HelpKINode Title="LPCArrayToCSV method" Url="html/5134411d-a4af-f25b-2ffd-61f004cd81d8.htm" />
+  <HelpKINode Title="LPCParsing class">
+    <HelpKINode Title="LPCParsing Class" Url="html/dc384b9b-60ef-a962-c0ba-816732a758eb.htm" />
+    <HelpKINode Title="about LPCParsing class" Url="html/dc384b9b-60ef-a962-c0ba-816732a758eb.htm" />
+    <HelpKINode Title="methods" Url="html/80abc62c-3ec0-6ba0-0b3a-76e7e9ef2f2e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LPCParsing.CompileMapping method" Url="html/3075228c-515b-75fc-67da-00dca7a9f2b7.htm" />
+  <HelpKINode Title="LPCParsing.CSVToLPCArray method" Url="html/43177c1b-95de-3940-0d14-8f7dc3f8ae35.htm" />
+  <HelpKINode Title="LPCParsing.DeQuote method" Url="html/bff94f00-5738-4f6b-052b-0d09b25108ab.htm" />
+  <HelpKINode Title="LPCParsing.GetBetween method" Url="html/7ef4c5e1-042a-434e-fa34-51672ad58040.htm" />
+  <HelpKINode Title="LPCParsing.LPCArrayToCSV method" Url="html/5134411d-a4af-f25b-2ffd-61f004cd81d8.htm" />
+  <HelpKINode Title="LPCParsing.ParseMapping method" Url="html/e08ad76b-2163-4b0e-3360-73bee775676f.htm" />
+  <HelpKINode Title="LPCParsing.ReQuote method" Url="html/6cd2fb30-8975-965f-ee49-99d942f2f537.htm" />
+  <HelpKINode Title="LPCParsing.SetBetween method" Url="html/f3cb330a-643f-b035-64f4-315317a220a3.htm" />
+  <HelpKINode Title="LPCParsing.StringNotFoundException class">
+    <HelpKINode Title="LPCParsing.StringNotFoundException Class" Url="html/f5a3eabc-4cdb-95d3-303d-f8dcecd731c8.htm" />
+    <HelpKINode Title="about LPCParsing.StringNotFoundException class" Url="html/f5a3eabc-4cdb-95d3-303d-f8dcecd731c8.htm" />
+    <HelpKINode Title="constructor" Url="html/424c1f66-17be-1e6f-3c9c-fc83a7c9ac16.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LPCParsing.StringNotFoundException.StringNotFoundException constructor" Url="html/424c1f66-17be-1e6f-3c9c-fc83a7c9ac16.htm" />
+  <HelpKINode Title="LPCParsing.StripWhitepace method" Url="html/30117ff6-d047-7051-9369-c6035c1f68f1.htm" />
   <HelpKINode Title="MainApplicationWindow class">
     <HelpKINode Title="MainApplicationWindow Class" Url="html/89ededa1-fe25-3483-d1c6-f2001573404f.htm" />
     <HelpKINode Title="about MainApplicationWindow class" Url="html/89ededa1-fe25-3483-d1c6-f2001573404f.htm" />
     <HelpKINode Title="constructor" Url="html/39896533-a2b3-6b05-fc90-6d8f025f850f.htm" />
-    <HelpKINode Title="events" Url="html/44a118c5-b082-8ca8-fa49-d67103c8049c.htm" />
     <HelpKINode Title="methods" Url="html/d1f2e90b-52c2-5029-a96c-18619a3632b2.htm" />
-    <HelpKINode Title="properties" Url="html/bc57f9d4-e6cd-9c24-3a39-10a10e2c7147.htm" />
   </HelpKINode>
-  <HelpKINode Title="MainApplicationWindow.Dispose method" Url="html/7f6d7297-be2e-3a12-76af-c1b41526c8b1.htm" />
+  <HelpKINode Title="MainApplicationWindow.Dispose method" Url="html/cbafb268-1359-8aba-aca2-9f2c027dadce.htm" />
   <HelpKINode Title="MainApplicationWindow.MainApplicationWindow constructor" Url="html/39896533-a2b3-6b05-fc90-6d8f025f850f.htm" />
   <HelpKINode Title="MappingEditorMS class">
     <HelpKINode Title="MappingEditorMS Class" Url="html/1e6d4893-892f-1cf6-e44c-063e52844e07.htm" />
     <HelpKINode Title="about MappingEditorMS class" Url="html/1e6d4893-892f-1cf6-e44c-063e52844e07.htm" />
     <HelpKINode Title="constructor" Url="html/11246edc-c8f1-4af5-fec9-a4407a5dd8a0.htm" />
-    <HelpKINode Title="events" Url="html/da141678-bca3-046f-ce52-27346f6d1bdd.htm" />
     <HelpKINode Title="fields" Url="html/3f21c013-c1d8-abca-9ca3-85476a40a9c9.htm" />
     <HelpKINode Title="methods" Url="html/d4d72961-9e5f-b318-0f9b-cb5e39651582.htm" />
-    <HelpKINode Title="properties" Url="html/71b6fbc4-3a87-7f3f-271e-2bf101a54136.htm" />
   </HelpKINode>
   <HelpKINode Title="MappingEditorMS.dialogValue field" Url="html/371ec764-86fb-33e3-2e3d-5156831f337b.htm" />
-  <HelpKINode Title="MappingEditorMS.Dispose method" Url="html/fa4d58f0-5e23-7a04-8e51-f2791515cd37.htm" />
+  <HelpKINode Title="MappingEditorMS.Dispose method" Url="html/e46b40e5-a621-b4cc-b675-325a35a44450.htm" />
   <HelpKINode Title="MappingEditorMS.MappingEditorMS constructor" Url="html/11246edc-c8f1-4af5-fec9-a4407a5dd8a0.htm" />
   <HelpKINode Title="NPCEditor class">
     <HelpKINode Title="NPCEditor Class" Url="html/20dd4904-d5c0-ae7c-a5d5-e7423942c07e.htm" />
     <HelpKINode Title="about NPCEditor class" Url="html/20dd4904-d5c0-ae7c-a5d5-e7423942c07e.htm" />
     <HelpKINode Title="constructor" Url="html/12775904-07c0-8418-9f2e-dc51716faf69.htm" />
-    <HelpKINode Title="events" Url="html/ea557da9-264f-64a0-b163-ecb48572f3a6.htm" />
     <HelpKINode Title="methods" Url="html/453416f9-09ed-5e33-6e7c-0b1dbd3c8dd0.htm" />
-    <HelpKINode Title="properties" Url="html/d7f7812f-22c3-dceb-cb6c-bd2cef1cef3e.htm" />
   </HelpKINode>
-  <HelpKINode Title="NPCEditor.Dispose method" Url="html/30311d8a-0648-1ef9-bca0-f206e0612dcf.htm" />
+  <HelpKINode Title="NPCEditor.Dispose method" Url="html/db2f7bcb-c75d-e4a6-0412-fde5cd6385da.htm" />
   <HelpKINode Title="NPCEditor.NPCEditor constructor" Url="html/12775904-07c0-8418-9f2e-dc51716faf69.htm" />
+  <HelpKINode Title="ParseMapping method" Url="html/e08ad76b-2163-4b0e-3360-73bee775676f.htm" />
+  <HelpKINode Title="ReQuote method" Url="html/6cd2fb30-8975-965f-ee49-99d942f2f537.htm" />
   <HelpKINode Title="RoomEditor class">
     <HelpKINode Title="RoomEditor Class" Url="html/4a757790-17a6-ac1d-f18a-2f7da8f39731.htm" />
     <HelpKINode Title="about RoomEditor class" Url="html/4a757790-17a6-ac1d-f18a-2f7da8f39731.htm" />
     <HelpKINode Title="constructor" Url="html/a6cc09c7-4c21-d94a-8a17-3604e7c35d16.htm" />
-    <HelpKINode Title="events" Url="html/0d8245d1-4d18-a92a-dc64-f4280116075d.htm" />
     <HelpKINode Title="fields" Url="html/d39c87f6-49dc-2c57-2c5b-1394ba3a87b5.htm" />
     <HelpKINode Title="methods" Url="html/50576567-f532-7555-3616-9c4048f7e7e8.htm" />
-    <HelpKINode Title="properties" Url="html/0f98cd63-e428-7e14-0bbe-70135769e66b.htm" />
   </HelpKINode>
-  <HelpKINode Title="RoomEditor.Dispose method" Url="html/f1ed8e27-2e4b-c3d6-decd-616ebd1d8a2a.htm" />
+  <HelpKINode Title="RoomEditor.Dispose method" Url="html/a904e08f-d2d0-4661-d4fa-56c325a23f24.htm" />
   <HelpKINode Title="RoomEditor.file field" Url="html/db8000e9-279a-2ed2-6d80-402145615adf.htm" />
   <HelpKINode Title="RoomEditor.filePath field" Url="html/db9ec08a-f7fa-2a29-90aa-628f18f4093f.htm" />
   <HelpKINode Title="RoomEditor.RoomEditor constructor" Url="html/a6cc09c7-4c21-d94a-8a17-3604e7c35d16.htm" />
+  <HelpKINode Title="SetBetween method" Url="html/f3cb330a-643f-b035-64f4-315317a220a3.htm" />
   <HelpKINode Title="StringPrompt class">
     <HelpKINode Title="StringPrompt Class" Url="html/90f4b3b5-51dd-a93b-e048-7e22bba412a0.htm" />
     <HelpKINode Title="about StringPrompt class" Url="html/90f4b3b5-51dd-a93b-e048-7e22bba412a0.htm" />
     <HelpKINode Title="constructor" Url="html/90a07878-8240-4c8e-97fd-824b8d694754.htm" />
-    <HelpKINode Title="events" Url="html/1160d92c-b691-4c26-3482-23be3a045a4f.htm" />
     <HelpKINode Title="fields" Url="html/12d7719b-74bf-fbfb-3836-b5d39d30645d.htm" />
     <HelpKINode Title="methods" Url="html/b3c17640-0f5e-a224-a80c-3666b017767c.htm" />
-    <HelpKINode Title="properties" Url="html/9f0a1096-4980-df5b-2c84-e8d0053bd52b.htm" />
   </HelpKINode>
   <HelpKINode Title="StringPrompt.dialogValue field" Url="html/e52e8924-e601-1161-0901-901c667df1e8.htm" />
-  <HelpKINode Title="StringPrompt.Dispose method" Url="html/e73c4cd6-1b6e-1214-bcf7-d7bf45b94cdc.htm" />
+  <HelpKINode Title="StringPrompt.Dispose method" Url="html/f809397a-7490-0926-7631-40d5e4cd9c27.htm" />
   <HelpKINode Title="StringPrompt.StringPrompt constructor" Url="html/90a07878-8240-4c8e-97fd-824b8d694754.htm" />
+  <HelpKINode Title="StripWhitepace method" Url="html/30117ff6-d047-7051-9369-c6035c1f68f1.htm" />
   <HelpKINode Title="tempValue field" Url="html/523c7005-2710-3237-01ba-5032aafd29fb.htm" />
   <HelpKINode Title="TextFilterTesting class">
     <HelpKINode Title="TextFilterTesting Class" Url="html/7d77a5a3-3770-5e11-08bc-2e9d1a560156.htm" />
     <HelpKINode Title="about TextFilterTesting class" Url="html/7d77a5a3-3770-5e11-08bc-2e9d1a560156.htm" />
     <HelpKINode Title="constructor" Url="html/428a98ab-9613-7ede-11dd-2a9a76f60a62.htm" />
-    <HelpKINode Title="events" Url="html/4e360940-e835-ef2f-905c-7d2b2ea89d15.htm" />
     <HelpKINode Title="methods" Url="html/43a1e066-fade-f6ba-8be2-72c240d446be.htm" />
-    <HelpKINode Title="properties" Url="html/ed4a174b-5cf8-e4ed-ed9c-53e97f411a9b.htm" />
   </HelpKINode>
-  <HelpKINode Title="TextFilterTesting.Dispose method" Url="html/28201069-1891-7ccc-7d9c-b2f49ea775cd.htm" />
+  <HelpKINode Title="TextFilterTesting.Dispose method" Url="html/00d96005-2f5a-0dd3-7084-3dd7564b4f93.htm" />
   <HelpKINode Title="TextFilterTesting.TextFilterTesting constructor" Url="html/428a98ab-9613-7ede-11dd-2a9a76f60a62.htm" />
 </HelpKI>

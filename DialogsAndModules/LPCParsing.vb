@@ -1,4 +1,4 @@
-﻿Module LPCParsing
+﻿Public Module LPCParsing
 
     ''' <summary>
     ''' A simple exception class specifically for functions in this module. 

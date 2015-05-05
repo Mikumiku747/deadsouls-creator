@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="b866c96f-d707-4048-bced-880ff2845831" Title="Deadsouls_Creator" Url="html/912d392b-caeb-aaa9-a211-568c76e311d0.htm">
+    <HelpTOCNode Id="b1e868c6-4352-457a-a1a7-751045f18a0c" Title="ds_path_dialog Class" Url="html/4e8c022b-080a-b920-5fdd-838c29633dd6.htm">
+      <HelpTOCNode Title="ds_path_dialog Constructor " Url="html/09cf9b1d-4b7b-24c2-4786-bb5edf445787.htm" />
+      <HelpTOCNode Id="3b7b5898-387d-4e2b-8b47-cc67da7e5e9a" Title="ds_path_dialog Methods" Url="html/9b3752a5-9ef7-2cbd-1c0d-4fd85517aae3.htm">
+        <HelpTOCNode Id="5b982d36-00bb-49fd-a2fe-bc79c0fe87a8" Title="Dispose Method " Url="html/70ad2186-af69-6f01-8e18-0fb55c48e75f.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/8eb7620e-8b9e-81f7-de27-dd83f40c82a4.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ds_path_dialog Properties" Url="html/458010e5-2d8b-cb43-f80d-b02c52edccf0.htm" />
+      <HelpTOCNode Title="ds_path_dialog Events" Url="html/438fc22f-c4a8-6a7c-0643-cf2c47ef1f9d.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="94958edc-a6a7-4398-9d78-ef0b6544ad63" Title="ExampleListboxDesign Class" Url="html/a6505c71-9615-60bf-e972-13765bc068fa.htm">
+      <HelpTOCNode Title="ExampleListboxDesign Constructor " Url="html/09b2e6b0-c1ba-7a87-dc6c-a0a17de7bc7d.htm" />
+      <HelpTOCNode Id="249c906c-0b4e-45fb-b945-ccdfaff755d2" Title="ExampleListboxDesign Methods" Url="html/1137a079-9560-382e-b392-98bcca3f6665.htm">
+        <HelpTOCNode Id="3a0fd995-0ebf-41c5-8cbb-049d5ed989e0" Title="Dispose Method " Url="html/7cfb852c-617d-6874-1887-b81c2ed59a3b.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/707cb8f1-a633-1e4a-3382-7330c5ff9d8f.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ExampleListboxDesign Properties" Url="html/21442f47-45fc-ac97-77df-7bca8666ade6.htm" />
+      <HelpTOCNode Title="ExampleListboxDesign Events" Url="html/bc9c3b3e-c9b4-8b4c-2ac3-a2b49e9f3b93.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9002a4e4-a7c6-48bc-9a71-c65045df82b8" Title="FileEditor Class" Url="html/34963bd7-24cf-3c33-c08f-7f5afb124498.htm">
+      <HelpTOCNode Title="FileEditor Constructor " Url="html/77913e88-61d0-3635-e1e6-a2254ae042ee.htm" />
+      <HelpTOCNode Id="8380531d-01f7-4f8c-8509-c9bf994ce95f" Title="FileEditor Fields" Url="html/53fc51dd-2c80-7151-2ea1-14da26d04041.htm">
+        <HelpTOCNode Title="dialogValue Field" Url="html/b1267848-6838-b56e-a1b5-1bc908692a2b.htm" />
+        <HelpTOCNode Title="tempValue Field" Url="html/523c7005-2710-3237-01ba-5032aafd29fb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7f6df563-f040-4b98-a2a3-947610630d85" Title="FileEditor Methods" Url="html/5b18ee41-7a21-d14a-d426-d60107a0342e.htm">
+        <HelpTOCNode Id="1ae77762-73ed-47eb-a7e2-b2a648c8f3e7" Title="Dispose Method " Url="html/a9e058e6-d191-c6e2-4ea1-8dea95fad255.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/db5014dd-1de7-017b-9eb1-da95cb4a8f9d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="FileEditor Properties" Url="html/1973b5b6-4b59-2a35-6ae8-2a0c10cfa605.htm" />
+      <HelpTOCNode Title="FileEditor Events" Url="html/3996d88c-2234-7f8f-9579-d1df54d61561.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="2adadc84-6f53-4371-93cc-0a355fe10522" Title="ItemEditor Class" Url="html/4e712f74-b2f3-b100-c4c1-132a80fd48ec.htm">
+      <HelpTOCNode Title="ItemEditor Constructor " Url="html/679e917f-5dd0-b5ed-175c-cc7c6205f5a5.htm" />
+      <HelpTOCNode Id="246ba2b1-fd86-4b68-8639-395b606c279d" Title="ItemEditor Methods" Url="html/e658feac-3608-5e8c-1eae-0a1a3972d12c.htm">
+        <HelpTOCNode Id="5d361424-605e-4b21-a1d8-4aaa38decc7b" Title="Dispose Method " Url="html/2e716fc5-0d63-a628-dc66-9c6284a6f363.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/c814f0b3-919b-bba0-0dc8-e3a76e2b3dd3.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ItemEditor Properties" Url="html/4decf543-a8f0-d241-12e1-bddf5326f80e.htm" />
+      <HelpTOCNode Title="ItemEditor Events" Url="html/1e187e86-fff0-177c-a509-aca35be91d99.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d2dc0704-6726-4222-b511-3eba3c1e599f" Title="MainApplicationWindow Class" Url="html/89ededa1-fe25-3483-d1c6-f2001573404f.htm">
+      <HelpTOCNode Title="MainApplicationWindow Constructor " Url="html/39896533-a2b3-6b05-fc90-6d8f025f850f.htm" />
+      <HelpTOCNode Id="6c3ce9f2-bee6-4fa5-a237-77bec6bd15b6" Title="MainApplicationWindow Methods" Url="html/d1f2e90b-52c2-5029-a96c-18619a3632b2.htm">
+        <HelpTOCNode Id="47ee9196-3cce-4e51-954f-53d940eded0a" Title="Dispose Method " Url="html/7f6d7297-be2e-3a12-76af-c1b41526c8b1.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/cbafb268-1359-8aba-aca2-9f2c027dadce.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainApplicationWindow Properties" Url="html/bc57f9d4-e6cd-9c24-3a39-10a10e2c7147.htm" />
+      <HelpTOCNode Title="MainApplicationWindow Events" Url="html/44a118c5-b082-8ca8-fa49-d67103c8049c.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7bd399e3-6a08-476f-b50e-9fcc027e7dff" Title="MappingEditorMS Class" Url="html/1e6d4893-892f-1cf6-e44c-063e52844e07.htm">
+      <HelpTOCNode Title="MappingEditorMS Constructor " Url="html/11246edc-c8f1-4af5-fec9-a4407a5dd8a0.htm" />
+      <HelpTOCNode Id="ba6875bb-9f3d-4d36-bf02-1330522e5afa" Title="MappingEditorMS Fields" Url="html/3f21c013-c1d8-abca-9ca3-85476a40a9c9.htm">
+        <HelpTOCNode Title="dialogValue Field" Url="html/371ec764-86fb-33e3-2e3d-5156831f337b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="37b369ad-e334-4a68-bdc6-a77d0b84b327" Title="MappingEditorMS Methods" Url="html/d4d72961-9e5f-b318-0f9b-cb5e39651582.htm">
+        <HelpTOCNode Id="d346f936-444e-47df-9da0-bfc27a17e011" Title="Dispose Method " Url="html/fa4d58f0-5e23-7a04-8e51-f2791515cd37.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/e46b40e5-a621-b4cc-b675-325a35a44450.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="MappingEditorMS Properties" Url="html/71b6fbc4-3a87-7f3f-271e-2bf101a54136.htm" />
+      <HelpTOCNode Title="MappingEditorMS Events" Url="html/da141678-bca3-046f-ce52-27346f6d1bdd.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="89f55590-bdc6-45f9-badf-53cd890a6c53" Title="NPCEditor Class" Url="html/20dd4904-d5c0-ae7c-a5d5-e7423942c07e.htm">
+      <HelpTOCNode Title="NPCEditor Constructor " Url="html/12775904-07c0-8418-9f2e-dc51716faf69.htm" />
+      <HelpTOCNode Id="b64a1e9e-d66c-4fb4-be1b-689e6617cf8a" Title="NPCEditor Methods" Url="html/453416f9-09ed-5e33-6e7c-0b1dbd3c8dd0.htm">
+        <HelpTOCNode Id="c884148a-d2c9-4210-ac4f-63c53c7a8ea5" Title="Dispose Method " Url="html/30311d8a-0648-1ef9-bca0-f206e0612dcf.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/db2f7bcb-c75d-e4a6-0412-fde5cd6385da.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="NPCEditor Properties" Url="html/d7f7812f-22c3-dceb-cb6c-bd2cef1cef3e.htm" />
+      <HelpTOCNode Title="NPCEditor Events" Url="html/ea557da9-264f-64a0-b163-ecb48572f3a6.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c6c15c0a-c223-472a-b554-a2a52f2b3416" Title="RoomEditor Class" Url="html/4a757790-17a6-ac1d-f18a-2f7da8f39731.htm">
+      <HelpTOCNode Title="RoomEditor Constructor " Url="html/a6cc09c7-4c21-d94a-8a17-3604e7c35d16.htm" />
+      <HelpTOCNode Id="d1a9bf4e-fefa-4f49-9f1c-aa352352c8fe" Title="RoomEditor Fields" Url="html/d39c87f6-49dc-2c57-2c5b-1394ba3a87b5.htm">
+        <HelpTOCNode Title="file Field" Url="html/db8000e9-279a-2ed2-6d80-402145615adf.htm" />
+        <HelpTOCNode Title="filePath Field" Url="html/db9ec08a-f7fa-2a29-90aa-628f18f4093f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="11fb1c17-5082-45d7-835d-38b02379653c" Title="RoomEditor Methods" Url="html/50576567-f532-7555-3616-9c4048f7e7e8.htm">
+        <HelpTOCNode Id="a4e65de2-c6f2-462f-90fd-38fcbe5a2479" Title="Dispose Method " Url="html/f1ed8e27-2e4b-c3d6-decd-616ebd1d8a2a.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/a904e08f-d2d0-4661-d4fa-56c325a23f24.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="RoomEditor Properties" Url="html/0f98cd63-e428-7e14-0bbe-70135769e66b.htm" />
+      <HelpTOCNode Title="RoomEditor Events" Url="html/0d8245d1-4d18-a92a-dc64-f4280116075d.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0f4d60f8-aa92-418a-9fdd-8f9c83e4781d" Title="StringPrompt Class" Url="html/90f4b3b5-51dd-a93b-e048-7e22bba412a0.htm">
+      <HelpTOCNode Title="StringPrompt Constructor " Url="html/90a07878-8240-4c8e-97fd-824b8d694754.htm" />
+      <HelpTOCNode Id="0673cef0-aabb-4911-91b3-b85317cac26f" Title="StringPrompt Fields" Url="html/12d7719b-74bf-fbfb-3836-b5d39d30645d.htm">
+        <HelpTOCNode Title="dialogValue Field" Url="html/e52e8924-e601-1161-0901-901c667df1e8.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4ad6d81a-142d-4324-a3e6-08e5db624470" Title="StringPrompt Methods" Url="html/b3c17640-0f5e-a224-a80c-3666b017767c.htm">
+        <HelpTOCNode Id="73d52e20-eb4b-4393-b080-d2406716cbc1" Title="Dispose Method " Url="html/e73c4cd6-1b6e-1214-bcf7-d7bf45b94cdc.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/f809397a-7490-0926-7631-40d5e4cd9c27.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="StringPrompt Properties" Url="html/9f0a1096-4980-df5b-2c84-e8d0053bd52b.htm" />
+      <HelpTOCNode Title="StringPrompt Events" Url="html/1160d92c-b691-4c26-3482-23be3a045a4f.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5bcf5af5-8e88-48ee-82c8-53fadcf4488f" Title="TextFilterTesting Class" Url="html/7d77a5a3-3770-5e11-08bc-2e9d1a560156.htm">
+      <HelpTOCNode Title="TextFilterTesting Constructor " Url="html/428a98ab-9613-7ede-11dd-2a9a76f60a62.htm" />
+      <HelpTOCNode Id="78902b19-8b9e-4076-8eef-36612505eb19" Title="TextFilterTesting Methods" Url="html/43a1e066-fade-f6ba-8be2-72c240d446be.htm">
+        <HelpTOCNode Id="39bd7c68-6c4b-4400-8745-6fdbfb1dbef5" Title="Dispose Method " Url="html/28201069-1891-7ccc-7d9c-b2f49ea775cd.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/00d96005-2f5a-0dd3-7084-3dd7564b4f93.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="TextFilterTesting Properties" Url="html/ed4a174b-5cf8-e4ed-ed9c-53e97f411a9b.htm" />
+      <HelpTOCNode Title="TextFilterTesting Events" Url="html/4e360940-e835-ef2f-905c-7d2b2ea89d15.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

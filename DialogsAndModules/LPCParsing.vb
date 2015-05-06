@@ -1,4 +1,7 @@
-﻿Public Module LPCParsing
+﻿''' <summary>
+''' A set of functions for handling LPC code, and converting it into easier to handle data types. See individual function docs for more info.
+''' </summary>
+Public Module LPCParsing
 
     ''' <summary>
     ''' A simple exception class specifically for functions in this module. 

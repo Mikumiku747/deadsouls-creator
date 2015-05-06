@@ -1,4 +1,7 @@
-﻿Public Class ds_path_dialog
+﻿''' <summary>
+''' This lets the user customise where thier deadsouls server software is installed to.
+''' </summary>
+Public Class ds_path_dialog
 
     Private Sub ds_path_dialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.deadsouls_installation_path = "NOINSTALLPATH" Then

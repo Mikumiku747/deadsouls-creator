@@ -1,13 +1,12 @@
 ﻿''' <summary>
-''' An Application to edit LPC Room files
+''' An Application for editing LPC room code files
 ''' </summary>
-''' <remarks>Is a part of the Deadsouls creator application.</remarks>
+''' <remarks>You can provide a file to open when the form starts up by putting a path into the filePath variable.</remarks>
 Public Class RoomEditor
 
     ''' <summary>
-    ''' This is where you path the file to be used before you load the file
+    ''' An optional file path to open when the room editor starts
     ''' </summary>
-    ''' <remarks></remarks>
     Public filePath As String
 
     Private file As String

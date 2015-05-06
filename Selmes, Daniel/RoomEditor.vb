@@ -1,6 +1,16 @@
-﻿Public Class RoomEditor
+﻿''' <summary>
+''' An Application to edit LPC Room files
+''' </summary>
+''' <remarks>Is a part of the Deadsouls creator application.</remarks>
+Public Class RoomEditor
+
+    ''' <summary>
+    ''' This is where you path the file to be used before you load the file
+    ''' </summary>
+    ''' <remarks></remarks>
     Public filePath As String
-    Public file As String
+
+    Private file As String
 
     Private Sub RoomEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -122,7 +132,7 @@
         mappingEditor.ShowDialog()
         file = SetBetween(file, "SetItems(", ");", mappingEditor.dialogValue)
         mappingEditor.Close()
-        
+
     End Sub
 
     Private Sub EditLPCCodeButton_Click(sender As Object, e As EventArgs) Handles EditLPCCodeButton.Click

@@ -1,6 +1,14 @@
-﻿Public Class ItemEditor
+﻿''' <summary>
+''' An application for editing LPC item files
+''' </summary>
+''' <remarks>You can provide a file to open with the filePath member</remarks>
+Public Class ItemEditor
 
-    Private Sub RoomToolStripMenuItem_Click(sender As Object, e As EventArgs)
+    ''' <summary>
+    ''' Set this to a file you want to open for editing
+    ''' </summary>
+    ''' <remarks></remarks>
+    Public filePath As String
 
-    End Sub
+
 End Class

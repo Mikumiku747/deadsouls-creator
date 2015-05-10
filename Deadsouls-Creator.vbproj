@@ -98,6 +98,7 @@
     <Compile Include="Chin, Daniel\NPCEditor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Resources\RoomTemplate.vb" />
     <Compile Include="Selmes, Daniel\ItemEditor.Designer.vb">
       <DependentUpon>ItemEditor.vb</DependentUpon>
     </Compile>

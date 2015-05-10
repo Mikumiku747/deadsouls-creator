@@ -5,6 +5,7 @@
 Public Class MainApplicationWindow
 
     Private Sub MainApplicationWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Debug.Print("Application started: " & Now.ToString)
         'Check deadsouls installation path
         If My.Settings.deadsouls_installation_path = "" Then
             Dim path_dialog As New ds_path_dialog

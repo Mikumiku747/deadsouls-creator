@@ -603,7 +603,7 @@ Partial Class RoomEditor
         'ClimateComboBox
         '
         Me.ClimateComboBox.FormattingEnabled = True
-        Me.ClimateComboBox.Items.AddRange(New Object() {"indoors", "outdoors", "freezing", "cold", "temperate", "hot", "boiling", "custom..."})
+        Me.ClimateComboBox.Items.AddRange(New Object() {"indoors", "temperate", "arid", "arctic", "tropical", "sub-tropical"})
         Me.ClimateComboBox.Location = New System.Drawing.Point(59, 49)
         Me.ClimateComboBox.Name = "ClimateComboBox"
         Me.ClimateComboBox.Size = New System.Drawing.Size(235, 21)

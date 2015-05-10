@@ -16,65 +16,126 @@ Public Class RoomEditor
         'Set the current file
         If filePath = "" Then
             Me.Text = "Dead Souls Room Editor"
-            file = My.Computer.FileSystem.ReadAllText("C:\ds\lib\domains\town\room\bridge.c")
+            file = RoomTemplate.template 'Load the template
             file = file.Replace(vbLf, vbNewLine)
-            MsgBox("Opening a blank file, replace this code with actual file creation.")
         Else
-            Me.Text = filePath + " - Dead Souls Room Editor"
-            file = My.Computer.FileSystem.ReadAllText(filePath)
-            file = file.Replace(vbLf, vbNewLine)
+            Try
+                Me.Text = filePath + " - Dead Souls Room Editor"
+                file = My.Computer.FileSystem.ReadAllText(filePath)
+                file = file.Replace(vbLf, vbNewLine)
+            Catch ex As IO.IOException
+                MsgBox("Welp, failed to open the file")
+                Close()
+                Return
+            End Try
         End If
 
-        'Get the room short description, or set if it doesn't exist (It's a BIG problem if it doesn't)
+        'Load short description
         Try
-            ShortDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetShort(", ");"))
-        Catch ex As LPCParsing.StringNotFoundException
-            Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
-            file = file.Substring(0, innerCreate) + vbNewLine + "SetShort(" + ReQuote(ShortDescriptionBox.Text) + ");" + vbNewLine + file.Substring(innerCreate)
+            ShortDescriptionBox.Text = DeQuote(GetBetween(file, "SetShort(", ");"))
+        Catch ex As StringNotFoundException
+            ShortDescriptionBox.Text = "an empty room"
         End Try
-        'Get the room long description, if it exists. Checks for both day and night
-        If file.Contains("SetNightLong(") Then
-            NightDescriptionEnabledCheckbox.Checked = True
-        End If
-        Try
-            LongDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetLong(", ");"))
-        Catch ex As LPCParsing.StringNotFoundException
+
+        If file.Contains("SetNightLong(") And file.Contains("SetDayLong(") Then 'Day and night long desc
             Try
-                LongDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetDayLong(", ");"))
-            Catch ex2 As LPCParsing.StringNotFoundException
-                Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
-                file = file.Substring(0, innerCreate) + vbNewLine + "SetDayLong(" + """DayTime Description""" + ");" + vbNewLine + file.Substring(innerCreate)
-                file = file.Substring(0, innerCreate) + vbNewLine + "SetNightLong(" + """NightTime Description""" + ");" + vbNewLine + file.Substring(innerCreate)
-                LongDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetDayLong(", ");"))
-                NightDescriptionTextBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetNightLong(""", """);"))
                 NightDescriptionEnabledCheckbox.Checked = True
+                LongDescriptionBox.Text = DeQuote(GetBetween(file, "SetDayLong(", ");"))
+                NightDescriptionTextBox.Text = DeQuote(GetBetween(file, "SetNightLong(", ");"))
+            Catch ex As StringNotFoundException
+                NightDescriptionEnabledCheckbox.Checked = True
+                LongDescriptionBox.Text = "An empty room, sunlight flows in through the window."
+                NightDescriptionTextBox.Text = "An empty room, moonlight flows in through the window."
             End Try
-        End Try
-        'Get the ambient light level
+        Else 'Just a long desc
+            Try
+                NightDescriptionEnabledCheckbox.Checked = False
+                LongDescriptionBox.Text = DeQuote(GetBetween(file, "SetLong(", ");"))
+            Catch ex As StringNotFoundException
+                NightDescriptionEnabledCheckbox.Checked = False
+                LongDescriptionBox.Text = "An empty room. Light flows in through the window."
+            End Try
+        End If
+
+        'Load climate
         Try
-            LightLevelTrackBar.Value = CInt((LPCParsing.GetBetween(file, "SetAmbientLight(", ");")))
-        Catch ex As LPCParsing.StringNotFoundException
-            Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
-            file = file.Substring(0, innerCreate) + vbNewLine + "SetAmbientLight(" + CStr(LightLevelTrackBar.Value) + ");" + vbNewLine + file.Substring(innerCreate)
+            ClimateComboBox.Text = DeQuote(GetBetween(file, "SetClimate(", ");"))
+        Catch ex As StringNotFoundException
+            ClimateComboBox.Text = "indoors"
+            Debug.Print("Could not read climate, setting to indoors")
         End Try
-        LightLevelIndicatorLabel.Text = CStr(LightLevelTrackBar.Value)
-        'Get the gravity strength. This is an optional value
+        ClimateComboBox_SelectedIndexChanged(New Object, New EventArgs)
+
+        'Light level
         Try
-            GravityTrackBar.Value = CInt((LPCParsing.GetBetween(file, "SetGravity(", ");")))
-            GravityDisplayLabel.Text = CStr(GravityTrackBar.Value)
-        Catch ex As LPCParsing.StringNotFoundException
+            LightLevelTrackBar.Value = Convert.ToDouble(GetBetween(file, "SetProperty(""light"",", ");"))
+            Debug.Print(Convert.ToDouble(GetBetween(file, "SetProperty(""light"",", ");")))
+        Catch ex As StringNotFoundException
+            Debug.Print("Could not read light level, setting to 6")
+            LightLevelTrackBar.Value = 6.0
         End Try
-        'Get the climate
+        LightLevelTrackBar_Scroll(New Object, New EventArgs)
+
+        'Gravity
         Try
-            LPCParsing.GetBetween(file, "SetClimate(", ");")
-        Catch exex As LPCParsing.StringNotFoundException
-            Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
-            file = file.Substring(0, innerCreate) + vbNewLine + "SetClimate(" + ReQuote("tempperate") + ");" + vbNewLine + file.Substring(innerCreate)
-            If ClimateComboBox.Items.Contains(DeQuote(LPCParsing.GetBetween(file, "SetClimate(", ");"))) Then
-                ClimateComboBox.Items.Add(DeQuote(LPCParsing.GetBetween(file, "SetClimate(", ");")))
-            End If
+            GravityTrackBar.Value = Convert.ToDouble(GetBetween(file, "SetGravity(", ");"))
+            Debug.Print("Gravity level: " & Convert.ToDouble(GetBetween(file, "SetGravity(", ");")))
+        Catch ex As StringNotFoundException
+            GravityTrackBar.Value = 2.0
         End Try
-        ClimateComboBox.SelectedItem = DeQuote(LPCParsing.GetBetween(file, "SetClimate(", ");"))
+        GravityTrackBar_Scroll(New Object, New EventArgs)
+
+        'OLD ROOM EDITOR CODE
+        ''Get the room short description, or set if it doesn't exist (It's a BIG problem if it doesn't)
+        'Try
+        '    ShortDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetShort(", ");"))
+        'Catch ex As LPCParsing.StringNotFoundException
+        '    Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
+        '    file = file.Substring(0, innerCreate) + vbNewLine + "SetShort(" + ReQuote(ShortDescriptionBox.Text) + ");" + vbNewLine + file.Substring(innerCreate)
+        'End Try
+        ''Get the room long description, if it exists. Checks for both day and night
+        'If file.Contains("SetNightLong(") Then
+        '    NightDescriptionEnabledCheckbox.Checked = True
+        'End If
+        'Try
+        '    LongDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetLong(", ");"))
+        'Catch ex As LPCParsing.StringNotFoundException
+        '    Try
+        '        LongDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetDayLong(", ");"))
+        '    Catch ex2 As LPCParsing.StringNotFoundException
+        '        Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
+        '        file = file.Substring(0, innerCreate) + vbNewLine + "SetDayLong(" + """DayTime Description""" + ");" + vbNewLine + file.Substring(innerCreate)
+        '        file = file.Substring(0, innerCreate) + vbNewLine + "SetNightLong(" + """NightTime Description""" + ");" + vbNewLine + file.Substring(innerCreate)
+        '        LongDescriptionBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetDayLong(", ");"))
+        '        NightDescriptionTextBox.Text = DeQuote(LPCParsing.GetBetween(file, "SetNightLong(""", """);"))
+        '        NightDescriptionEnabledCheckbox.Checked = True
+        '    End Try
+        'End Try
+        ''Get the ambient light level
+        'Try
+        '    LightLevelTrackBar.Value = CInt((LPCParsing.GetBetween(file, "SetAmbientLight(", ");")))
+        'Catch ex As LPCParsing.StringNotFoundException
+        '    Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
+        '    file = file.Substring(0, innerCreate) + vbNewLine + "SetAmbientLight(" + CStr(LightLevelTrackBar.Value) + ");" + vbNewLine + file.Substring(innerCreate)
+        'End Try
+        'LightLevelIndicatorLabel.Text = CStr(LightLevelTrackBar.Value)
+        ''Get the gravity strength. This is an optional value
+        'Try
+        '    GravityTrackBar.Value = CInt((LPCParsing.GetBetween(file, "SetGravity(", ");")))
+        '    GravityDisplayLabel.Text = CStr(GravityTrackBar.Value)
+        'Catch ex As LPCParsing.StringNotFoundException
+        'End Try
+        ''Get the climate
+        'Try
+        '    LPCParsing.GetBetween(file, "SetClimate(", ");")
+        'Catch exex As LPCParsing.StringNotFoundException
+        '    Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
+        '    file = file.Substring(0, innerCreate) + vbNewLine + "SetClimate(" + ReQuote("tempperate") + ");" + vbNewLine + file.Substring(innerCreate)
+        '    If ClimateComboBox.Items.Contains(DeQuote(LPCParsing.GetBetween(file, "SetClimate(", ");"))) Then
+        '        ClimateComboBox.Items.Add(DeQuote(LPCParsing.GetBetween(file, "SetClimate(", ");")))
+        '    End If
+        'End Try
+        'ClimateComboBox.SelectedItem = DeQuote(LPCParsing.GetBetween(file, "SetClimate(", ");"))
     End Sub
 
     Private Sub LightLevelTrackBar_Scroll(sender As Object, e As EventArgs) Handles LightLevelTrackBar.Scroll
@@ -94,7 +155,7 @@ Public Class RoomEditor
             LPCParsing.GetBetween(file, "SetGravity(", ");")
         Catch ex As LPCParsing.StringNotFoundException
             Dim innerCreate As Integer = file.IndexOf("room::create();") + 16
-            file = file.Substring(0, innerCreate) + vbNewLine + "SetGravity(" + CStr(GravityTrackBar.Value) + ");" + vbNewLine + file.Substring(innerCreate)
+            file = file.Substring(0, innerCreate) + vbNewLine + "SetGravity(" + GravityTrackBar.Value.ToString + ");" + vbNewLine + file.Substring(innerCreate)
         End Try
     End Sub
 

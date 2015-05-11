@@ -18,8 +18,8 @@
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
-      <DocumentationSource sourceFile="bin\Debug\Deadsouls-Creator.exe" />
-<DocumentationSource sourceFile="bin\Debug\Deadsouls-Creator.xml" /></DocumentationSources>
+      <DocumentationSource sourceFile="Deadsouls-Creator.vbproj" />
+    </DocumentationSources>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>Website</HelpFileFormat>
     <IndentHtml>False</IndentHtml>

@@ -5,14 +5,14 @@
 Public Class MainApplicationWindow
 
     Private Sub MainApplicationWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Debug.Print("Application started: " & Now.ToString)
+        InitialiseLogging("logfile.txt", levels.debug)
         'Check deadsouls installation path
         If My.Settings.deadsouls_installation_path = "" Then
             Dim path_dialog As New ds_path_dialog
             path_dialog.ShowDialog()
         End If
 
-        Debug.Print("Deadsouls Path: " & My.Settings.deadsouls_installation_path)
+        WriteToLog("Deadsouls Path: " & My.Settings.deadsouls_installation_path)
 
         'Select the "create new [thing]" option by default for all the file lists
         RoomsListBox.SelectedItem = "Build new room..."

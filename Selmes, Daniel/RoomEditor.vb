@@ -16,7 +16,15 @@ Public Class RoomEditor
         'Set the current file
         If filePath = "" Then
             Me.Text = "Dead Souls Room Editor"
-            file = RoomTemplate.template 'Load the template
+            Try
+                file = My.Computer.FileSystem.ReadAllText(System.IO.Directory.GetCurrentDirectory & "\Resources\RoomTemplate.c")
+            Catch ex As IO.IOException
+                MsgBox("Sorry, there was an error loading the room template. Try re-installing the program, or contant support if that doesn't resolve the issue.", MsgBoxStyle.Critical, "Critical Error")
+                Debug.Print("CRITICAL ERROR - " & Now.ToString & ": Failed to load template error for room file! Room editor, exiting...")
+                Close()
+                Return
+            End Try
+            file = My.Computer.FileSystem.ReadAllText(System.IO.Directory.GetCurrentDirectory & "\Resources\RoomTemplate.c")
             file = file.Replace(vbLf, vbNewLine)
         Else
             Try

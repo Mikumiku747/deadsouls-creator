@@ -29,7 +29,6 @@ Partial Class RoomEditor
         Me.SaveRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveRoomAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CloseFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
@@ -128,7 +127,7 @@ Partial Class RoomEditor
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRoomToolStripMenuItem, Me.OpenRoomToolStripMenuItem, Me.SaveRoomToolStripMenuItem, Me.SaveRoomAsToolStripMenuItem, Me.ToolStripSeparator1, Me.CloseFileToolStripMenuItem, Me.QuitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRoomToolStripMenuItem, Me.OpenRoomToolStripMenuItem, Me.SaveRoomToolStripMenuItem, Me.SaveRoomAsToolStripMenuItem, Me.ToolStripSeparator1, Me.QuitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -161,12 +160,6 @@ Partial Class RoomEditor
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(150, 6)
-        '
-        'CloseFileToolStripMenuItem
-        '
-        Me.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem"
-        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.CloseFileToolStripMenuItem.Text = "Close file"
         '
         'QuitToolStripMenuItem
         '
@@ -908,7 +901,6 @@ Partial Class RoomEditor
     Friend WithEvents OpenRoomToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveRoomToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents CloseFileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WindowStatusString As System.Windows.Forms.ToolStripStatusLabel

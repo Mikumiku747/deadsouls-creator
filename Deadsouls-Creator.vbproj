@@ -79,6 +79,7 @@
     <Compile Include="DialogsAndModules\ds_path_dialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DialogsAndModules\EZLogging.vb" />
     <Compile Include="DialogsAndModules\FileEditor.Designer.vb">
       <DependentUpon>FileEditor.vb</DependentUpon>
     </Compile>
@@ -208,7 +209,9 @@
     <None Include="Resources\redCrossIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\RoomTemplate.c" />
+    <Content Include="Resources\RoomTemplate.c">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

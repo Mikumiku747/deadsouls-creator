@@ -85,6 +85,8 @@ Public Class RoomEditor
         End Try
         GravityTrackBar_Scroll(New Object, New EventArgs)
 
+
+
         'OLD ROOM EDITOR CODE
         ''Get the room short description, or set if it doesn't exist (It's a BIG problem if it doesn't)
         'Try

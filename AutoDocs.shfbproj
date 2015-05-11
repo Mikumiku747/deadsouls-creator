@@ -18,7 +18,8 @@
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
     <DocumentationSources>
-      <DocumentationSource sourceFile="Deadsouls-Creator.vbproj" />
+      <DocumentationSource sourceFile="bin\Debug\Deadsouls-Creator.exe" />
+      <DocumentationSource sourceFile="bin\Debug\Deadsouls-Creator.xml" />
     </DocumentationSources>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>Website</HelpFileFormat>
@@ -37,7 +38,7 @@
     <MSHelp2SdkLinkType>Index</MSHelp2SdkLinkType>
     <IncludeStopWordList>True</IncludeStopWordList>
     <VisibleItems>Attributes, Protected, ProtectedInternalAsProtected</VisibleItems>
-    <MissingTags>Summary, Parameter, Returns, Remarks, AutoDocumentCtors, AutoDocumentDispose</MissingTags>
+    <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
     <MaximumGroupParts>2</MaximumGroupParts>
     <NamespaceGrouping>False</NamespaceGrouping>
     <SyntaxFilters>Standard</SyntaxFilters>
@@ -46,7 +47,7 @@
     <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
-    <HelpTitle>Deadsouls Source Documentation</HelpTitle>
+    <HelpTitle>Deadsouls Creator - Source Code Documentation</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform

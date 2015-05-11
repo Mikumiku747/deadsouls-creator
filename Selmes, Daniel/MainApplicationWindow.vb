@@ -1,4 +1,8 @@
-﻿Public Class MainApplicationWindow
+﻿''' <summary>
+''' The main startup application for the deadsouls-creator software
+''' This provides lists of game files so you can easily open them for editing, and manages the locations of game files, so that the individual modules don't have to locate them.
+''' </summary>
+Public Class MainApplicationWindow
 
     Private Sub MainApplicationWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Check deadsouls installation path

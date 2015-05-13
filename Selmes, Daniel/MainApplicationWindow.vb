@@ -99,4 +99,8 @@ Public Class MainApplicationWindow
             MsgBox("Opening file " + ItemListBox.SelectedItem.ToString() + " in item editor...")
         End If
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox.ShowDialog()
+    End Sub
 End Class

@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,17 +9,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Deadsouls-Creator")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Hewlett-Packard")> 
-<Assembly: AssemblyProduct("Deadsouls-Creator")> 
-<Assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2015")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("Deadsouls Creator")>
+<Assembly: AssemblyDescription("A set of programs for easily editing deadsouls game files, such as rooms, items and NPCs.")>
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("Deadsouls Creator")>
+<Assembly: AssemblyCopyright("Copyright © Daniel Selmes, Daniel Chin 2015")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("7bc02236-3f87-41f0-9506-3e5b7b17448b")> 
+<Assembly: Guid("7bc02236-3f87-41f0-9506-3e5b7b17448b")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +32,6 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: NeutralResourcesLanguage("en")>

@@ -112,6 +112,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DialogsAndModules\LPCParsing.vb" />
+    <Compile Include="DialogsAndModules\MappingEditorSF.Designer.vb">
+      <DependentUpon>MappingEditorSF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogsAndModules\MappingEditorSF.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogsAndModules\StringPrompt.Designer.vb">
       <DependentUpon>StringPrompt.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\FileEditor.resx">
       <DependentUpon>FileEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogsAndModules\MappingEditorSF.resx">
+      <DependentUpon>MappingEditorSF.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\StringPrompt.resx">
       <DependentUpon>StringPrompt.vb</DependentUpon>

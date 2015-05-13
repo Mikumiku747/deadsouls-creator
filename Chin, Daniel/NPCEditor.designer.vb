@@ -24,52 +24,52 @@ Partial Class NPCEditor
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.ID = New System.Windows.Forms.TextBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.NPCObjects = New System.Windows.Forms.TextBox()
-        Me.equiplabel = New System.Windows.Forms.Label()
-        Me.NPCEquipped = New System.Windows.Forms.TextBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Adjectives = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ShortDescription = New System.Windows.Forms.TextBox()
-        Me.LongDescription = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Race = New System.Windows.Forms.ComboBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Classes = New System.Windows.Forms.ComboBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Gender = New System.Windows.Forms.ComboBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Level = New System.Windows.Forms.TrackBar()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.LevelLabel = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.Language = New System.Windows.Forms.ComboBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Gender = New System.Windows.Forms.ComboBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Classes = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Race = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ID = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.NPCEquipped = New System.Windows.Forms.TextBox()
+        Me.equiplabel = New System.Windows.Forms.Label()
+        Me.NPCObjects = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LongDescription = New System.Windows.Forms.Label()
+        Me.Adjectives = New System.Windows.Forms.TextBox()
+        Me.ShortDescription = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.LevelLabel = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Level = New System.Windows.Forms.TrackBar()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.CombatCheck = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewNPCToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenNPCFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveNPCFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CloseFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -86,7 +86,7 @@ Partial Class NPCEditor
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.31469!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.68531!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 244.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox3, 0, 1)
@@ -125,22 +125,85 @@ Partial Class NPCEditor
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "NPC Identity"
         '
-        'Label2
+        'Language
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Name"
+        Me.Language.FormattingEnabled = True
+        Me.Language.Location = New System.Drawing.Point(13, 240)
+        Me.Language.Name = "Language"
+        Me.Language.Size = New System.Drawing.Size(167, 21)
+        Me.Language.TabIndex = 12
+        Me.Language.Text = "Null"
         '
-        'TextBox1
+        'Label10
         '
-        Me.TextBox1.Location = New System.Drawing.Point(10, 37)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(167, 20)
-        Me.TextBox1.TabIndex = 1
-        Me.TextBox1.Text = "Name of NPC"
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(10, 224)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(55, 13)
+        Me.Label10.TabIndex = 11
+        Me.Label10.Text = "Language"
+        '
+        'Gender
+        '
+        Me.Gender.FormattingEnabled = True
+        Me.Gender.Location = New System.Drawing.Point(11, 200)
+        Me.Gender.Name = "Gender"
+        Me.Gender.Size = New System.Drawing.Size(167, 21)
+        Me.Gender.TabIndex = 10
+        Me.Gender.Text = "Null"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(10, 184)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(42, 13)
+        Me.Label8.TabIndex = 9
+        Me.Label8.Text = "Gender"
+        '
+        'Classes
+        '
+        Me.Classes.FormattingEnabled = True
+        Me.Classes.Location = New System.Drawing.Point(11, 160)
+        Me.Classes.Name = "Classes"
+        Me.Classes.Size = New System.Drawing.Size(167, 21)
+        Me.Classes.TabIndex = 8
+        Me.Classes.Text = "Null"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(9, 144)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(32, 13)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "Class"
+        '
+        'Race
+        '
+        Me.Race.FormattingEnabled = True
+        Me.Race.Location = New System.Drawing.Point(10, 120)
+        Me.Race.Name = "Race"
+        Me.Race.Size = New System.Drawing.Size(167, 21)
+        Me.Race.TabIndex = 6
+        Me.Race.Text = "Dog"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(7, 103)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(33, 13)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "Race"
+        '
+        'ID
+        '
+        Me.ID.Location = New System.Drawing.Point(10, 76)
+        Me.ID.Name = "ID"
+        Me.ID.Size = New System.Drawing.Size(167, 20)
+        Me.ID.TabIndex = 4
+        Me.ID.Text = "ID"
         '
         'Label3
         '
@@ -151,13 +214,22 @@ Partial Class NPCEditor
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "ID"
         '
-        'ID
+        'TextBox1
         '
-        Me.ID.Location = New System.Drawing.Point(10, 76)
-        Me.ID.Name = "ID"
-        Me.ID.Size = New System.Drawing.Size(167, 20)
-        Me.ID.TabIndex = 4
-        Me.ID.Text = "ID"
+        Me.TextBox1.Location = New System.Drawing.Point(10, 37)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(167, 20)
+        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.Text = "Name of NPC"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(7, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Name"
         '
         'GroupBox2
         '
@@ -170,19 +242,29 @@ Partial Class NPCEditor
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox2.Location = New System.Drawing.Point(327, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(385, 267)
+        Me.GroupBox2.Size = New System.Drawing.Size(384, 267)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "NPC Inventory"
         '
-        'Label4
+        'NPCEquipped
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 20)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(43, 13)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Objects"
+        Me.NPCEquipped.Location = New System.Drawing.Point(6, 119)
+        Me.NPCEquipped.Multiline = True
+        Me.NPCEquipped.Name = "NPCEquipped"
+        Me.NPCEquipped.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.NPCEquipped.Size = New System.Drawing.Size(368, 58)
+        Me.NPCEquipped.TabIndex = 3
+        Me.NPCEquipped.Text = "lit charge"
+        '
+        'equiplabel
+        '
+        Me.equiplabel.AutoSize = True
+        Me.equiplabel.Location = New System.Drawing.Point(6, 99)
+        Me.equiplabel.Name = "equiplabel"
+        Me.equiplabel.Size = New System.Drawing.Size(91, 13)
+        Me.equiplabel.TabIndex = 2
+        Me.equiplabel.Text = "Equipped Objects"
         '
         'NPCObjects
         '
@@ -194,24 +276,14 @@ Partial Class NPCEditor
         Me.NPCObjects.TabIndex = 1
         Me.NPCObjects.Text = "nasty stuff, lit charge"
         '
-        'equiplabel
+        'Label4
         '
-        Me.equiplabel.AutoSize = True
-        Me.equiplabel.Location = New System.Drawing.Point(6, 99)
-        Me.equiplabel.Name = "equiplabel"
-        Me.equiplabel.Size = New System.Drawing.Size(91, 13)
-        Me.equiplabel.TabIndex = 2
-        Me.equiplabel.Text = "Equipped Objects"
-        '
-        'NPCEquipped
-        '
-        Me.NPCEquipped.Location = New System.Drawing.Point(6, 119)
-        Me.NPCEquipped.Multiline = True
-        Me.NPCEquipped.Name = "NPCEquipped"
-        Me.NPCEquipped.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.NPCEquipped.Size = New System.Drawing.Size(368, 58)
-        Me.NPCEquipped.TabIndex = 3
-        Me.NPCEquipped.Text = "lit charge"
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(7, 20)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(43, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Objects"
         '
         'GroupBox3
         '
@@ -231,53 +303,6 @@ Partial Class NPCEditor
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "NPC Description"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 16)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 13)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Adjectives"
-        '
-        'Adjectives
-        '
-        Me.Adjectives.Location = New System.Drawing.Point(10, 32)
-        Me.Adjectives.Multiline = True
-        Me.Adjectives.Name = "Adjectives"
-        Me.Adjectives.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Adjectives.Size = New System.Drawing.Size(272, 43)
-        Me.Adjectives.TabIndex = 6
-        Me.Adjectives.Text = "viscous, nasty , black,  yellow"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 78)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 13)
-        Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Short description"
-        '
-        'ShortDescription
-        '
-        Me.ShortDescription.Location = New System.Drawing.Point(9, 94)
-        Me.ShortDescription.Multiline = True
-        Me.ShortDescription.Name = "ShortDescription"
-        Me.ShortDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.ShortDescription.Size = New System.Drawing.Size(269, 51)
-        Me.ShortDescription.TabIndex = 10
-        Me.ShortDescription.Text = "The dog is biting ankles nursing its own nastiness"
-        '
-        'LongDescription
-        '
-        Me.LongDescription.AutoSize = True
-        Me.LongDescription.Location = New System.Drawing.Point(8, 148)
-        Me.LongDescription.Name = "LongDescription"
-        Me.LongDescription.Size = New System.Drawing.Size(85, 13)
-        Me.LongDescription.TabIndex = 11
-        Me.LongDescription.Text = "Long description"
-        '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(9, 164)
@@ -289,59 +314,52 @@ Partial Class NPCEditor
         Me.TextBox2.Text = "The dog is biting ankles nursing its own nastiness under the floor boards of the " & _
     "pub it is said to have an army of mongrels"
         '
-        'Label6
+        'Label5
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 103)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(33, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Race"
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 16)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(56, 13)
+        Me.Label5.TabIndex = 5
+        Me.Label5.Text = "Adjectives"
         '
-        'Race
+        'LongDescription
         '
-        Me.Race.FormattingEnabled = True
-        Me.Race.Location = New System.Drawing.Point(10, 120)
-        Me.Race.Name = "Race"
-        Me.Race.Size = New System.Drawing.Size(167, 21)
-        Me.Race.TabIndex = 6
-        Me.Race.Text = "Dog"
+        Me.LongDescription.AutoSize = True
+        Me.LongDescription.Location = New System.Drawing.Point(8, 148)
+        Me.LongDescription.Name = "LongDescription"
+        Me.LongDescription.Size = New System.Drawing.Size(85, 13)
+        Me.LongDescription.TabIndex = 11
+        Me.LongDescription.Text = "Long description"
         '
-        'Label7
+        'Adjectives
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(9, 144)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(32, 13)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "Class"
+        Me.Adjectives.Location = New System.Drawing.Point(10, 32)
+        Me.Adjectives.Multiline = True
+        Me.Adjectives.Name = "Adjectives"
+        Me.Adjectives.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.Adjectives.Size = New System.Drawing.Size(272, 43)
+        Me.Adjectives.TabIndex = 6
+        Me.Adjectives.Text = "viscous, nasty , black,  yellow"
         '
-        'Classes
+        'ShortDescription
         '
-        Me.Classes.FormattingEnabled = True
-        Me.Classes.Location = New System.Drawing.Point(11, 160)
-        Me.Classes.Name = "Classes"
-        Me.Classes.Size = New System.Drawing.Size(167, 21)
-        Me.Classes.TabIndex = 8
-        Me.Classes.Text = "Null"
+        Me.ShortDescription.Location = New System.Drawing.Point(9, 94)
+        Me.ShortDescription.Multiline = True
+        Me.ShortDescription.Name = "ShortDescription"
+        Me.ShortDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.ShortDescription.Size = New System.Drawing.Size(269, 51)
+        Me.ShortDescription.TabIndex = 10
+        Me.ShortDescription.Text = "The dog is biting ankles nursing its own nastiness"
         '
-        'Label8
+        'Label1
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(10, 184)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(42, 13)
-        Me.Label8.TabIndex = 9
-        Me.Label8.Text = "Gender"
-        '
-        'Gender
-        '
-        Me.Gender.FormattingEnabled = True
-        Me.Gender.Location = New System.Drawing.Point(11, 200)
-        Me.Gender.Name = "Gender"
-        Me.Gender.Size = New System.Drawing.Size(167, 21)
-        Me.Gender.TabIndex = 10
-        Me.Gender.Text = "Null"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 78)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(86, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Short description"
         '
         'GroupBox4
         '
@@ -357,72 +375,10 @@ Partial Class NPCEditor
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox4.Location = New System.Drawing.Point(327, 276)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(385, 292)
+        Me.GroupBox4.Size = New System.Drawing.Size(384, 292)
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "NPC Stats"
-        '
-        'Level
-        '
-        Me.Level.Location = New System.Drawing.Point(14, 32)
-        Me.Level.Maximum = 100
-        Me.Level.Name = "Level"
-        Me.Level.Size = New System.Drawing.Size(317, 45)
-        Me.Level.TabIndex = 0
-        Me.Level.TickFrequency = 10
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(11, 16)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(33, 13)
-        Me.Label9.TabIndex = 1
-        Me.Label9.Text = "Level"
-        '
-        'LevelLabel
-        '
-        Me.LevelLabel.AutoSize = True
-        Me.LevelLabel.Location = New System.Drawing.Point(337, 32)
-        Me.LevelLabel.Name = "LevelLabel"
-        Me.LevelLabel.Size = New System.Drawing.Size(13, 13)
-        Me.LevelLabel.TabIndex = 2
-        Me.LevelLabel.Text = "0"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(10, 224)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(55, 13)
-        Me.Label10.TabIndex = 11
-        Me.Label10.Text = "Language"
-        '
-        'Language
-        '
-        Me.Language.FormattingEnabled = True
-        Me.Language.Location = New System.Drawing.Point(13, 240)
-        Me.Language.Name = "Language"
-        Me.Language.Size = New System.Drawing.Size(167, 21)
-        Me.Language.TabIndex = 12
-        Me.Language.Text = "Null"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(14, 96)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 3
-        Me.TextBox3.Text = "40"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(11, 80)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(71, 13)
-        Me.Label11.TabIndex = 4
-        Me.Label11.Text = "Max Hitpoints"
         '
         'Label12
         '
@@ -441,14 +397,58 @@ Partial Class NPCEditor
         Me.TextBox4.TabIndex = 5
         Me.TextBox4.Text = "35"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(11, 80)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(71, 13)
+        Me.Label11.TabIndex = 4
+        Me.Label11.Text = "Max Hitpoints"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(14, 96)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 3
+        Me.TextBox3.Text = "40"
+        '
+        'LevelLabel
+        '
+        Me.LevelLabel.AutoSize = True
+        Me.LevelLabel.Location = New System.Drawing.Point(337, 32)
+        Me.LevelLabel.Name = "LevelLabel"
+        Me.LevelLabel.Size = New System.Drawing.Size(13, 13)
+        Me.LevelLabel.TabIndex = 2
+        Me.LevelLabel.Text = "0"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(11, 16)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(33, 13)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "Level"
+        '
+        'Level
+        '
+        Me.Level.Location = New System.Drawing.Point(14, 32)
+        Me.Level.Maximum = 100
+        Me.Level.Name = "Level"
+        Me.Level.Size = New System.Drawing.Size(317, 45)
+        Me.Level.TabIndex = 0
+        Me.Level.TickFrequency = 10
+        '
         'GroupBox5
         '
         Me.GroupBox5.AutoSize = True
         Me.GroupBox5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox5.Location = New System.Drawing.Point(718, 276)
+        Me.GroupBox5.Location = New System.Drawing.Point(717, 276)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(239, 292)
+        Me.GroupBox5.Size = New System.Drawing.Size(240, 292)
         Me.GroupBox5.TabIndex = 5
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "NPC Misc"
@@ -460,12 +460,21 @@ Partial Class NPCEditor
         Me.GroupBox6.Controls.Add(Me.Button1)
         Me.GroupBox6.Controls.Add(Me.CombatCheck)
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox6.Location = New System.Drawing.Point(718, 3)
+        Me.GroupBox6.Location = New System.Drawing.Point(717, 3)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(239, 267)
+        Me.GroupBox6.Size = New System.Drawing.Size(240, 267)
         Me.GroupBox6.TabIndex = 6
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "NPC Combat"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(7, 35)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(226, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Edit Action LPC"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'CombatCheck
         '
@@ -495,40 +504,40 @@ Partial Class NPCEditor
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(37, 20)
         Me.ToolStripMenuItem1.Text = "File"
         '
-        'EditToolStripMenuItem
-        '
-        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
-        Me.EditToolStripMenuItem.Text = "Edit"
-        '
         'NewNPCToolStripMenuItem
         '
         Me.NewNPCToolStripMenuItem.Name = "NewNPCToolStripMenuItem"
-        Me.NewNPCToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewNPCToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.NewNPCToolStripMenuItem.Text = " New NPC file"
         '
         'OpenNPCFileToolStripMenuItem
         '
         Me.OpenNPCFileToolStripMenuItem.Name = "OpenNPCFileToolStripMenuItem"
-        Me.OpenNPCFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenNPCFileToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.OpenNPCFileToolStripMenuItem.Text = "Open NPC file"
         '
         'SaveNPCFileToolStripMenuItem
         '
         Me.SaveNPCFileToolStripMenuItem.Name = "SaveNPCFileToolStripMenuItem"
-        Me.SaveNPCFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveNPCFileToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.SaveNPCFileToolStripMenuItem.Text = "Save NPC file"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(146, 6)
         '
         'CloseFileToolStripMenuItem
         '
         Me.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem"
-        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.CloseFileToolStripMenuItem.Text = "Close file"
+        '
+        'EditToolStripMenuItem
+        '
+        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.EditToolStripMenuItem.Text = "Edit"
         '
         'StatusStrip1
         '
@@ -544,15 +553,6 @@ Partial Class NPCEditor
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(126, 17)
         Me.ToolStripStatusLabel1.Text = "Dead Souls NPC Editor"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(7, 35)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(226, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Edit Action LPC"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'NPCEditor
         '

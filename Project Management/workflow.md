@@ -18,10 +18,10 @@ In terms of data flow, optionally recevies a file path to open (from the program
 Pretty much identical to the room editor, except that it edits items. Copy paste the thing above here.
 
 ###Weapon editor
-Chuck in something here Daniel. :)
+An editor interface that is designed to create and edit weapons. It creates and writes to files and can read files to edit. Well thats what is going to do. This is connected to the Main application whihc displays pre-exisitng weapons to edit
 
 ###Armour editor editor
-Chuck in something here Daniel. :)
+An editor interface that allows the user to modify and create armour. same as the rest of the editors create/Read/ Write modify etc. This is connected to the Main application whihc displays pre-exisitng Armour to edit
 
 ###NPC editor
-Chuck in something here Daniel. :)
+THe NPC editor is made to help users make NPCs (other people that are not playable) for the MUD. These NPCs  can be hostile and non hostile but combat needs to be coded in manually. Like all the other editors it should be able create/read/edit files for the NPC. This is connected to the Main application whihc displays pre-exisitng NPCs to edit

@@ -1,5 +1,10 @@
 ﻿Public Class NPCEditor
 
+    Public filepath As String
+
+    Private file As String
+
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -37,6 +42,10 @@
     End Sub
 
     Private Sub NewNPCToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewNPCToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
 
     End Sub
 End Class

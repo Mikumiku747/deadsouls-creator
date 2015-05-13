@@ -29,8 +29,6 @@ Partial Class RoomEditor
         Me.SaveRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveRoomAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CloseFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
@@ -76,8 +74,6 @@ Partial Class RoomEditor
         Me.GravityTrackBar = New System.Windows.Forms.TrackBar()
         Me.CodeButtonsGroupBox = New System.Windows.Forms.GroupBox()
         Me.EditLPCCodeButton = New System.Windows.Forms.Button()
-        Me.EditFunctionalsButton = New System.Windows.Forms.Button()
-        Me.EditPrototypesButton = New System.Windows.Forms.Button()
         Me.ItemsGroupBox = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditItemsButton = New System.Windows.Forms.Button()
@@ -90,6 +86,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditSearchesButton = New System.Windows.Forms.Button()
         Me.SearchesTextBox = New System.Windows.Forms.TextBox()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -128,7 +125,7 @@ Partial Class RoomEditor
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRoomToolStripMenuItem, Me.OpenRoomToolStripMenuItem, Me.SaveRoomToolStripMenuItem, Me.SaveRoomAsToolStripMenuItem, Me.ToolStripSeparator1, Me.CloseFileToolStripMenuItem, Me.QuitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRoomToolStripMenuItem, Me.OpenRoomToolStripMenuItem, Me.SaveRoomToolStripMenuItem, Me.SaveRoomAsToolStripMenuItem, Me.ToolStripSeparator1, Me.QuitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -161,19 +158,6 @@ Partial Class RoomEditor
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(150, 6)
-        '
-        'CloseFileToolStripMenuItem
-        '
-        Me.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem"
-        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.CloseFileToolStripMenuItem.Text = "Close file"
-        '
-        'QuitToolStripMenuItem
-        '
-        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
-        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'EditToolStripMenuItem
         '
@@ -271,6 +255,7 @@ Partial Class RoomEditor
         Me.DoorsTextBox.Location = New System.Drawing.Point(3, 3)
         Me.DoorsTextBox.Multiline = True
         Me.DoorsTextBox.Name = "DoorsTextBox"
+        Me.DoorsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.DoorsTextBox.Size = New System.Drawing.Size(153, 198)
         Me.DoorsTextBox.TabIndex = 1
         '
@@ -317,6 +302,7 @@ Partial Class RoomEditor
         Me.EntersTextBox.Location = New System.Drawing.Point(3, 3)
         Me.EntersTextBox.Multiline = True
         Me.EntersTextBox.Name = "EntersTextBox"
+        Me.EntersTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.EntersTextBox.Size = New System.Drawing.Size(153, 197)
         Me.EntersTextBox.TabIndex = 1
         '
@@ -363,6 +349,7 @@ Partial Class RoomEditor
         Me.ExitsTextBox.Location = New System.Drawing.Point(3, 3)
         Me.ExitsTextBox.Multiline = True
         Me.ExitsTextBox.Name = "ExitsTextBox"
+        Me.ExitsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.ExitsTextBox.Size = New System.Drawing.Size(151, 197)
         Me.ExitsTextBox.TabIndex = 1
         '
@@ -410,6 +397,7 @@ Partial Class RoomEditor
         Me.SoundsTextBox.Location = New System.Drawing.Point(3, 3)
         Me.SoundsTextBox.Multiline = True
         Me.SoundsTextBox.Name = "SoundsTextBox"
+        Me.SoundsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.SoundsTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SoundsTextBox.TabIndex = 1
         '
@@ -456,6 +444,7 @@ Partial Class RoomEditor
         Me.ObjectsTextBox.Location = New System.Drawing.Point(3, 3)
         Me.ObjectsTextBox.Multiline = True
         Me.ObjectsTextBox.Name = "ObjectsTextBox"
+        Me.ObjectsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.ObjectsTextBox.Size = New System.Drawing.Size(151, 197)
         Me.ObjectsTextBox.TabIndex = 1
         '
@@ -603,7 +592,7 @@ Partial Class RoomEditor
         'ClimateComboBox
         '
         Me.ClimateComboBox.FormattingEnabled = True
-        Me.ClimateComboBox.Items.AddRange(New Object() {"indoors", "outdoors", "freezing", "cold", "temperate", "hot", "boiling", "custom..."})
+        Me.ClimateComboBox.Items.AddRange(New Object() {"indoors", "temperate", "arid", "arctic", "tropical", "sub-tropical"})
         Me.ClimateComboBox.Location = New System.Drawing.Point(59, 49)
         Me.ClimateComboBox.Name = "ClimateComboBox"
         Me.ClimateComboBox.Size = New System.Drawing.Size(235, 21)
@@ -670,8 +659,6 @@ Partial Class RoomEditor
         'CodeButtonsGroupBox
         '
         Me.CodeButtonsGroupBox.Controls.Add(Me.EditLPCCodeButton)
-        Me.CodeButtonsGroupBox.Controls.Add(Me.EditFunctionalsButton)
-        Me.CodeButtonsGroupBox.Controls.Add(Me.EditPrototypesButton)
         Me.CodeButtonsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CodeButtonsGroupBox.Location = New System.Drawing.Point(3, 399)
         Me.CodeButtonsGroupBox.Name = "CodeButtonsGroupBox"
@@ -682,30 +669,12 @@ Partial Class RoomEditor
         '
         'EditLPCCodeButton
         '
-        Me.EditLPCCodeButton.Location = New System.Drawing.Point(7, 80)
+        Me.EditLPCCodeButton.Location = New System.Drawing.Point(6, 19)
         Me.EditLPCCodeButton.Name = "EditLPCCodeButton"
         Me.EditLPCCodeButton.Size = New System.Drawing.Size(287, 23)
         Me.EditLPCCodeButton.TabIndex = 2
         Me.EditLPCCodeButton.Text = "Edit LPC Code"
         Me.EditLPCCodeButton.UseVisualStyleBackColor = True
-        '
-        'EditFunctionalsButton
-        '
-        Me.EditFunctionalsButton.Location = New System.Drawing.Point(7, 50)
-        Me.EditFunctionalsButton.Name = "EditFunctionalsButton"
-        Me.EditFunctionalsButton.Size = New System.Drawing.Size(287, 23)
-        Me.EditFunctionalsButton.TabIndex = 1
-        Me.EditFunctionalsButton.Text = "Edit Functionals"
-        Me.EditFunctionalsButton.UseVisualStyleBackColor = True
-        '
-        'EditPrototypesButton
-        '
-        Me.EditPrototypesButton.Location = New System.Drawing.Point(7, 20)
-        Me.EditPrototypesButton.Name = "EditPrototypesButton"
-        Me.EditPrototypesButton.Size = New System.Drawing.Size(287, 23)
-        Me.EditPrototypesButton.TabIndex = 0
-        Me.EditPrototypesButton.Text = "Edit Prototypes"
-        Me.EditPrototypesButton.UseVisualStyleBackColor = True
         '
         'ItemsGroupBox
         '
@@ -750,6 +719,7 @@ Partial Class RoomEditor
         Me.ItemsTextBox.Location = New System.Drawing.Point(3, 3)
         Me.ItemsTextBox.Multiline = True
         Me.ItemsTextBox.Name = "ItemsTextBox"
+        Me.ItemsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.ItemsTextBox.Size = New System.Drawing.Size(151, 197)
         Me.ItemsTextBox.TabIndex = 1
         '
@@ -797,6 +767,7 @@ Partial Class RoomEditor
         Me.SmellsTextBox.Location = New System.Drawing.Point(3, 3)
         Me.SmellsTextBox.Multiline = True
         Me.SmellsTextBox.Name = "SmellsTextBox"
+        Me.SmellsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.SmellsTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SmellsTextBox.TabIndex = 1
         '
@@ -844,8 +815,16 @@ Partial Class RoomEditor
         Me.SearchesTextBox.Location = New System.Drawing.Point(3, 3)
         Me.SearchesTextBox.Multiline = True
         Me.SearchesTextBox.Name = "SearchesTextBox"
+        Me.SearchesTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.SearchesTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SearchesTextBox.TabIndex = 1
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'RoomEditor
         '
@@ -908,7 +887,6 @@ Partial Class RoomEditor
     Friend WithEvents OpenRoomToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveRoomToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents CloseFileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EditToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WindowStatusString As System.Windows.Forms.ToolStripStatusLabel
@@ -933,8 +911,6 @@ Partial Class RoomEditor
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents CodeButtonsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents EditLPCCodeButton As System.Windows.Forms.Button
-    Friend WithEvents EditFunctionalsButton As System.Windows.Forms.Button
-    Friend WithEvents EditPrototypesButton As System.Windows.Forms.Button
     Friend WithEvents ObjectsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents ItemsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents SmellsGroupBox As System.Windows.Forms.GroupBox

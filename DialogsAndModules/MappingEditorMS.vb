@@ -91,10 +91,13 @@ Public Class MappingEditorMS
     Private Sub RemoveButton_Click(sender As Object, e As EventArgs) Handles RemoveButton.Click
         cleanKeys.RemoveAt(currentItem)
         cleanValues.RemoveAt(currentItem)
-        KeysListBox.Items.RemoveAt(currentItem)
-        If KeysListBox.Items.Count < 1 Then
-            Throw New Exception("Out of items, need to return dialog as """"set to default.""""")
-        End If
+        Try
+            KeysListBox.Items.RemoveAt(currentItem)
+        Catch ex As Exception
+            dialogValue = "EMPTY"
+            Close()
+            Return
+        End Try
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click

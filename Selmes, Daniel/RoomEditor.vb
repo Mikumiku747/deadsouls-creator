@@ -16,11 +16,12 @@ Public Class RoomEditor
         'Set the current file
         If filePath = "" Then
             Me.Text = "Dead Souls Room Editor"
+            filePath = "NEW"
             Try
                 file = My.Computer.FileSystem.ReadAllText(System.IO.Directory.GetCurrentDirectory & "\Resources\RoomTemplate.c")
             Catch ex As IO.IOException
                 MsgBox("Sorry, there was an error loading the room template. Try re-installing the program, or contant support if that doesn't resolve the issue.", MsgBoxStyle.Critical, "Critical Error")
-                Debug.Print("CRITICAL ERROR - " & Now.ToString & ": Failed to load template error for room file! Room editor, exiting...")
+                WriteToLog("Failed to load template error for room file! Room editor, exiting...", levels.critical)
                 Close()
                 Return
             End Try
@@ -102,23 +103,29 @@ Public Class RoomEditor
 
         'Smells
         Try
-            SmellsTextBox.Text = GetBetween(file, "SetSmells(", ");")
+            SmellsTextBox.Text = GetBetween(file, "SetSmell(", ");")
         Catch ex As StringNotFoundException
             SmellsTextBox.Text = ""
         End Try
 
         'sounds
         Try
-            SoundsTextBox.Text = GetBetween(file, "SetSounds(", ");")
+            SoundsTextBox.Text = GetBetween(file, "SetListen(", ");")
         Catch ex As StringNotFoundException
             SoundsTextBox.Text = ""
         End Try
 
         'Searches
         Try
-            SearchesTextBox.Text = GetBetween(file, "SetSearches(", ");")
+            SearchesTextBox.Text = GetBetween(file, "SetSearch(", ");")
         Catch ex As StringNotFoundException
-            SoundsTextBox.Text = ""
+            SearchesTextBox.Text = ""
+        End Try
+
+        Try
+            ObjectsTextBox.Text = GetBetween(file, "SetObjects(", ");")
+        Catch ex As Exception
+            ObjectsTextBox.Text = ""
         End Try
 
     End Sub
@@ -156,8 +163,17 @@ Public Class RoomEditor
     End Sub
 
     Private Sub EditLPCCodeButton_Click(sender As Object, e As EventArgs) Handles EditLPCCodeButton.Click
+        If filePath = "NEW" Then
+            MsgBox("You need to save the file before you can edit the LPC code by hand. Try again once, you've saved the file.", MsgBoxStyle.Information, "Couldn't open LPC code")
+            SaveRoomAsToolStripMenuItem_Click(New Object, New EventArgs)
+            Return
+        Else
+            If Not SaveToDisk(filePath) Then
+                Return
+            End If
+        End If
         Dim lpceditor As New FileEditor
-        lpceditor.dialogValue = file
+        lpceditor.dialogValue = My.Computer.FileSystem.ReadAllText(filePath)
         lpceditor.Text = "LPC Code Editor: " + filePath
         lpceditor.Show()
     End Sub
@@ -232,5 +248,124 @@ Public Class RoomEditor
         If mappingEditor.dialogValue <> "CANCEL" Or mappingEditor.dialogValue <> "EMPTY" Then
             ObjectsTextBox.Text = mappingEditor.dialogValue
         End If
+    End Sub
+
+    Private Function SaveToDisk(pathtosaveto As String)
+        Dim stringtosave As String
+        Try
+            stringtosave = My.Computer.FileSystem.ReadAllText(System.IO.Directory.GetCurrentDirectory & "\Resources\RoomTemplate.c")
+        Catch ex As Exception
+            MsgBox("Sorry, there was an error loading the room template. Try re-installing the program, or contant support if that doesn't resolve the issue.", MsgBoxStyle.Critical, "Critical Error")
+            WriteToLog("Failed to load template error for room file! Aborting save...", levels.warning)
+            Return False
+        End Try
+        'Short desc
+        If ShortDescriptionBox.Text = "" Then
+            MsgBox("You must enter something for the short description.", MsgBoxStyle.Critical, "Invalid Short description")
+            ShortDescriptionBox.Focus()
+            Return False
+        End If
+        stringtosave = SetBetween(stringtosave, "SetShort(", ");", ReQuote(ShortDescriptionBox.Text))
+        'Long desc
+        If LongDescriptionBox.Text = "" Then
+            MsgBox("You must enter something for the long/day description.", MsgBoxStyle.Critical, "Invalid Long description")
+            LongDescriptionBox.Focus()
+            Return False
+        End If
+        If NightDescriptionEnabledCheckbox.Checked And NightDescriptionTextBox.Text = "" Then
+            MsgBox("You must enter something for the night description, or disable the night description.", MsgBoxStyle.Critical, "Invalid Long description")
+            LongDescriptionBox.Focus()
+            Return False
+        End If
+        If NightDescriptionEnabledCheckbox.Checked Then
+            stringtosave = SetBetween(stringtosave, "SetDayLong(", ");", ReQuote(LongDescriptionBox.Text))
+            stringtosave = SetBetween(stringtosave, "SetNightLong(", ");", ReQuote(NightDescriptionTextBox.Text))
+        Else
+            stringtosave = SetBetween(stringtosave, "SetDayLong(", ");", ReQuote(LongDescriptionBox.Text))
+            stringtosave = SetBetween(stringtosave, "SetNightLong(", ");", ReQuote(LongDescriptionBox.Text))
+        End If
+        'Light
+        stringtosave = SetBetween(stringtosave, "SetProperty(""light"",", ");", LightLevelTrackBar.Value.ToString)
+        'Climate
+        stringtosave = SetBetween(stringtosave, "SetClimate(", ");", ReQuote(ClimateComboBox.SelectedItem))
+        'Gravity
+        stringtosave = SetBetween(stringtosave, "SetGravity(", ");", GravityTrackBar.Value.ToString)
+        'Town
+        If TownTextBox.Text <> "" Then
+            stringtosave = SetBetween(stringtosave, "SetTown(", ");", TownTextBox.Text)
+        End If
+        'Items
+        If ItemsTextBox.Text <> "" Then
+            stringtosave = SetBetween(stringtosave, "SetItems(", ");", ItemsTextBox.Text)
+        End If
+        'Smells
+        If SmellsTextBox.Text <> "" Then
+            stringtosave = SetBetween(stringtosave, "SetSmell(", ");", SmellsTextBox.Text)
+        End If
+        'Sounds
+        If SoundsTextBox.Text <> "" Then
+            stringtosave = SetBetween(stringtosave, "SetListen(", ");", SoundsTextBox.Text)
+        End If
+        'Searches
+        If SearchesTextBox.Text <> "" Then
+            stringtosave = SetBetween(stringtosave, "SetSearch(", ");", SearchesTextBox.Text)
+        End If
+        'Acutal saving of the string to the file
+        My.Computer.FileSystem.WriteAllText(pathtosaveto, stringtosave, False, System.Text.Encoding.Default)
+        Return True
+    End Function
+
+    Private Sub SaveRoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveRoomToolStripMenuItem.Click
+        If filePath = "NEW" Then
+            SaveRoomAsToolStripMenuItem_Click(New Object, New EventArgs)
+        Else
+            SaveToDisk(filePath)
+        End If
+    End Sub
+
+    Private Sub SaveRoomAsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveRoomAsToolStripMenuItem.Click
+        Dim chooser As New SaveFileDialog
+        chooser.Filter = "LPC Files (*.c)|*.c|All Files (*.*)|*.*"
+        chooser.FilterIndex = 0
+        chooser.ShowDialog()
+        If chooser.FileName = "" Then
+            Return
+        End If
+        Try
+            SaveToDisk(chooser.FileName)
+        Catch ex As IO.IOException
+            MsgBox("Sorry, there was an error saving the file, check that it exists and that you have read/write privelages.", MsgBoxStyle.Critical, "Could not save file.")
+            WriteToLog("There was an error saving the file: " & ex.Message, levels.warning)
+        End Try
+        filePath = chooser.FileName
+        Me.Text = filePath + " - Dead Souls Room Editor"
+    End Sub
+
+    Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
+        Select Case MsgBox("Save changes before quitting?", MsgBoxStyle.YesNoCancel, "Save changes?")
+            Case Is = MsgBoxResult.Yes
+                If SaveToDisk(filePath) Then
+                    Close()
+                End If
+            Case Is = MsgBoxResult.No
+                Close()
+        End Select
+    End Sub
+
+    Private Sub NewRoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewRoomToolStripMenuItem.Click
+        filePath = ""
+        RoomEditor_Load(New Object, New EventArgs)
+    End Sub
+
+    Private Sub OpenRoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenRoomToolStripMenuItem.Click
+        Dim chooser As New OpenFileDialog
+        chooser.Filter = "LPC Files (*.c)|*.c|All Files (*.*)|*.*"
+        chooser.FilterIndex = 0
+        chooser.ShowDialog()
+        If chooser.FileName = "" Then
+            Return
+        End If
+        filePath = chooser.FileName
+        RoomEditor_Load(New Object, New EventArgs)
     End Sub
 End Class

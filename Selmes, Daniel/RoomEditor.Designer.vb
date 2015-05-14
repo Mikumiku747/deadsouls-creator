@@ -133,25 +133,30 @@ Partial Class RoomEditor
         'NewRoomToolStripMenuItem
         '
         Me.NewRoomToolStripMenuItem.Name = "NewRoomToolStripMenuItem"
-        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.NewRoomToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.NewRoomToolStripMenuItem.Text = "New room"
         '
         'OpenRoomToolStripMenuItem
         '
         Me.OpenRoomToolStripMenuItem.Name = "OpenRoomToolStripMenuItem"
-        Me.OpenRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.OpenRoomToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.OpenRoomToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.OpenRoomToolStripMenuItem.Text = "Open room..."
         '
         'SaveRoomToolStripMenuItem
         '
         Me.SaveRoomToolStripMenuItem.Name = "SaveRoomToolStripMenuItem"
-        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.SaveRoomToolStripMenuItem.Text = "Save room..."
+        Me.SaveRoomToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.SaveRoomToolStripMenuItem.Text = "Save room"
         '
         'SaveRoomAsToolStripMenuItem
         '
         Me.SaveRoomAsToolStripMenuItem.Name = "SaveRoomAsToolStripMenuItem"
-        Me.SaveRoomAsToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.SaveRoomAsToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveRoomAsToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.SaveRoomAsToolStripMenuItem.Text = "Save room as..."
         '
         'ToolStripSeparator1
@@ -163,7 +168,7 @@ Partial Class RoomEditor
         '
         Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'EditToolStripMenuItem

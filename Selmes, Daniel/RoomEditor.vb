@@ -99,6 +99,28 @@ Public Class RoomEditor
         Catch ex As StringNotFoundException
             ItemsTextBox.Text = ""
         End Try
+
+        'Smells
+        Try
+            SmellsTextBox.Text = GetBetween(file, "SetSmells(", ");")
+        Catch ex As StringNotFoundException
+            SmellsTextBox.Text = ""
+        End Try
+
+        'sounds
+        Try
+            SoundsTextBox.Text = GetBetween(file, "SetSounds(", ");")
+        Catch ex As StringNotFoundException
+            SoundsTextBox.Text = ""
+        End Try
+
+        'Searches
+        Try
+            SearchesTextBox.Text = GetBetween(file, "SetSearches(", ");")
+        Catch ex As StringNotFoundException
+            SoundsTextBox.Text = ""
+        End Try
+
     End Sub
 
     Private Sub LightLevelTrackBar_Scroll(sender As Object, e As EventArgs) Handles LightLevelTrackBar.Scroll
@@ -198,5 +220,17 @@ Public Class RoomEditor
             SearchesTextBox.Text = mappingEditor.dialogValue
         End If
         mappingEditor.Close()
+    End Sub
+
+    Private Sub EditObjectsButton_Click(sender As Object, e As EventArgs) Handles EditObjectsButton.Click
+        Dim mappingEditor As New MappingEditorSF
+        mappingEditor.dialogValue = ObjectsTextBox.Text
+        If mappingEditor.dialogValue = "" Then
+            mappingEditor.dialogValue = "([""north"":""domains/example/room/kitchen.c"", ""south"":""/domains/example/room/basement.c""])"
+        End If
+        mappingEditor.ShowDialog()
+        If mappingEditor.dialogValue <> "CANCEL" Or mappingEditor.dialogValue <> "EMPTY" Then
+            ObjectsTextBox.Text = mappingEditor.dialogValue
+        End If
     End Sub
 End Class

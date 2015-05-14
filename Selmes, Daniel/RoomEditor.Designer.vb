@@ -29,6 +29,7 @@ Partial Class RoomEditor
         Me.SaveRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveRoomAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
@@ -86,7 +87,6 @@ Partial Class RoomEditor
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditSearchesButton = New System.Windows.Forms.Button()
         Me.SearchesTextBox = New System.Windows.Forms.TextBox()
-        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -158,6 +158,13 @@ Partial Class RoomEditor
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(150, 6)
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'EditToolStripMenuItem
         '
@@ -818,13 +825,6 @@ Partial Class RoomEditor
         Me.SearchesTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.SearchesTextBox.Size = New System.Drawing.Size(151, 198)
         Me.SearchesTextBox.TabIndex = 1
-        '
-        'QuitToolStripMenuItem
-        '
-        Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
-        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
-        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'RoomEditor
         '

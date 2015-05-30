@@ -122,9 +122,17 @@ Public Class RoomEditor
             SearchesTextBox.Text = ""
         End Try
 
+        'Objects
         Try
             ObjectsTextBox.Text = GetBetween(file, "SetObjects(", ");")
-        Catch ex As Exception
+        Catch ex As StringNotFoundException
+            ObjectsTextBox.Text = ""
+        End Try
+
+        'Exits
+        Try
+            ExitsTextBox.Text = GetBetween(file, "SetExits(", ");")
+        Catch ex As StringNotFoundException
             ObjectsTextBox.Text = ""
         End Try
 
@@ -239,15 +247,7 @@ Public Class RoomEditor
     End Sub
 
     Private Sub EditObjectsButton_Click(sender As Object, e As EventArgs) Handles EditObjectsButton.Click
-        Dim mappingEditor As New MappingEditorSF
-        mappingEditor.dialogValue = ObjectsTextBox.Text
-        If mappingEditor.dialogValue = "" Then
-            mappingEditor.dialogValue = "([""north"":""domains/example/room/kitchen.c"", ""south"":""/domains/example/room/basement.c""])"
-        End If
-        mappingEditor.ShowDialog()
-        If mappingEditor.dialogValue <> "CANCEL" Or mappingEditor.dialogValue <> "EMPTY" Then
-            ObjectsTextBox.Text = mappingEditor.dialogValue
-        End If
+
     End Sub
 
     Private Function SaveToDisk(pathtosaveto As String)
@@ -401,6 +401,28 @@ Public Class RoomEditor
                 stringtosave = firstpart & vbNewLine & "SetSearch(" & SearchesTextBox.Text & ");" & lastpart
             End Try
         End If
+        'Exits
+        If ExitsTextBox.Text <> "" Then
+            Try
+                stringtosave = SetBetween(stringtosave, "SetExits(", ");", ExitsTextBox.Text)
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetExits(" & ExitsTextBox.Text & ");" & lastpart
+            End Try
+        End If
+        'Enters
+        If EntersTextBox.Text <> "" Then
+            Try
+                stringtosave = SetBetween(stringtosave, "SetEnters(", ");", EntersTextBox.Text)
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetEnters(" & EntersTextBox.Text & ");" & lastpart
+            End Try
+        End If
         'Acutal saving of the string to the file
         My.Computer.FileSystem.WriteAllText(pathtosaveto, stringtosave, False, System.Text.Encoding.Default)
         'Update status message
@@ -462,5 +484,31 @@ Public Class RoomEditor
         filePath = chooser.FileName
         RoomEditor_Load(New Object, New EventArgs)
         WindowStatusString.Text = "Loaded file from " & chooser.FileName
+    End Sub
+
+    Private Sub EditExitsButton_Click(sender As Object, e As EventArgs) Handles EditExitsButton.Click
+        Dim mappingEditor As New MappingEditorSF
+        mappingEditor.fileTypeName = "room"
+        mappingEditor.dialogValue = ExitsTextBox.Text
+        If mappingEditor.dialogValue = "" Then
+            mappingEditor.dialogValue = "([""north"":""domains/example/room/kitchen.c"", ""south"":""/domains/example/room/basement.c""])"
+        End If
+        mappingEditor.ShowDialog()
+        If mappingEditor.dialogValue <> "CANCEL" And mappingEditor.dialogValue <> "EMPTY" Then
+            ExitsTextBox.Text = mappingEditor.dialogValue
+        End If
+    End Sub
+
+    Private Sub EditEntersButton_Click(sender As Object, e As EventArgs) Handles EditEntersButton.Click
+        Dim mappingEditor As New MappingEditorSF
+        mappingEditor.fileTypeName = "room"
+        mappingEditor.dialogValue = EntersTextBox.Text
+        If mappingEditor.dialogValue = "" Then
+            mappingEditor.dialogValue = "([""window"":""domains/example/room/kitchen.c"", ""trapdoor"":""/domains/example/room/basement.c""])"
+        End If
+        mappingEditor.ShowDialog()
+        If mappingEditor.dialogValue <> "CANCEL" And mappingEditor.dialogValue <> "EMPTY" Then
+            EntersTextBox.Text = mappingEditor.dialogValue
+        End If
     End Sub
 End Class

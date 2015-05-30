@@ -13,6 +13,11 @@ Public Class MappingEditorSF
     ''' </summary>
     Public fileList As List(Of String) = Nothing
 
+    ''' <summary>
+    ''' A string describing the type of file this dialog is mapping. As an exmaple, for editing exits, it would be "Room" files
+    ''' </summary>
+    Public fileTypeName As String = "resource"
+
     Dim currentItem As Integer = 0
     Dim cleanValues As New List(Of String)
     Dim cleanKeys As New List(Of String)
@@ -108,6 +113,16 @@ Public Class MappingEditorSF
             values(Array.IndexOf(values, value)) = ReQuote(value)
         Next
         dialogValue = CompileMapping(keys, values)
+        Close()
+    End Sub
+
+    Private Sub ChooseFileButton_Click(sender As Object, e As EventArgs) Handles ChooseFileButton.Click
+        Dim chooser As New OpenFileDialog
+        chooser.Title = "Choose a " & fileTypeName & " file."
+    End Sub
+
+    Private Sub CancelButton_Click(sender As Object, e As EventArgs) Handles CancelButton.Click
+        dialogValue = "CANCEL"
         Close()
     End Sub
 End Class

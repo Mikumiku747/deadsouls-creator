@@ -253,9 +253,9 @@ Public Class RoomEditor
     Private Function SaveToDisk(pathtosaveto As String)
         Dim stringtosave As String
         Try
-            stringtosave = My.Computer.FileSystem.ReadAllText(System.IO.Directory.GetCurrentDirectory & "\Resources\RoomTemplate.c")
+            stringtosave = file
         Catch ex As Exception
-            MsgBox("Sorry, there was an error loading the room template. Try re-installing the program, or contant support if that doesn't resolve the issue.", MsgBoxStyle.Critical, "Critical Error")
+            MsgBox("Sorry, there was an error loading the file your were editing. Check the file still exists and that you can edit it.", MsgBoxStyle.Critical, "Critical Error")
             WriteToLog("Failed to load template error for room file! Aborting save...", levels.warning)
             Return False
         End Try
@@ -265,7 +265,14 @@ Public Class RoomEditor
             ShortDescriptionBox.Focus()
             Return False
         End If
-        stringtosave = SetBetween(stringtosave, "SetShort(", ");", ReQuote(ShortDescriptionBox.Text))
+        Try
+            stringtosave = SetBetween(stringtosave, "SetShort(", ");", ReQuote(ShortDescriptionBox.Text))
+        Catch ex As StringNotFoundException
+            'Insert the string we need under the super call
+            Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+            Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+            stringtosave = firstpart & vbNewLine & "SetShort(" & ReQuote(ShortDescriptionBox.Text) & ");" & lastpart
+        End Try
         'Long desc
         If LongDescriptionBox.Text = "" Then
             MsgBox("You must enter something for the long/day description.", MsgBoxStyle.Critical, "Invalid Long description")
@@ -278,40 +285,127 @@ Public Class RoomEditor
             Return False
         End If
         If NightDescriptionEnabledCheckbox.Checked Then
-            stringtosave = SetBetween(stringtosave, "SetDayLong(", ");", ReQuote(LongDescriptionBox.Text))
-            stringtosave = SetBetween(stringtosave, "SetNightLong(", ");", ReQuote(NightDescriptionTextBox.Text))
+            Try
+                stringtosave = SetBetween(stringtosave, "SetDayLong(", ");", ReQuote(LongDescriptionBox.Text))
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetDayLong(" & ReQuote(LongDescriptionBox.Text) & ");" & lastpart
+            End Try
+            Try
+                stringtosave = SetBetween(stringtosave, "SetNightLong(", ");", ReQuote(NightDescriptionTextBox.Text))
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetNightLong(" & ReQuote(NightDescriptionTextBox.Text) & ");" & lastpart
+            End Try
         Else
-            stringtosave = SetBetween(stringtosave, "SetDayLong(", ");", ReQuote(LongDescriptionBox.Text))
-            stringtosave = SetBetween(stringtosave, "SetNightLong(", ");", ReQuote(LongDescriptionBox.Text))
+            Try
+                stringtosave = SetBetween(stringtosave, "SetDayLong(", ");", ReQuote(LongDescriptionBox.Text))
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetDayLong(" & ReQuote(LongDescriptionBox.Text) & ");" & lastpart
+            End Try
+            Try
+                stringtosave = SetBetween(stringtosave, "SetNightLong(", ");", ReQuote(LongDescriptionBox.Text))
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetNightLong(" & ReQuote(LongDescriptionBox.Text) & ");" & lastpart
+            End Try
         End If
         'Light
-        stringtosave = SetBetween(stringtosave, "SetProperty(""light"",", ");", LightLevelTrackBar.Value.ToString)
+        Try
+            stringtosave = SetBetween(stringtosave, "SetProperty(""light"",", ");", LightLevelTrackBar.Value.ToString)
+        Catch ex As StringNotFoundException
+            'Insert the string we need under the super call
+            Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+        Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+            stringtosave = firstpart & vbNewLine & "SetProperty(""light""," & LightLevelTrackBar.Value.ToString & ");" & lastpart
+        End Try
         'Climate
-        stringtosave = SetBetween(stringtosave, "SetClimate(", ");", ReQuote(ClimateComboBox.SelectedItem))
+        Try
+            stringtosave = SetBetween(stringtosave, "SetClimate(", ");", ReQuote(ClimateComboBox.SelectedItem))
+        Catch ex As StringNotFoundException
+            'Insert the string we need under the super call
+            Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+            Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+            stringtosave = firstpart & vbNewLine & "SetClimate(" & ReQuote(ClimateComboBox.SelectedItem) & ");" & lastpart
+        End Try
         'Gravity
-        stringtosave = SetBetween(stringtosave, "SetGravity(", ");", GravityTrackBar.Value.ToString)
+        Try
+            stringtosave = SetBetween(stringtosave, "SetGravity(", ");", GravityTrackBar.Value.ToString)
+        Catch ex As StringNotFoundException
+            'Insert the string we need under the super call
+            Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+            Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+            stringtosave = firstpart & vbNewLine & "SetGravity(" & GravityTrackBar.Value.ToString & ");" & lastpart
+        End Try
         'Town
         If TownTextBox.Text <> "" Then
-            stringtosave = SetBetween(stringtosave, "SetTown(", ");", TownTextBox.Text)
+            Try
+                stringtosave = SetBetween(stringtosave, "SetTown(", ");", ReQuote(TownTextBox.Text))
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetTown(" & ReQuote(TownTextBox.Text) & ");" & lastpart
+            End Try
         End If
         'Items
         If ItemsTextBox.Text <> "" Then
-            stringtosave = SetBetween(stringtosave, "SetItems(", ");", ItemsTextBox.Text)
+            Try
+                stringtosave = SetBetween(stringtosave, "SetItems(", ");", ItemsTextBox.Text)
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetItems(" & ItemsTextBox.Text & ");" & lastpart
+            End Try
         End If
         'Smells
         If SmellsTextBox.Text <> "" Then
-            stringtosave = SetBetween(stringtosave, "SetSmell(", ");", SmellsTextBox.Text)
+            Try
+                stringtosave = SetBetween(stringtosave, "SetSmell(", ");", SmellsTextBox.Text)
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetSmell(" & SmellsTextBox.Text & ");" & lastpart
+            End Try
         End If
         'Sounds
         If SoundsTextBox.Text <> "" Then
-            stringtosave = SetBetween(stringtosave, "SetListen(", ");", SoundsTextBox.Text)
+            Try
+                stringtosave = SetBetween(stringtosave, "SetListen(", ");", SoundsTextBox.Text)
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetListen(" & SoundsTextBox.Text & ");" & lastpart
+            End Try
         End If
         'Searches
         If SearchesTextBox.Text <> "" Then
-            stringtosave = SetBetween(stringtosave, "SetSearch(", ");", SearchesTextBox.Text)
+            Try
+                stringtosave = SetBetween(stringtosave, "SetSearch(", ");", SearchesTextBox.Text)
+            Catch ex As StringNotFoundException
+                'Insert the string we need under the super call
+                Dim firstpart As String = stringtosave.Substring(0, stringtosave.IndexOf("room::create();") + 15)
+                Dim lastpart As String = stringtosave.Substring(stringtosave.IndexOf("room::create();") + 15)
+                stringtosave = firstpart & vbNewLine & "SetSearch(" & SearchesTextBox.Text & ");" & lastpart
+            End Try
         End If
         'Acutal saving of the string to the file
         My.Computer.FileSystem.WriteAllText(pathtosaveto, stringtosave, False, System.Text.Encoding.Default)
+        'Update status message
+        WindowStatusString.Text = "Sucessfully saved to " & pathtosaveto
+        file = stringtosave
         Return True
     End Function
 
@@ -333,7 +427,7 @@ Public Class RoomEditor
         End If
         Try
             SaveToDisk(chooser.FileName)
-        Catch ex As IO.IOException
+        Catch ex As Exception When TypeOf (ex) Is IO.IOException Or TypeOf (ex) Is System.UnauthorizedAccessException
             MsgBox("Sorry, there was an error saving the file, check that it exists and that you have read/write privelages.", MsgBoxStyle.Critical, "Could not save file.")
             WriteToLog("There was an error saving the file: " & ex.Message, levels.warning)
         End Try
@@ -367,5 +461,6 @@ Public Class RoomEditor
         End If
         filePath = chooser.FileName
         RoomEditor_Load(New Object, New EventArgs)
+        WindowStatusString.Text = "Loaded file from " & chooser.FileName
     End Sub
 End Class

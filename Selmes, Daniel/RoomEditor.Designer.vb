@@ -148,7 +148,7 @@ Partial Class RoomEditor
         '
         Me.SaveRoomToolStripMenuItem.Name = "SaveRoomToolStripMenuItem"
         Me.SaveRoomToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.SaveRoomToolStripMenuItem.Size = New System.Drawing.Size(225, 22)
         Me.SaveRoomToolStripMenuItem.Text = "Save room"
         '
         'SaveRoomAsToolStripMenuItem
@@ -162,7 +162,7 @@ Partial Class RoomEditor
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(150, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(222, 6)
         '
         'QuitToolStripMenuItem
         '

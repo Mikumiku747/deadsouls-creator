@@ -94,9 +94,14 @@ Public Class MainApplicationWindow
         If ItemListBox.SelectedItem = "Craft new item..." Then
             'Create new item
             MsgBox("Creating new item in item editor...")
+            Dim itemeditor As New ItemEditor
+            itemeditor.Show()
         Else
             'Open the selected item in the armour editor
             MsgBox("Opening file " + ItemListBox.SelectedItem.ToString() + " in item editor...")
+            Dim itemeditor As New ItemEditor
+            itemeditor.filePath = "C:\ds\lib\domains\" + ItemListBox.SelectedItem
+            itemeditor.Show()
         End If
     End Sub
 

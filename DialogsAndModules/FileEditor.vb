@@ -4,8 +4,12 @@
 ''' <remarks>Mainly intended to be used as a dialog for editing raw file code.</remarks>
 Public Class FileEditor
 
+    ''' <summary>
+    ''' The value of the dialogbox, pass this a value before opening to set the dialog text, read it after closing to get the results
+    ''' </summary>
     Public dialogValue As String
-    Public tempValue As String
+
+    Private tempValue As String
 
     Private Sub FileEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tempValue = dialogValue

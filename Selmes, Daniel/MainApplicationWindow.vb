@@ -17,7 +17,6 @@ Public Class MainApplicationWindow
         'Select the "create new [thing]" option by default for all the file lists
         RoomsListBox.SelectedItem = "Build new room..."
         NPCListBox.SelectedItem = "Make new NPC..."
-        ShopkeeperListBox.SelectedItem = "Make new merchant..."
         WeaponsListBox.SelectedItem = "Forge new weapon..."
         ArmourListBox.SelectedItem = "Forge new armour..."
         ItemListBox.SelectedItem = "Craft new item..."
@@ -55,16 +54,6 @@ Public Class MainApplicationWindow
         End If
     End Sub
 
-    Private Sub EditShopkeeperButton_Click(sender As Object, e As EventArgs) Handles EditShopkeeperButton.Click
-        If ShopkeeperListBox.SelectedItem = "Make new merchant..." Then
-            'Create a new NPC
-            MsgBox("Creating a new shopkeeper in shopkeeper editor...")
-        Else
-            'Open the selected NPC in the NPC editor
-            MsgBox("Opening file " + ShopkeeperListBox.SelectedItem.ToString() + " in shopkeeper editor...")
-        End If
-    End Sub
-
     Private Sub EditWeaponButton_Click(sender As Object, e As EventArgs) Handles EditWeaponButton.Click
         If WeaponsListBox.SelectedItem = "Forge new weapon..." Then
             'Create a new weapon
@@ -93,12 +82,10 @@ Public Class MainApplicationWindow
     Private Sub EditItemButton_Click(sender As Object, e As EventArgs) Handles EditItemButton.Click
         If ItemListBox.SelectedItem = "Craft new item..." Then
             'Create new item
-            MsgBox("Creating new item in item editor...")
             Dim itemeditor As New ItemEditor
             itemeditor.Show()
         Else
             'Open the selected item in the armour editor
-            MsgBox("Opening file " + ItemListBox.SelectedItem.ToString() + " in item editor...")
             Dim itemeditor As New ItemEditor
             itemeditor.filePath = "C:\ds\lib\domains\" + ItemListBox.SelectedItem
             itemeditor.Show()

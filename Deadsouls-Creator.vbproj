@@ -151,9 +151,9 @@
     <Compile Include="Testing Stuff\ExampleListboxDesign.Designer.vb">
       <DependentUpon>ExampleListboxDesign.vb</DependentUpon>
     </Compile>
-    <Compile Include="Testing Stuff\ExampleListboxDesign.vb">
+    <None Include="Testing Stuff\ExampleListboxDesign.vb">
       <SubType>Form</SubType>
-    </Compile>
+    </None>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -178,9 +178,9 @@
     <Compile Include="Testing Stuff\TextFilterTesting.Designer.vb">
       <DependentUpon>TextFilterTesting.vb</DependentUpon>
     </Compile>
-    <Compile Include="Testing Stuff\TextFilterTesting.vb">
+    <None Include="Testing Stuff\TextFilterTesting.vb">
       <SubType>Form</SubType>
-    </Compile>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DialogsAndModules\AboutBox.resx">
@@ -246,6 +246,9 @@
     <None Include="Resources\redCrossIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\ItemTemplate.c">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\RoomTemplate.c">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -100,7 +100,7 @@
                 filepath = oldpath
                 Return
             End Try
-            'StatusLabel.Text = "Successfully saved " & filepath
+            StatusLabel.Text = "Successfully saved " & filepath
         End If
     End Sub
 
@@ -121,7 +121,7 @@
         'Actually save the file
         Try
             My.Computer.FileSystem.WriteAllText(filePath, stringtosave, False, System.Text.Encoding.Default)
-            'StatusLabel.Text = "Saved to " & filePath
+            StatusLabel.Text = "Saved to " & filepath
         Catch ex As Exception
             MsgBox("Failed to save the file, check it exists and you have write permission. Error: " & ex.Message)
             Return
@@ -162,7 +162,7 @@
                 file = My.Computer.FileSystem.ReadAllText(chooser.FileName)
                 filepath = chooser.FileName
                 loadFromFile()
-                'StatusLabel.Text = "Loaded from " & filepath
+                StatusLabel.Text = "Loaded from " & filepath
             Catch ex As Exception
                 MsgBox("Failed To open " & chooser.FileName & ", check it exists And that you have read/write permission.", MsgBoxStyle.Critical, "Failed To open room file")
                 Return

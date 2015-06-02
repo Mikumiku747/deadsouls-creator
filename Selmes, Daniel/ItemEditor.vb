@@ -223,7 +223,7 @@ Public Class ItemEditor
     Private Sub OpenItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenItemToolStripMenuItem.Click
         Dim chooser As New OpenFileDialog
         chooser.Title = "Open an item file..."
-        chooser.Filter = "LPC Room Files (*.c) | *.c "
+        chooser.Filter = "LPC Item Files (*.c)|*.c "
         chooser.ShowDialog()
         If chooser.FileName <> "" Then
             Try
@@ -259,6 +259,30 @@ Public Class ItemEditor
     End Sub
 
     Private Sub SaveItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveItemToolStripMenuItem.Click
-        SaveToFile()
+        If filePath = "NEW" Then
+            SaveItemAsToolStripMenuItem_Click(sender, e)
+        Else
+            SaveToFile()
+        End If
+    End Sub
+
+    Private Sub SaveItemAsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveItemAsToolStripMenuItem.Click
+        Dim chooser As New SaveFileDialog
+        chooser.Title = "Save item file to..."
+        chooser.Filter = "LPC Item Files (*.c)|*.c"
+        chooser.ShowDialog()
+        Dim oldpath As String = filePath
+        If chooser.FileName <> "" Then
+            Try
+                filePath = chooser.FileName
+                SaveToFile()
+            Catch ex As Exception
+                MsgBox("Failed to save file: " & ex.Message, MsgBoxStyle.Critical, "Error Saving file")
+                EZLogging.WriteToLog("Failed to save " & filePath & ": " & ex.Message, levels.warning)
+                filePath = oldpath
+                Return
+            End Try
+            StatusLabel.Text = "Successfully saved " & filePath
+        End If
     End Sub
 End Class

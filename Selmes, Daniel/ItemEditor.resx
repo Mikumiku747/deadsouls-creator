@@ -1246,34 +1246,34 @@
     <value>17, 17</value>
   </metadata>
   <data name="NewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="NewItemToolStripMenuItem.Text" xml:space="preserve">
     <value>New Item</value>
   </data>
   <data name="OpenItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="OpenItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Open Item...</value>
   </data>
   <data name="SaveItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="SaveItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Save Item</value>
   </data>
   <data name="SaveItemAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="SaveItemAsToolStripMenuItem.Text" xml:space="preserve">
     <value>Save Item as...</value>
   </data>
   <data name="ToolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="QuitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="QuitToolStripMenuItem.Text" xml:space="preserve">
     <value>Quit</value>

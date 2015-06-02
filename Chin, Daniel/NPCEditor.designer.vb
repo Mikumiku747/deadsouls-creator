@@ -34,7 +34,7 @@ Partial Class NPCEditor
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ID = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Name1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.NPCEquipped = New System.Windows.Forms.TextBox()
@@ -42,7 +42,7 @@ Partial Class NPCEditor
         Me.NPCObjects = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.LongDesc = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.LongDescription = New System.Windows.Forms.Label()
         Me.Adjectives = New System.Windows.Forms.TextBox()
@@ -50,9 +50,9 @@ Partial Class NPCEditor
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.CurrentHitPoints = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.HitPoints = New System.Windows.Forms.TextBox()
         Me.LevelLabel = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Level = New System.Windows.Forms.TrackBar()
@@ -86,7 +86,7 @@ Partial Class NPCEditor
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.31469!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.68531!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 247.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox3, 0, 1)
@@ -115,12 +115,12 @@ Partial Class NPCEditor
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.ID)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Name1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(318, 267)
+        Me.GroupBox1.Size = New System.Drawing.Size(317, 267)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "NPC Identity"
@@ -186,7 +186,7 @@ Partial Class NPCEditor
         Me.Race.Name = "Race"
         Me.Race.Size = New System.Drawing.Size(167, 21)
         Me.Race.TabIndex = 6
-        Me.Race.Text = "Dog"
+        Me.Race.Text = "Human"
         '
         'Label6
         '
@@ -214,13 +214,13 @@ Partial Class NPCEditor
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "ID"
         '
-        'TextBox1
+        'Name1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(10, 37)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(167, 20)
-        Me.TextBox1.TabIndex = 1
-        Me.TextBox1.Text = "Name of NPC"
+        Me.Name1.Location = New System.Drawing.Point(10, 37)
+        Me.Name1.Name = "Name1"
+        Me.Name1.Size = New System.Drawing.Size(167, 20)
+        Me.Name1.TabIndex = 1
+        Me.Name1.Text = "Name of NPC"
         '
         'Label2
         '
@@ -240,9 +240,9 @@ Partial Class NPCEditor
         Me.GroupBox2.Controls.Add(Me.NPCObjects)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox2.Location = New System.Drawing.Point(327, 3)
+        Me.GroupBox2.Location = New System.Drawing.Point(326, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(384, 267)
+        Me.GroupBox2.Size = New System.Drawing.Size(383, 267)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "NPC Inventory"
@@ -255,7 +255,7 @@ Partial Class NPCEditor
         Me.NPCEquipped.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.NPCEquipped.Size = New System.Drawing.Size(368, 58)
         Me.NPCEquipped.TabIndex = 3
-        Me.NPCEquipped.Text = "lit charge"
+        Me.NPCEquipped.Text = "none"
         '
         'equiplabel
         '
@@ -289,7 +289,7 @@ Partial Class NPCEditor
         '
         Me.GroupBox3.AutoSize = True
         Me.GroupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.GroupBox3.Controls.Add(Me.TextBox2)
+        Me.GroupBox3.Controls.Add(Me.LongDesc)
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.LongDescription)
         Me.GroupBox3.Controls.Add(Me.Adjectives)
@@ -298,20 +298,20 @@ Partial Class NPCEditor
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox3.Location = New System.Drawing.Point(3, 276)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(318, 292)
+        Me.GroupBox3.Size = New System.Drawing.Size(317, 292)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "NPC Description"
         '
-        'TextBox2
+        'LongDesc
         '
-        Me.TextBox2.Location = New System.Drawing.Point(9, 164)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(269, 68)
-        Me.TextBox2.TabIndex = 12
-        Me.TextBox2.Text = "The dog is biting ankles nursing its own nastiness under the floor boards of the " & _
+        Me.LongDesc.Location = New System.Drawing.Point(9, 164)
+        Me.LongDesc.Multiline = True
+        Me.LongDesc.Name = "LongDesc"
+        Me.LongDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.LongDesc.Size = New System.Drawing.Size(269, 68)
+        Me.LongDesc.TabIndex = 12
+        Me.LongDesc.Text = "The dog is biting ankles nursing its own nastiness under the floor boards of the " & _
     "pub it is said to have an army of mongrels"
         '
         'Label5
@@ -366,16 +366,16 @@ Partial Class NPCEditor
         Me.GroupBox4.AutoSize = True
         Me.GroupBox4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.GroupBox4.Controls.Add(Me.Label12)
-        Me.GroupBox4.Controls.Add(Me.TextBox4)
+        Me.GroupBox4.Controls.Add(Me.CurrentHitPoints)
         Me.GroupBox4.Controls.Add(Me.Label11)
-        Me.GroupBox4.Controls.Add(Me.TextBox3)
+        Me.GroupBox4.Controls.Add(Me.HitPoints)
         Me.GroupBox4.Controls.Add(Me.LevelLabel)
         Me.GroupBox4.Controls.Add(Me.Label9)
         Me.GroupBox4.Controls.Add(Me.Level)
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox4.Location = New System.Drawing.Point(327, 276)
+        Me.GroupBox4.Location = New System.Drawing.Point(326, 276)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(384, 292)
+        Me.GroupBox4.Size = New System.Drawing.Size(383, 292)
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "NPC Stats"
@@ -389,13 +389,13 @@ Partial Class NPCEditor
         Me.Label12.TabIndex = 6
         Me.Label12.Text = "Current Hitpoints"
         '
-        'TextBox4
+        'CurrentHitPoints
         '
-        Me.TextBox4.Location = New System.Drawing.Point(14, 148)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 5
-        Me.TextBox4.Text = "35"
+        Me.CurrentHitPoints.Location = New System.Drawing.Point(14, 148)
+        Me.CurrentHitPoints.Name = "CurrentHitPoints"
+        Me.CurrentHitPoints.Size = New System.Drawing.Size(100, 20)
+        Me.CurrentHitPoints.TabIndex = 5
+        Me.CurrentHitPoints.Text = "35"
         '
         'Label11
         '
@@ -406,13 +406,13 @@ Partial Class NPCEditor
         Me.Label11.TabIndex = 4
         Me.Label11.Text = "Max Hitpoints"
         '
-        'TextBox3
+        'HitPoints
         '
-        Me.TextBox3.Location = New System.Drawing.Point(14, 96)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 3
-        Me.TextBox3.Text = "40"
+        Me.HitPoints.Location = New System.Drawing.Point(14, 96)
+        Me.HitPoints.Name = "HitPoints"
+        Me.HitPoints.Size = New System.Drawing.Size(100, 20)
+        Me.HitPoints.TabIndex = 3
+        Me.HitPoints.Text = "40"
         '
         'LevelLabel
         '
@@ -446,9 +446,9 @@ Partial Class NPCEditor
         Me.GroupBox5.AutoSize = True
         Me.GroupBox5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox5.Location = New System.Drawing.Point(717, 276)
+        Me.GroupBox5.Location = New System.Drawing.Point(715, 276)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(240, 292)
+        Me.GroupBox5.Size = New System.Drawing.Size(242, 292)
         Me.GroupBox5.TabIndex = 5
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "NPC Misc"
@@ -460,9 +460,9 @@ Partial Class NPCEditor
         Me.GroupBox6.Controls.Add(Me.Button1)
         Me.GroupBox6.Controls.Add(Me.CombatCheck)
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox6.Location = New System.Drawing.Point(717, 3)
+        Me.GroupBox6.Location = New System.Drawing.Point(715, 3)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(240, 267)
+        Me.GroupBox6.Size = New System.Drawing.Size(242, 267)
         Me.GroupBox6.TabIndex = 6
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "NPC Combat"
@@ -507,30 +507,30 @@ Partial Class NPCEditor
         'NewNPCToolStripMenuItem
         '
         Me.NewNPCToolStripMenuItem.Name = "NewNPCToolStripMenuItem"
-        Me.NewNPCToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.NewNPCToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NewNPCToolStripMenuItem.Text = " New NPC file"
         '
         'OpenNPCFileToolStripMenuItem
         '
         Me.OpenNPCFileToolStripMenuItem.Name = "OpenNPCFileToolStripMenuItem"
-        Me.OpenNPCFileToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.OpenNPCFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.OpenNPCFileToolStripMenuItem.Text = "Open NPC file"
         '
         'SaveNPCFileToolStripMenuItem
         '
         Me.SaveNPCFileToolStripMenuItem.Name = "SaveNPCFileToolStripMenuItem"
-        Me.SaveNPCFileToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.SaveNPCFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveNPCFileToolStripMenuItem.Text = "Save NPC file"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(146, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'CloseFileToolStripMenuItem
         '
         Me.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem"
-        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.CloseFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CloseFileToolStripMenuItem.Text = "Close file"
         '
         'EditToolStripMenuItem
@@ -593,14 +593,14 @@ Partial Class NPCEditor
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ID As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Name1 As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents equiplabel As System.Windows.Forms.Label
     Friend WithEvents NPCObjects As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents NPCEquipped As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents LongDesc As System.Windows.Forms.TextBox
     Friend WithEvents LongDescription As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Adjectives As System.Windows.Forms.TextBox
@@ -619,9 +619,9 @@ Partial Class NPCEditor
     Friend WithEvents Language As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents CurrentHitPoints As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents HitPoints As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
     Friend WithEvents CombatCheck As System.Windows.Forms.CheckBox

@@ -140,6 +140,35 @@
         End Try
         Return final
     End Function
+
+    Private Sub NewNPCToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewNPCToolStripMenuItem.Click
+        Try
+            filepath = My.Computer.FileSystem.CurrentDirectory & "\Resources\NPCTemplate.c"
+            file = My.Computer.FileSystem.ReadAllText(filepath).Replace(vbLf, vbNewLine)
+            loadFromFile()
+            filepath = "NEW"
+        Catch ex As Exception
+            MsgBox("Failed to open the template file. Check the installation or contact support if the problem persists." & vbNewLine & vbNewLine & "More info: " & ex.Message, MsgBoxStyle.Critical, "Template Error")
+        End Try
+    End Sub
+
+    Private Sub OpenNPCFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenNPCFileToolStripMenuItem.Click
+        Dim chooser As New OpenFileDialog
+        chooser.Title = "Open an NPC file..."
+        chooser.Filter = "LPC Item Files (*.c)|*.c "
+        chooser.ShowDialog()
+        If chooser.FileName <> "" Then
+            Try
+                file = My.Computer.FileSystem.ReadAllText(chooser.FileName)
+                filepath = chooser.FileName
+                loadFromFile()
+                'StatusLabel.Text = "Loaded from " & filepath
+            Catch ex As Exception
+                MsgBox("Failed To open " & chooser.FileName & ", check it exists And that you have read/write permission.", MsgBoxStyle.Critical, "Failed To open room file")
+                Return
+            End Try
+        End If
+    End Sub
     Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
     End Sub
@@ -172,9 +201,6 @@
 
     End Sub
 
-    Private Sub NewNPCToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewNPCToolStripMenuItem.Click
-
-    End Sub
 
     Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
 

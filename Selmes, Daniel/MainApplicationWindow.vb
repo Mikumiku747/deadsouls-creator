@@ -13,6 +13,21 @@ Public Class MainApplicationWindow
         End If
 
         WriteToLog("Deadsouls Path: " & My.Settings.deadsouls_installation_path)
+        If My.Settings.deadsouls_installation_path = "NOINSTALLPATH" Then
+            RefreshFilesToolStripMenuItem.Enabled = False
+        End If
+
+        'Populate the list boxes from settings
+        RoomsListBox.Items.Clear()
+        RoomsListBox.Items.Add("Build new room...")
+        For Each room In My.Settings.rooms_list
+            RoomsListBox.Items.Add(room)
+        Next
+        ItemListBox.Items.Clear()
+        ItemListBox.Items.Add("Build new room...")
+        For Each room In My.Settings.items_list
+            ItemListBox.Items.Add(room)
+        Next
 
         'Select the "create new [thing]" option by default for all the file lists
         RoomsListBox.SelectedItem = "Build new room..."
@@ -35,7 +50,7 @@ Public Class MainApplicationWindow
         Else
             'Open the selected room in the room editor
             Dim roomeditor As New RoomEditor()
-            roomeditor.filePath = "C:\ds\lib\domains\" + RoomsListBox.SelectedItem
+            roomeditor.filePath = RoomsListBox.SelectedItem
             roomeditor.Show()
         End If
     End Sub
@@ -77,6 +92,12 @@ Public Class MainApplicationWindow
     Private Sub DeadsoulsInstallationPathToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeadsoulsInstallationPathToolStripMenuItem.Click
         Dim path_dialog As New ds_path_dialog
         path_dialog.ShowDialog()
+        WriteToLog("Deadsouls Path: " & My.Settings.deadsouls_installation_path)
+        If My.Settings.deadsouls_installation_path = "NOINSTALLPATH" Then
+            RefreshFilesToolStripMenuItem.Enabled = False
+        Else
+            RefreshFilesToolStripMenuItem.Enabled = True
+        End If
     End Sub
 
     Private Sub EditItemButton_Click(sender As Object, e As EventArgs) Handles EditItemButton.Click
@@ -87,12 +108,26 @@ Public Class MainApplicationWindow
         Else
             'Open the selected item in the armour editor
             Dim itemeditor As New ItemEditor
-            itemeditor.filePath = "C:\ds\lib\domains\" + ItemListBox.SelectedItem
+            itemeditor.filePath = ItemListBox.SelectedItem
             itemeditor.Show()
         End If
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         AboutBox.ShowDialog()
+    End Sub
+
+    Private Sub RefreshFilesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RefreshFilesToolStripMenuItem.Click
+        FileScanDialog.ShowDialog()
+        RoomsListBox.Items.Clear()
+        RoomsListBox.Items.Add("Build new room...")
+        For Each room In My.Settings.rooms_list
+            RoomsListBox.Items.Add(room)
+        Next
+        ItemListBox.Items.Clear()
+        ItemListBox.Items.Add("Build new room...")
+        For Each room In My.Settings.items_list
+            ItemListBox.Items.Add(room)
+        Next
     End Sub
 End Class

@@ -111,6 +111,12 @@
     <Compile Include="DialogsAndModules\FileEditor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DialogsAndModules\FileScanDialog.Designer.vb">
+      <DependentUpon>FileScanDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogsAndModules\FileScanDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogsAndModules\LPCParsing.vb" />
     <Compile Include="DialogsAndModules\MappingEditorSF.Designer.vb">
       <DependentUpon>MappingEditorSF.vb</DependentUpon>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\FileEditor.resx">
       <DependentUpon>FileEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogsAndModules\FileScanDialog.resx">
+      <DependentUpon>FileScanDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\MappingEditorSF.resx">
       <DependentUpon>MappingEditorSF.vb</DependentUpon>

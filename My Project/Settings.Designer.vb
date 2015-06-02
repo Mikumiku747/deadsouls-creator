@@ -68,12 +68,56 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property domains_list() As Global.System.Collections.Specialized.ListDictionary
+        Public Property rooms_list() As Global.System.Collections.Specialized.StringCollection
             Get
-                Return CType(Me("domains_list"),Global.System.Collections.Specialized.ListDictionary)
+                Return CType(Me("rooms_list"),Global.System.Collections.Specialized.StringCollection)
             End Get
             Set
-                Me("domains_list") = value
+                Me("rooms_list") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property items_list() As Global.System.Collections.Specialized.StringCollection
+            Get
+                Return CType(Me("items_list"),Global.System.Collections.Specialized.StringCollection)
+            End Get
+            Set
+                Me("items_list") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property NPC_list() As Global.System.Collections.Specialized.StringCollection
+            Get
+                Return CType(Me("NPC_list"),Global.System.Collections.Specialized.StringCollection)
+            End Get
+            Set
+                Me("NPC_list") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property weapon_list() As Global.System.Collections.Specialized.StringCollection
+            Get
+                Return CType(Me("weapon_list"),Global.System.Collections.Specialized.StringCollection)
+            End Get
+            Set
+                Me("weapon_list") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property armour_list() As Global.System.Collections.Specialized.StringCollection
+            Get
+                Return CType(Me("armour_list"),Global.System.Collections.Specialized.StringCollection)
+            End Get
+            Set
+                Me("armour_list") = value
             End Set
         End Property
     End Class

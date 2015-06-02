@@ -162,8 +162,8 @@ Public Class ItemEditor
             final = SetBetween(final, start, end_, middle)
         Catch ex As StringNotFoundException
             'Insert the string we need under the super call
-            Dim firstpart As String = final.Substring(0, final.IndexOf(" : create();") + 15)
-            Dim lastpart As String = final.Substring(final.IndexOf("::create();") + 15)
+            Dim firstpart As String = final.Substring(0, final.IndexOf("::create();") + 9)
+            Dim lastpart As String = final.Substring(final.IndexOf("::create();") + 10)
             final = firstpart & vbNewLine & start & middle & end_ & lastpart
         End Try
         Return final
@@ -202,10 +202,15 @@ Public Class ItemEditor
             MsgBox("You need to save the file before you can edit the code. Please save first.", MsgBoxStyle.Information, "Error opening code for editing")
         Else
             Dim lpceditor As New FileEditor
+            Try
+                file = My.Computer.FileSystem.ReadAllText(filePath).Replace(vbLf, vbNewLine)
+            Catch ex As Exception
+                MsgBox("Failed to open the code file properly. Check file exists and is accessible.", MsgBoxStyle.Critical)
+            End Try
             lpceditor.dialogValue = file
             lpceditor.Text = "LPC Code editor: " & filePath
             lpceditor.ShowDialog()
-            file = lpceditor.dialogValue
+            file = lpceditor.dialogValue.Replace(vbLf, vbNewLine)
         End If
     End Sub
 
@@ -223,7 +228,7 @@ Public Class ItemEditor
     Private Sub OpenItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenItemToolStripMenuItem.Click
         Dim chooser As New OpenFileDialog
         chooser.Title = "Open an item file..."
-        chooser.Filter = "LPC Item Files (*.c)|*.c "
+        chooser.Filter = "LPC Item Files (*.c)|*.c"
         chooser.ShowDialog()
         If chooser.FileName <> "" Then
             Try

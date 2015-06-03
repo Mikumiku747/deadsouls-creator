@@ -84,10 +84,15 @@ Public Class MainApplicationWindow
     Private Sub EditArmourButton_Click(sender As Object, e As EventArgs) Handles EditArmourButton.Click
         If ArmourListBox.SelectedItem = "Forge new armour..." Then
             'Create new armour
-            MsgBox("Creating new armour in armour editor...")
+            ' MsgBox("Creating new armour in armour editor...")
+            Dim armour As New Armour
+            armour.Show()
         Else
             'Open the selected armour in the armour editor
-            MsgBox("Opening file " + ArmourListBox.SelectedItem.ToString() + " in armour editor...")
+            ' MsgBox("Opening file " + ArmourListBox.SelectedItem.ToString() + " in armour editor...")
+            Dim armour As New Armour
+            armour.filepath = ArmourListBox.SelectedItem
+            armour.Show()
         End If
     End Sub
 

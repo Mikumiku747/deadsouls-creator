@@ -1,4 +1,4 @@
-﻿Public Class WeaponEditor
+﻿Public Class Armour
 
     Public filepath As String
 
@@ -8,7 +8,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If filepath = "" Then
             Try
-                filepath = My.Computer.FileSystem.CurrentDirectory & "\Resources\WeaponTemplate.c"
+                filepath = My.Computer.FileSystem.CurrentDirectory & "\Resources\ArmourTemplate.c"
                 file = My.Computer.FileSystem.ReadAllText(filepath).Replace(vbLf, vbNewLine)
                 loadFromFile()
                 filepath = "NEW"
@@ -16,7 +16,7 @@
                 MsgBox("Failed to open the template file. Check the installation or contact support if the problem persists." & vbNewLine & vbNewLine & "More info: " & ex.Message, MsgBoxStyle.Critical, "Template Error")
             End Try
         Else
-            Text = filepath & " - Weapon editor - Deadsouls Creator"
+            Text = filepath & " - Armour editor - Deadsouls Creator"
             loadFromFile()
         End If
     End Sub
@@ -27,66 +27,61 @@
             file = My.Computer.FileSystem.ReadAllText(filePath).Replace(vbLf, vbNewLine)
         Catch ex As StringNotFoundException
             MsgBox("Failed to open the file, check that it exists and you have read/write access.", MsgBoxStyle.Critical, "Error opening file")
-            EZLogging.WriteToLog("Failed to load file " & filepath & ". Exiting Weapon editor", levels.critical)
+            EZLogging.WriteToLog("Failed to load file " & filepath & ". Exiting Armour editor", levels.critical)
             Close()
             Return
         End Try
         'Load all the properties
         Try
-            wepName.Text = GetBetween(file, "SetKeyName(""", """);")
+            armName.Text = GetBetween(file, "SetKeyName(""", """);")
         Catch ex As StringNotFoundException
-            wepName.Text = "Weapon name"
+            armName.Text = "Armour name"
         End Try
         Try
-            wepID.Text = GetBetween(file, "SetId(""", """);")
+            armID.Text = GetBetween(file, "SetId(""", """);")
         Catch ex As StringNotFoundException
-            wepID.Text = "ID"
+            armID.Text = "ID"
         End Try
         Try
-            wepAdjectives.Text = LPCArrayToCSV(GetBetween(file, "SetAdjectives(", ");"))
+            armAdjectives.Text = LPCArrayToCSV(GetBetween(file, "SetAdjectives(", ");"))
         Catch ex As StringNotFoundException
-            wepAdjectives.Text = "blanky blunt"
+            armAdjectives.Text = "blanky armour"
         End Try
         Try
-            wepShortDesc.Text = GetBetween(file, "SetShort(""", """);")
+            armShortDesc.Text = GetBetween(file, "SetShort(""", """);")
         Catch ex As StringNotFoundException
-            wepShortDesc.Text = "a weapon"
+            armShortDesc.Text = "armour"
         End Try
         Try
-            wepLongDesc.Text = GetBetween(file, "SetLong(""", """);")
+            armLongDesc.Text = GetBetween(file, "SetLong(""", """);")
         Catch ex As StringNotFoundException
-            wepLongDesc.Text = "a weapon that has no description"
+            armLongDesc.Text = "armour that has no description"
         End Try
 
         Try
-            wepMass.Text = GetBetween(file, "SetMass(""", """);")
+            armMass.Text = GetBetween(file, "SetMass(""", """);")
         Catch ex As StringNotFoundException
-            wepMass.Text = "0"
+            armMass.Text = "0"
         End Try
 
         Try
-            wepClassType.Text = GetBetween(file, "SetClass(""", """);")
+            armType.Text = GetBetween(file, "SetClass(""", """);")
         Catch ex As StringNotFoundException
-            wepClassType.Text = "5"
+            armType.Text = "A_ARMOR"
         End Try
 
         Try
-            wepDamageType.Text = GetBetween(file, "SetDamageType(""", """);")
+            armDamageType.Text = GetBetween(file, "SetProtection(""", """);")
         Catch ex As StringNotFoundException
-            wepDamageType.Text = "KNIFE"
+            armDamageType.Text = "BLUNT, 5"
         End Try
 
-        Try
-            wepType.Text = GetBetween(file, "SetWeaponType(""", """);")
-        Catch ex As StringNotFoundException
-            wepType.Text = "knife"
-        End Try
 
     End Sub
 
-    Private Sub SaveWeaponToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveWeaponToolStripMenuItem.Click
+    Private Sub SaveArmourToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveArmourToolStripMenuItem.Click
         Dim chooser As New SaveFileDialog
-        chooser.Title = "Save Weapon file to..."
+        chooser.Title = "Save Armour file to..."
         chooser.Filter = "LPC Item Files (*.c)|*.c"
         chooser.ShowDialog()
         Dim oldpath As String = filepath
@@ -108,14 +103,13 @@
         'Get the current file
         Dim stringtosave As String = file
         'Replace in each of the parts of the file, or add them if they don't exist
-        stringtosave = ReplaceOrCreate(stringtosave, "SetKeyName(", ReQuote(wepName.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetShort(", ReQuote(wepShortDesc.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetLong(", ReQuote(wepLongDesc.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetId(", CSVToLPCArray(wepID.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetAdjectives(", CSVToLPCArray(wepAdjectives.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetMass(", ReQuote(wepMass.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetDamageType(", ReQuote(wepDamageType.Text), ");")
-        stringtosave = ReplaceOrCreate(stringtosave, "SetWeaponType(", ReQuote(wepType.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetKeyName(", ReQuote(armName.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetShort(", ReQuote(armShortDesc.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetLong(", ReQuote(armLongDesc.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetId(", CSVToLPCArray(armID.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetAdjectives(", CSVToLPCArray(armAdjectives.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetMass(", ReQuote(armMass.Text), ");")
+        stringtosave = ReplaceOrCreate(stringtosave, "SetProtection(", ReQuote(armDamageType.Text), ");")
 
         'Actually save the file
         Try
@@ -140,9 +134,9 @@
         Return final
     End Function
 
-    Private Sub NewWeaponToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewWeaponToolStripMenuItem.Click
+    Private Sub NewArmourToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewArmourToolStripMenuItem.Click
         Try
-            filepath = My.Computer.FileSystem.CurrentDirectory & "\Resources\WeaponTemplate.c"
+            filepath = My.Computer.FileSystem.CurrentDirectory & "\Resources\ArmourTemplate.c"
             file = My.Computer.FileSystem.ReadAllText(filepath).Replace(vbLf, vbNewLine)
             loadFromFile()
             filepath = "NEW"
@@ -151,9 +145,9 @@
         End Try
     End Sub
 
-    Private Sub OpenWeaponToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenWeaponToolStripMenuItem.Click
+    Private Sub OpenArmourToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenArmourToolStripMenuItem.Click
         Dim chooser As New OpenFileDialog
-        chooser.Title = "Open a Weapon file..."
+        chooser.Title = "Open a Armour file..."
         chooser.Filter = "LPC Item Files (*.c)|*.c "
         chooser.ShowDialog()
         If chooser.FileName <> "" Then
@@ -184,20 +178,11 @@
             file = lpceditor.dialogValue.Replace(vbLf, vbNewLine)
         End If
     End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+    Private Sub Armour_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-
-    Private Sub wepName_TextChanged(sender As Object, e As EventArgs) Handles wepName.TextChanged
 
     End Sub
 End Class

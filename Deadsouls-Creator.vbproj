@@ -92,6 +92,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chin, Daniel\Armour.Designer.vb">
+      <DependentUpon>Armour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chin, Daniel\Armour.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Chin, Daniel\WeaponEditor.Designer.vb">
       <DependentUpon>WeaponEditor.vb</DependentUpon>
     </Compile>
@@ -195,6 +201,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Chin, Daniel\Armour.resx">
+      <DependentUpon>Armour.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chin, Daniel\WeaponEditor.resx">
       <DependentUpon>WeaponEditor.vb</DependentUpon>
     </EmbeddedResource>

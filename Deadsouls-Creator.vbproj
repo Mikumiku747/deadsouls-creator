@@ -92,6 +92,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chin, Daniel\WeaponEditor.Designer.vb">
+      <DependentUpon>WeaponEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chin, Daniel\WeaponEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DialogsAndModules\AboutBox.Designer.vb">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Chin, Daniel\WeaponEditor.resx">
+      <DependentUpon>WeaponEditor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogsAndModules\AboutBox.resx">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </EmbeddedResource>

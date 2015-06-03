@@ -58,24 +58,26 @@ Public Class MainApplicationWindow
     Private Sub EditNPCButton_Click(sender As Object, e As EventArgs) Handles EditNPCButton.Click
         If NPCListBox.SelectedItem = "Make new NPC..." Then
             'Create a new NPC
-            MsgBox("Creating a new NPC in NPC editor...")
             Dim editor As New NPCEditor
-            NPCEditor.Show()
+            editor.Show()
         Else
             'Open the selected NPC in the NPC editor
-            MsgBox("Opening file " + NPCListBox.SelectedItem.ToString() + " in NPC editor...")
             Dim editor As New NPCEditor
-            NPCEditor.Show()
+            editor.filepath = NPCListBox.SelectedItem
+            editor.Show()
         End If
     End Sub
 
     Private Sub EditWeaponButton_Click(sender As Object, e As EventArgs) Handles EditWeaponButton.Click
         If WeaponsListBox.SelectedItem = "Forge new weapon..." Then
             'Create a new weapon
-            MsgBox("Creating a new weapon in weapon editor...")
+            Dim weapon As New WeaponEditor
+            weapon.Show()
         Else
             'Open the selected weapon in the weapon editor
-            MsgBox("Opening file " + WeaponsListBox.SelectedItem.ToString() + " in weapon editor...")
+            Dim weapon As New WeaponEditor
+            weapon.filepath = WeaponsListBox.SelectedItem
+            weapon.Show()
         End If
     End Sub
 

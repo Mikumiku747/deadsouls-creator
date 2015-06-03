@@ -86,7 +86,7 @@
 
     Private Sub SaveNPCFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveNPCFileToolStripMenuItem.Click
         Dim chooser As New SaveFileDialog
-        chooser.Title = "Save item file to..."
+        chooser.Title = "Save NPC file to..."
         chooser.Filter = "LPC Item Files (*.c)|*.c"
         chooser.ShowDialog()
         Dim oldpath As String = filepath
@@ -167,6 +167,23 @@
                 MsgBox("Failed To open " & chooser.FileName & ", check it exists And that you have read/write permission.", MsgBoxStyle.Critical, "Failed To open room file")
                 Return
             End Try
+        End If
+    End Sub
+
+    Private Sub EditLPCCodeButton_Click(sender As Object, e As EventArgs) Handles EditLPCCodeButton.Click
+        If filePath = "NEW" Then
+            MsgBox("You need to save the file before you can edit the code. Please save first.", MsgBoxStyle.Information, "Error opening code for editing")
+        Else
+            Dim lpceditor As New FileEditor
+            Try
+                file = My.Computer.FileSystem.ReadAllText(filePath).Replace(vbLf, vbNewLine)
+            Catch ex As Exception
+                MsgBox("Failed to open the code file properly. Check file exists and is accessible.", MsgBoxStyle.Critical)
+            End Try
+            lpceditor.dialogValue = file
+            lpceditor.Text = "LPC Code editor: " & filePath
+            lpceditor.ShowDialog()
+            file = lpceditor.dialogValue.Replace(vbLf, vbNewLine)
         End If
     End Sub
     Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint

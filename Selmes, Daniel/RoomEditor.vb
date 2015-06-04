@@ -122,18 +122,11 @@ Public Class RoomEditor
             SearchesTextBox.Text = ""
         End Try
 
-        'Objects
-        Try
-            ObjectsTextBox.Text = GetBetween(file, "SetObjects(", ");")
-        Catch ex As StringNotFoundException
-            ObjectsTextBox.Text = ""
-        End Try
-
         'Exits
         Try
             ExitsTextBox.Text = GetBetween(file, "SetExits(", ");")
         Catch ex As StringNotFoundException
-            ObjectsTextBox.Text = ""
+            ExitsTextBox.Text = ""
         End Try
 
     End Sub
@@ -246,7 +239,7 @@ Public Class RoomEditor
         mappingEditor.Close()
     End Sub
 
-    Private Sub EditObjectsButton_Click(sender As Object, e As EventArgs) Handles EditObjectsButton.Click
+    Private Sub EditObjectsButton_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -488,10 +481,17 @@ Public Class RoomEditor
 
     Private Sub EditExitsButton_Click(sender As Object, e As EventArgs) Handles EditExitsButton.Click
         Dim mappingEditor As New MappingEditorSF
+        mappingEditor.Text = "Set Room Exits"
         mappingEditor.fileTypeName = "room"
+        mappingEditor.AddButton.Text = "Add Direction"
+        mappingEditor.RemoveButton.Text = "Remove Direction"
         mappingEditor.dialogValue = ExitsTextBox.Text
+        mappingEditor.fileList = New List(Of String)
+        For Each room In My.Settings.rooms_list
+            mappingEditor.fileList.Add(room)
+        Next
         If mappingEditor.dialogValue = "" Then
-            mappingEditor.dialogValue = "([""north"":""domains/example/room/kitchen.c"", ""south"":""/domains/example/room/basement.c""])"
+            mappingEditor.dialogValue = "([""north"":""C:\ds\lib\domains\example\room\kitchen.c"", ""south"":""C:\ds\lib\domains\example\room\basement.c""])"
         End If
         mappingEditor.ShowDialog()
         If mappingEditor.dialogValue <> "CANCEL" And mappingEditor.dialogValue <> "EMPTY" Then
@@ -501,10 +501,17 @@ Public Class RoomEditor
 
     Private Sub EditEntersButton_Click(sender As Object, e As EventArgs) Handles EditEntersButton.Click
         Dim mappingEditor As New MappingEditorSF
+        mappingEditor.Text = "Set Entrances"
         mappingEditor.fileTypeName = "room"
+        mappingEditor.AddButton.Text = "Add Entrance"
+        mappingEditor.RemoveButton.Text = "Remove Entrance"
         mappingEditor.dialogValue = EntersTextBox.Text
+        mappingEditor.fileList = New List(Of String)
+        For Each room In My.Settings.rooms_list
+            mappingEditor.fileList.Add(room)
+        Next
         If mappingEditor.dialogValue = "" Then
-            mappingEditor.dialogValue = "([""window"":""domains/example/room/kitchen.c"", ""trapdoor"":""/domains/example/room/basement.c""])"
+            mappingEditor.dialogValue = "([""window"":""C:\ds\lib\domains\example\room\kitchen.c"", ""trapdoor"":""C:\ds\lib\domains\example\room\basement.c""])"
         End If
         mappingEditor.ShowDialog()
         If mappingEditor.dialogValue <> "CANCEL" And mappingEditor.dialogValue <> "EMPTY" Then

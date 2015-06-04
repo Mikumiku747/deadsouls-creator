@@ -18,16 +18,20 @@ Public Class MainApplicationWindow
         End If
 
         'Populate the list boxes from settings
-        ' RoomsListBox.Items.Clear()
-        'RoomsListBox.Items.Add("Build new room...")
-        'For Each room In My.Settings.rooms_list
-        'RoomsListBox.Items.Add(room)
-        'Next
-        'ItemListBox.Items.Clear()
-        'ItemListBox.Items.Add("Build new room...")
-        'For Each room In My.Settings.items_list
-        'ItemListBox.Items.Add(room)
-        ' Next
+        Try
+            RoomsListBox.Items.Clear()
+            RoomsListBox.Items.Add("Build new room...")
+            For Each room In My.Settings.rooms_list
+                RoomsListBox.Items.Add(room)
+            Next
+            ItemListBox.Items.Clear()
+            ItemListBox.Items.Add("Build new room...")
+            For Each room In My.Settings.items_list
+                ItemListBox.Items.Add(room)
+            Next
+        Catch ex As Exception
+            MsgBox("Something went wrong loading the file lists, you can go to ""Domain > Refresh Files"" to fix it.", MsgBoxStyle.Information)
+        End Try
 
         'Select the "create new [thing]" option by default for all the file lists
         RoomsListBox.SelectedItem = "Build new room..."

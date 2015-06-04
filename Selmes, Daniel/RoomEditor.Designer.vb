@@ -34,10 +34,6 @@ Partial Class RoomEditor
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.DoorsGroupBox = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
-        Me.EditDoorsButton = New System.Windows.Forms.Button()
-        Me.DoorsTextBox = New System.Windows.Forms.TextBox()
         Me.EntersGroupBox = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditEntersButton = New System.Windows.Forms.Button()
@@ -50,10 +46,6 @@ Partial Class RoomEditor
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.EditSoundsButton = New System.Windows.Forms.Button()
         Me.SoundsTextBox = New System.Windows.Forms.TextBox()
-        Me.ObjectsGroupBox = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.EditObjectsButton = New System.Windows.Forms.Button()
-        Me.ObjectsTextBox = New System.Windows.Forms.TextBox()
         Me.RoomDescriptionGroupBox = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -90,16 +82,12 @@ Partial Class RoomEditor
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.DoorsGroupBox.SuspendLayout()
-        Me.TableLayoutPanel9.SuspendLayout()
         Me.EntersGroupBox.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         Me.ExitsGroupBox.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         Me.SoundsGroupBox.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
-        Me.ObjectsGroupBox.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
         Me.RoomDescriptionGroupBox.SuspendLayout()
         Me.TableLayoutPanel10.SuspendLayout()
         Me.RoomSettingsGroupBox.SuspendLayout()
@@ -119,7 +107,7 @@ Partial Class RoomEditor
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(984, 24)
+        Me.MenuStrip.Size = New System.Drawing.Size(884, 24)
         Me.MenuStrip.TabIndex = 0
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -182,7 +170,7 @@ Partial Class RoomEditor
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WindowStatusString})
         Me.StatusStrip.Location = New System.Drawing.Point(0, 539)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(984, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(884, 22)
         Me.StatusStrip.TabIndex = 1
         Me.StatusStrip.Text = "StatusStrip1"
         '
@@ -194,19 +182,16 @@ Partial Class RoomEditor
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 5
+        Me.TableLayoutPanel1.ColumnCount = 4
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.DoorsGroupBox, 4, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.EntersGroupBox, 4, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.EntersGroupBox, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.ExitsGroupBox, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.SoundsGroupBox, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.ObjectsGroupBox, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.RoomDescriptionGroupBox, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.RoomSettingsGroupBox, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.CodeButtonsGroupBox, 0, 2)
@@ -220,64 +205,16 @@ Partial Class RoomEditor
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(984, 515)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(884, 515)
         Me.TableLayoutPanel1.TabIndex = 2
-        '
-        'DoorsGroupBox
-        '
-        Me.DoorsGroupBox.Controls.Add(Me.TableLayoutPanel9)
-        Me.DoorsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DoorsGroupBox.Location = New System.Drawing.Point(816, 260)
-        Me.DoorsGroupBox.Name = "DoorsGroupBox"
-        Me.TableLayoutPanel1.SetRowSpan(Me.DoorsGroupBox, 2)
-        Me.DoorsGroupBox.Size = New System.Drawing.Size(165, 252)
-        Me.DoorsGroupBox.TabIndex = 9
-        Me.DoorsGroupBox.TabStop = False
-        Me.DoorsGroupBox.Text = "Doors"
-        '
-        'TableLayoutPanel9
-        '
-        Me.TableLayoutPanel9.ColumnCount = 1
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel9.Controls.Add(Me.EditDoorsButton, 0, 1)
-        Me.TableLayoutPanel9.Controls.Add(Me.DoorsTextBox, 0, 0)
-        Me.TableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel9.Location = New System.Drawing.Point(3, 16)
-        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
-        Me.TableLayoutPanel9.RowCount = 2
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(159, 233)
-        Me.TableLayoutPanel9.TabIndex = 1
-        '
-        'EditDoorsButton
-        '
-        Me.EditDoorsButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EditDoorsButton.Location = New System.Drawing.Point(3, 207)
-        Me.EditDoorsButton.Name = "EditDoorsButton"
-        Me.EditDoorsButton.Size = New System.Drawing.Size(153, 23)
-        Me.EditDoorsButton.TabIndex = 0
-        Me.EditDoorsButton.Text = "Edit Doors"
-        Me.EditDoorsButton.UseVisualStyleBackColor = True
-        '
-        'DoorsTextBox
-        '
-        Me.DoorsTextBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DoorsTextBox.Location = New System.Drawing.Point(3, 3)
-        Me.DoorsTextBox.Multiline = True
-        Me.DoorsTextBox.Name = "DoorsTextBox"
-        Me.DoorsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.DoorsTextBox.Size = New System.Drawing.Size(153, 198)
-        Me.DoorsTextBox.TabIndex = 1
         '
         'EntersGroupBox
         '
         Me.EntersGroupBox.Controls.Add(Me.TableLayoutPanel8)
         Me.EntersGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EntersGroupBox.Location = New System.Drawing.Point(816, 3)
+        Me.EntersGroupBox.Location = New System.Drawing.Point(501, 3)
         Me.EntersGroupBox.Name = "EntersGroupBox"
-        Me.EntersGroupBox.Size = New System.Drawing.Size(165, 251)
+        Me.EntersGroupBox.Size = New System.Drawing.Size(186, 251)
         Me.EntersGroupBox.TabIndex = 8
         Me.EntersGroupBox.TabStop = False
         Me.EntersGroupBox.Text = "Enters"
@@ -295,7 +232,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(159, 232)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(180, 232)
         Me.TableLayoutPanel8.TabIndex = 1
         '
         'EditEntersButton
@@ -303,7 +240,7 @@ Partial Class RoomEditor
         Me.EditEntersButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditEntersButton.Location = New System.Drawing.Point(3, 206)
         Me.EditEntersButton.Name = "EditEntersButton"
-        Me.EditEntersButton.Size = New System.Drawing.Size(153, 23)
+        Me.EditEntersButton.Size = New System.Drawing.Size(174, 23)
         Me.EditEntersButton.TabIndex = 0
         Me.EditEntersButton.Text = "Edit Enters"
         Me.EditEntersButton.UseVisualStyleBackColor = True
@@ -315,16 +252,16 @@ Partial Class RoomEditor
         Me.EntersTextBox.Multiline = True
         Me.EntersTextBox.Name = "EntersTextBox"
         Me.EntersTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.EntersTextBox.Size = New System.Drawing.Size(153, 197)
+        Me.EntersTextBox.Size = New System.Drawing.Size(174, 197)
         Me.EntersTextBox.TabIndex = 1
         '
         'ExitsGroupBox
         '
         Me.ExitsGroupBox.Controls.Add(Me.TableLayoutPanel7)
         Me.ExitsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ExitsGroupBox.Location = New System.Drawing.Point(647, 3)
+        Me.ExitsGroupBox.Location = New System.Drawing.Point(693, 3)
         Me.ExitsGroupBox.Name = "ExitsGroupBox"
-        Me.ExitsGroupBox.Size = New System.Drawing.Size(163, 251)
+        Me.ExitsGroupBox.Size = New System.Drawing.Size(188, 251)
         Me.ExitsGroupBox.TabIndex = 7
         Me.ExitsGroupBox.TabStop = False
         Me.ExitsGroupBox.Text = "Exits"
@@ -342,7 +279,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(157, 232)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(182, 232)
         Me.TableLayoutPanel7.TabIndex = 1
         '
         'EditExitsButton
@@ -350,7 +287,7 @@ Partial Class RoomEditor
         Me.EditExitsButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditExitsButton.Location = New System.Drawing.Point(3, 206)
         Me.EditExitsButton.Name = "EditExitsButton"
-        Me.EditExitsButton.Size = New System.Drawing.Size(151, 23)
+        Me.EditExitsButton.Size = New System.Drawing.Size(176, 23)
         Me.EditExitsButton.TabIndex = 0
         Me.EditExitsButton.Text = "Edit Exits"
         Me.EditExitsButton.UseVisualStyleBackColor = True
@@ -362,17 +299,17 @@ Partial Class RoomEditor
         Me.ExitsTextBox.Multiline = True
         Me.ExitsTextBox.Name = "ExitsTextBox"
         Me.ExitsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.ExitsTextBox.Size = New System.Drawing.Size(151, 197)
+        Me.ExitsTextBox.Size = New System.Drawing.Size(176, 197)
         Me.ExitsTextBox.TabIndex = 1
         '
         'SoundsGroupBox
         '
         Me.SoundsGroupBox.Controls.Add(Me.TableLayoutPanel6)
         Me.SoundsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SoundsGroupBox.Location = New System.Drawing.Point(478, 260)
+        Me.SoundsGroupBox.Location = New System.Drawing.Point(501, 260)
         Me.SoundsGroupBox.Name = "SoundsGroupBox"
         Me.TableLayoutPanel1.SetRowSpan(Me.SoundsGroupBox, 2)
-        Me.SoundsGroupBox.Size = New System.Drawing.Size(163, 252)
+        Me.SoundsGroupBox.Size = New System.Drawing.Size(186, 252)
         Me.SoundsGroupBox.TabIndex = 0
         Me.SoundsGroupBox.TabStop = False
         Me.SoundsGroupBox.Text = "Sounds"
@@ -390,7 +327,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(157, 233)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(180, 233)
         Me.TableLayoutPanel6.TabIndex = 1
         '
         'EditSoundsButton
@@ -398,7 +335,7 @@ Partial Class RoomEditor
         Me.EditSoundsButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditSoundsButton.Location = New System.Drawing.Point(3, 207)
         Me.EditSoundsButton.Name = "EditSoundsButton"
-        Me.EditSoundsButton.Size = New System.Drawing.Size(151, 23)
+        Me.EditSoundsButton.Size = New System.Drawing.Size(174, 23)
         Me.EditSoundsButton.TabIndex = 0
         Me.EditSoundsButton.Text = "Edit Sounds"
         Me.EditSoundsButton.UseVisualStyleBackColor = True
@@ -410,55 +347,8 @@ Partial Class RoomEditor
         Me.SoundsTextBox.Multiline = True
         Me.SoundsTextBox.Name = "SoundsTextBox"
         Me.SoundsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.SoundsTextBox.Size = New System.Drawing.Size(151, 198)
+        Me.SoundsTextBox.Size = New System.Drawing.Size(174, 198)
         Me.SoundsTextBox.TabIndex = 1
-        '
-        'ObjectsGroupBox
-        '
-        Me.ObjectsGroupBox.Controls.Add(Me.TableLayoutPanel3)
-        Me.ObjectsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ObjectsGroupBox.Location = New System.Drawing.Point(478, 3)
-        Me.ObjectsGroupBox.Name = "ObjectsGroupBox"
-        Me.ObjectsGroupBox.Size = New System.Drawing.Size(163, 251)
-        Me.ObjectsGroupBox.TabIndex = 4
-        Me.ObjectsGroupBox.TabStop = False
-        Me.ObjectsGroupBox.Text = "Objects"
-        '
-        'TableLayoutPanel3
-        '
-        Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.EditObjectsButton, 0, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.ObjectsTextBox, 0, 0)
-        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 16)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(157, 232)
-        Me.TableLayoutPanel3.TabIndex = 1
-        '
-        'EditObjectsButton
-        '
-        Me.EditObjectsButton.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.EditObjectsButton.Location = New System.Drawing.Point(3, 206)
-        Me.EditObjectsButton.Name = "EditObjectsButton"
-        Me.EditObjectsButton.Size = New System.Drawing.Size(151, 23)
-        Me.EditObjectsButton.TabIndex = 0
-        Me.EditObjectsButton.Text = "Edit Objects"
-        Me.EditObjectsButton.UseVisualStyleBackColor = True
-        '
-        'ObjectsTextBox
-        '
-        Me.ObjectsTextBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ObjectsTextBox.Location = New System.Drawing.Point(3, 3)
-        Me.ObjectsTextBox.Multiline = True
-        Me.ObjectsTextBox.Name = "ObjectsTextBox"
-        Me.ObjectsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.ObjectsTextBox.Size = New System.Drawing.Size(151, 197)
-        Me.ObjectsTextBox.TabIndex = 1
         '
         'RoomDescriptionGroupBox
         '
@@ -694,7 +584,7 @@ Partial Class RoomEditor
         Me.ItemsGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ItemsGroupBox.Location = New System.Drawing.Point(309, 3)
         Me.ItemsGroupBox.Name = "ItemsGroupBox"
-        Me.ItemsGroupBox.Size = New System.Drawing.Size(163, 251)
+        Me.ItemsGroupBox.Size = New System.Drawing.Size(186, 251)
         Me.ItemsGroupBox.TabIndex = 3
         Me.ItemsGroupBox.TabStop = False
         Me.ItemsGroupBox.Text = "Items"
@@ -712,7 +602,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(157, 232)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(180, 232)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'EditItemsButton
@@ -720,7 +610,7 @@ Partial Class RoomEditor
         Me.EditItemsButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditItemsButton.Location = New System.Drawing.Point(3, 206)
         Me.EditItemsButton.Name = "EditItemsButton"
-        Me.EditItemsButton.Size = New System.Drawing.Size(151, 23)
+        Me.EditItemsButton.Size = New System.Drawing.Size(174, 23)
         Me.EditItemsButton.TabIndex = 0
         Me.EditItemsButton.Text = "Edit Items"
         Me.EditItemsButton.UseVisualStyleBackColor = True
@@ -732,7 +622,7 @@ Partial Class RoomEditor
         Me.ItemsTextBox.Multiline = True
         Me.ItemsTextBox.Name = "ItemsTextBox"
         Me.ItemsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.ItemsTextBox.Size = New System.Drawing.Size(151, 197)
+        Me.ItemsTextBox.Size = New System.Drawing.Size(174, 197)
         Me.ItemsTextBox.TabIndex = 1
         '
         'SmellsGroupBox
@@ -742,7 +632,7 @@ Partial Class RoomEditor
         Me.SmellsGroupBox.Location = New System.Drawing.Point(309, 260)
         Me.SmellsGroupBox.Name = "SmellsGroupBox"
         Me.TableLayoutPanel1.SetRowSpan(Me.SmellsGroupBox, 2)
-        Me.SmellsGroupBox.Size = New System.Drawing.Size(163, 252)
+        Me.SmellsGroupBox.Size = New System.Drawing.Size(186, 252)
         Me.SmellsGroupBox.TabIndex = 5
         Me.SmellsGroupBox.TabStop = False
         Me.SmellsGroupBox.Text = "Smells"
@@ -760,7 +650,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(157, 233)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(180, 233)
         Me.TableLayoutPanel4.TabIndex = 1
         '
         'EditSmellsButton
@@ -768,7 +658,7 @@ Partial Class RoomEditor
         Me.EditSmellsButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditSmellsButton.Location = New System.Drawing.Point(3, 207)
         Me.EditSmellsButton.Name = "EditSmellsButton"
-        Me.EditSmellsButton.Size = New System.Drawing.Size(151, 23)
+        Me.EditSmellsButton.Size = New System.Drawing.Size(174, 23)
         Me.EditSmellsButton.TabIndex = 0
         Me.EditSmellsButton.Text = "Edit Smells"
         Me.EditSmellsButton.UseVisualStyleBackColor = True
@@ -780,17 +670,17 @@ Partial Class RoomEditor
         Me.SmellsTextBox.Multiline = True
         Me.SmellsTextBox.Name = "SmellsTextBox"
         Me.SmellsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.SmellsTextBox.Size = New System.Drawing.Size(151, 198)
+        Me.SmellsTextBox.Size = New System.Drawing.Size(174, 198)
         Me.SmellsTextBox.TabIndex = 1
         '
         'SearchesGroupBox
         '
         Me.SearchesGroupBox.Controls.Add(Me.TableLayoutPanel5)
         Me.SearchesGroupBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SearchesGroupBox.Location = New System.Drawing.Point(647, 260)
+        Me.SearchesGroupBox.Location = New System.Drawing.Point(693, 260)
         Me.SearchesGroupBox.Name = "SearchesGroupBox"
         Me.TableLayoutPanel1.SetRowSpan(Me.SearchesGroupBox, 2)
-        Me.SearchesGroupBox.Size = New System.Drawing.Size(163, 252)
+        Me.SearchesGroupBox.Size = New System.Drawing.Size(188, 252)
         Me.SearchesGroupBox.TabIndex = 6
         Me.SearchesGroupBox.TabStop = False
         Me.SearchesGroupBox.Text = "Searches"
@@ -808,7 +698,7 @@ Partial Class RoomEditor
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(157, 233)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(182, 233)
         Me.TableLayoutPanel5.TabIndex = 1
         '
         'EditSearchesButton
@@ -816,7 +706,7 @@ Partial Class RoomEditor
         Me.EditSearchesButton.Dock = System.Windows.Forms.DockStyle.Fill
         Me.EditSearchesButton.Location = New System.Drawing.Point(3, 207)
         Me.EditSearchesButton.Name = "EditSearchesButton"
-        Me.EditSearchesButton.Size = New System.Drawing.Size(151, 23)
+        Me.EditSearchesButton.Size = New System.Drawing.Size(176, 23)
         Me.EditSearchesButton.TabIndex = 0
         Me.EditSearchesButton.Text = "Edit Searches"
         Me.EditSearchesButton.UseVisualStyleBackColor = True
@@ -828,19 +718,19 @@ Partial Class RoomEditor
         Me.SearchesTextBox.Multiline = True
         Me.SearchesTextBox.Name = "SearchesTextBox"
         Me.SearchesTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.SearchesTextBox.Size = New System.Drawing.Size(151, 198)
+        Me.SearchesTextBox.Size = New System.Drawing.Size(176, 198)
         Me.SearchesTextBox.TabIndex = 1
         '
         'RoomEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(984, 561)
+        Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.MainMenuStrip = Me.MenuStrip
-        Me.MinimumSize = New System.Drawing.Size(1000, 600)
+        Me.MinimumSize = New System.Drawing.Size(900, 600)
         Me.Name = "RoomEditor"
         Me.Text = "Dead Souls Room Editor"
         Me.MenuStrip.ResumeLayout(False)
@@ -849,9 +739,6 @@ Partial Class RoomEditor
         Me.StatusStrip.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        Me.DoorsGroupBox.ResumeLayout(False)
-        Me.TableLayoutPanel9.ResumeLayout(False)
-        Me.TableLayoutPanel9.PerformLayout()
         Me.EntersGroupBox.ResumeLayout(False)
         Me.TableLayoutPanel8.ResumeLayout(False)
         Me.TableLayoutPanel8.PerformLayout()
@@ -861,9 +748,6 @@ Partial Class RoomEditor
         Me.SoundsGroupBox.ResumeLayout(False)
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel6.PerformLayout()
-        Me.ObjectsGroupBox.ResumeLayout(False)
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        Me.TableLayoutPanel3.PerformLayout()
         Me.RoomDescriptionGroupBox.ResumeLayout(False)
         Me.TableLayoutPanel10.ResumeLayout(False)
         Me.TableLayoutPanel10.PerformLayout()
@@ -916,7 +800,6 @@ Partial Class RoomEditor
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents CodeButtonsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents EditLPCCodeButton As System.Windows.Forms.Button
-    Friend WithEvents ObjectsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents ItemsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents SmellsGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents SoundsGroupBox As System.Windows.Forms.GroupBox
@@ -924,9 +807,6 @@ Partial Class RoomEditor
     Friend WithEvents TableLayoutPanel6 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents EditSoundsButton As System.Windows.Forms.Button
     Friend WithEvents SoundsTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents TableLayoutPanel3 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents EditObjectsButton As System.Windows.Forms.Button
-    Friend WithEvents ObjectsTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TableLayoutPanel2 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents EditItemsButton As System.Windows.Forms.Button
     Friend WithEvents ItemsTextBox As System.Windows.Forms.TextBox
@@ -936,10 +816,6 @@ Partial Class RoomEditor
     Friend WithEvents TableLayoutPanel5 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents EditSearchesButton As System.Windows.Forms.Button
     Friend WithEvents SearchesTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DoorsGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents TableLayoutPanel9 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents EditDoorsButton As System.Windows.Forms.Button
-    Friend WithEvents DoorsTextBox As System.Windows.Forms.TextBox
     Friend WithEvents EntersGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents TableLayoutPanel8 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents EditEntersButton As System.Windows.Forms.Button

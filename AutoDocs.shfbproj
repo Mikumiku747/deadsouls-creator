@@ -38,7 +38,7 @@
     <MSHelp2SdkLinkType>Index</MSHelp2SdkLinkType>
     <IncludeStopWordList>True</IncludeStopWordList>
     <VisibleItems>Attributes, Protected, ProtectedInternalAsProtected</VisibleItems>
-    <MissingTags>Summary</MissingTags>
+    <MissingTags>Summary, AutoDocumentCtors</MissingTags>
     <MaximumGroupParts>2</MaximumGroupParts>
     <NamespaceGrouping>False</NamespaceGrouping>
     <SyntaxFilters>Standard</SyntaxFilters>

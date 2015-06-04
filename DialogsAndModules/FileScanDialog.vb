@@ -1,4 +1,8 @@
-﻿Public Class FileScanDialog
+﻿''' <summary>
+''' A dialog which scans the system for game files and organises them so that they can be easily opened from the main window. 
+''' </summary>
+
+Public Class FileScanDialog
 
     Private Sub FileScanDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer.Start()

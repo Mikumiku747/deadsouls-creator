@@ -1,4 +1,7 @@
-﻿Public NotInheritable Class AboutBox
+﻿''' <summary>
+''' A small info dialog displaying application information.
+''' </summary>
+Public NotInheritable Class AboutBox
 
     Private Sub AboutBox_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Set the title of the form.

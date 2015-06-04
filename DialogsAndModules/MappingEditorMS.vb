@@ -5,7 +5,12 @@
 ''' map arrays of strings to single strings.</remarks>
 Public Class MappingEditorMS
 
+    ''' <summary>
+    ''' The mapping to be edited, an LPC mapping as a string.
+    ''' You can also read from this when the dialog has closed to get the modified value.
+    ''' </summary>
     Public dialogValue As String
+
     Dim cleanKeys As List(Of String)
     Dim cleanValues As List(Of String)
     Dim currentItem As Integer = 0

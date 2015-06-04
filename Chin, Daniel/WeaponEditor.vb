@@ -1,5 +1,13 @@
-﻿Public Class WeaponEditor
+﻿
+''' <summary>
+''' A form for editing deadsouls weapons
+''' Pass a file path string to filepath on startup to open that file
+''' </summary>
+Public Class WeaponEditor
 
+    ''' <summary>
+    ''' Pass a file name as a string before startup to open this file
+    ''' </summary>
     Public filepath As String
 
     Dim file As String
@@ -24,7 +32,7 @@
     Private Sub loadFromFile()
         'Load the file
         Try
-            file = My.Computer.FileSystem.ReadAllText(filePath).Replace(vbLf, vbNewLine)
+            file = My.Computer.FileSystem.ReadAllText(filepath).Replace(vbLf, vbNewLine)
         Catch ex As StringNotFoundException
             MsgBox("Failed to open the file, check that it exists and you have read/write access.", MsgBoxStyle.Critical, "Error opening file")
             EZLogging.WriteToLog("Failed to load file " & filepath & ". Exiting Weapon editor", levels.critical)
@@ -119,7 +127,7 @@
 
         'Actually save the file
         Try
-            My.Computer.FileSystem.WriteAllText(filePath, stringtosave, False, System.Text.Encoding.Default)
+            My.Computer.FileSystem.WriteAllText(filepath, stringtosave, False, System.Text.Encoding.Default)
             StatusLabel.Text = "Saved to " & filepath
         Catch ex As Exception
             MsgBox("Failed to save the file, check it exists and you have write permission. Error: " & ex.Message)
@@ -169,17 +177,17 @@
         End If
     End Sub
     Private Sub EditLPCCodeButton_Click(sender As Object, e As EventArgs) Handles EditLPCCodeButton.Click
-        If filePath = "NEW" Then
+        If filepath = "NEW" Then
             MsgBox("You need to save the file before you can edit the code. Please save first.", MsgBoxStyle.Information, "Error opening code for editing")
         Else
             Dim lpceditor As New FileEditor
             Try
-                file = My.Computer.FileSystem.ReadAllText(filePath).Replace(vbLf, vbNewLine)
+                file = My.Computer.FileSystem.ReadAllText(filepath).Replace(vbLf, vbNewLine)
             Catch ex As Exception
                 MsgBox("Failed to open the code file properly. Check file exists and is accessible.", MsgBoxStyle.Critical)
             End Try
             lpceditor.dialogValue = file
-            lpceditor.Text = "LPC Code editor: " & filePath
+            lpceditor.Text = "LPC Code editor: " & filepath
             lpceditor.ShowDialog()
             file = lpceditor.dialogValue.Replace(vbLf, vbNewLine)
         End If

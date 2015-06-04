@@ -1245,35 +1245,50 @@
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="NewItemToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+N</value>
+  </data>
   <data name="NewItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="NewItemToolStripMenuItem.Text" xml:space="preserve">
     <value>New Item</value>
   </data>
+  <data name="OpenItemToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
   <data name="OpenItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="OpenItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Open Item...</value>
   </data>
+  <data name="SaveItemToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
   <data name="SaveItemToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="SaveItemToolStripMenuItem.Text" xml:space="preserve">
     <value>Save Item</value>
   </data>
+  <data name="SaveItemAsToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Shift+S</value>
+  </data>
   <data name="SaveItemAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="SaveItemAsToolStripMenuItem.Text" xml:space="preserve">
     <value>Save Item as...</value>
   </data>
   <data name="ToolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 6</value>
+    <value>217, 6</value>
+  </data>
+  <data name="QuitToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
   </data>
   <data name="QuitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>220, 22</value>
   </data>
   <data name="QuitToolStripMenuItem.Text" xml:space="preserve">
     <value>Quit</value>
@@ -1284,14 +1299,20 @@
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
+  <data name="MiscAllToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+A</value>
+  </data>
   <data name="MiscAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>166, 22</value>
   </data>
   <data name="MiscAllToolStripMenuItem.Text" xml:space="preserve">
     <value>Misc / All</value>
   </data>
+  <data name="ClearToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+C</value>
+  </data>
   <data name="ClearToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+    <value>166, 22</value>
   </data>
   <data name="ClearToolStripMenuItem.Text" xml:space="preserve">
     <value>Clear</value>

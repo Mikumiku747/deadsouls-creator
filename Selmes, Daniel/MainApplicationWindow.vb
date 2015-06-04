@@ -141,4 +141,29 @@ Public Class MainApplicationWindow
             ItemListBox.Items.Add(room)
         Next
     End Sub
+
+    Private Sub NewRoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewRoomToolStripMenuItem.Click
+        Dim editor As New RoomEditor()
+        editor.Show()
+    End Sub
+
+    Private Sub NewItemToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewItemToolStripMenuItem.Click
+        Dim editor As New ItemEditor()
+        editor.Show()
+    End Sub
+
+    Private Sub NewNPCToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewNPCToolStripMenuItem.Click
+        Dim editor As New NPCEditor()
+        editor.Show()
+    End Sub
+
+    Private Sub NewArmourToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewArmourToolStripMenuItem.Click
+        Dim editor As New Armour()
+        editor.Show()
+    End Sub
+
+    Private Sub NewWeaponsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewWeaponsToolStripMenuItem.Click
+        Dim editor As New WeaponEditor()
+        editor.Show()
+    End Sub
 End Class

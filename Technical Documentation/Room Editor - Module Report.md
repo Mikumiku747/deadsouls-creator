@@ -22,4 +22,3 @@ The following properties are covered by the editor:
 ## Technical Documentation
  - You can find a data dictionary inluded in the project distributed as "TechnicalDocs.zip". Double click index.html to view the technical documentation system, which describes the data and functions of each module and dialog in the application.
  - A flowchart of the module's internal operations can be found in the "Technical Docs/" Folder. 
- - A spreadsheet of test data used can be found in the "Technical Docs/Testing" Folder

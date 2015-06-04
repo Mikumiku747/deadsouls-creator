@@ -1,4 +1,4 @@
-#General meeting
+#Group Meeting 14-05-15
 
 ###Members present:
  - Daniel Selmes

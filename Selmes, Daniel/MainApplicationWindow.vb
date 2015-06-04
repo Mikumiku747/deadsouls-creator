@@ -24,13 +24,44 @@ Public Class MainApplicationWindow
             For Each room In My.Settings.rooms_list
                 RoomsListBox.Items.Add(room)
             Next
+        Catch ex As Exception
+
+        End Try
+        Try
             ItemListBox.Items.Clear()
-            ItemListBox.Items.Add("Build new room...")
+            ItemListBox.Items.Add("Craft new item...")
             For Each room In My.Settings.items_list
                 ItemListBox.Items.Add(room)
             Next
         Catch ex As Exception
-            MsgBox("Something went wrong loading the file lists, you can go to ""Domain > Refresh Files"" to fix it.", MsgBoxStyle.Information)
+
+        End Try
+        Try
+            WeaponsListBox.Items.Clear()
+            WeaponsListBox.Items.Add("Forge new weapon...")
+            For Each weapon In My.Settings.weapon_list
+                WeaponsListBox.Items.Add(weapon)
+            Next
+        Catch ex As Exception
+
+        End Try
+        Try
+            ArmourListBox.Items.Clear()
+            ArmourListBox.Items.Add("Forge new armour...")
+            For Each armour In My.Settings.armour_list
+                ArmourListBox.Items.Add(armour)
+            Next
+        Catch ex As Exception
+
+        End Try
+        Try
+            NPCListBox.Items.Clear()
+            NPCListBox.Items.Add("Make new NPC...")
+            For Each npc In My.Settings.NPC_list
+                NPCListBox.Items.Add(npc)
+            Next
+        Catch ex As Exception
+
         End Try
 
         'Select the "create new [thing]" option by default for all the file lists
@@ -130,16 +161,52 @@ Public Class MainApplicationWindow
 
     Private Sub RefreshFilesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RefreshFilesToolStripMenuItem.Click
         FileScanDialog.ShowDialog()
-        RoomsListBox.Items.Clear()
-        RoomsListBox.Items.Add("Build new room...")
-        For Each room In My.Settings.rooms_list
-            RoomsListBox.Items.Add(room)
-        Next
-        ItemListBox.Items.Clear()
-        ItemListBox.Items.Add("Build new room...")
-        For Each room In My.Settings.items_list
-            ItemListBox.Items.Add(room)
-        Next
+        Try
+            RoomsListBox.Items.Clear()
+            RoomsListBox.Items.Add("Build new room...")
+            For Each room In My.Settings.rooms_list
+                RoomsListBox.Items.Add(room)
+            Next
+        Catch ex As Exception
+
+        End Try
+        Try
+            ItemListBox.Items.Clear()
+            ItemListBox.Items.Add("Craft new item...")
+            For Each room In My.Settings.items_list
+                ItemListBox.Items.Add(room)
+            Next
+        Catch ex As Exception
+
+        End Try
+        Try
+            WeaponsListBox.Items.Clear()
+            WeaponsListBox.Items.Add("Forge new weapon...")
+            For Each weapon In My.Settings.weapon_list
+                WeaponsListBox.Items.Add(weapon)
+            Next
+        Catch ex As Exception
+
+        End Try
+        Try
+            ArmourListBox.Items.Clear()
+            ArmourListBox.Items.Add("Forge new armour...")
+            For Each armour In My.Settings.armour_list
+                ArmourListBox.Items.Add(armour)
+            Next
+        Catch ex As Exception
+
+        End Try
+        Try
+            NPCListBox.Items.Clear()
+            NPCListBox.Items.Add("Make new NPC...")
+            For Each npc In My.Settings.NPC_list
+                NPCListBox.Items.Add(npc)
+            Next
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
     Private Sub NewRoomToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewRoomToolStripMenuItem.Click

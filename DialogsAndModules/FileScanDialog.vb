@@ -36,7 +36,7 @@ Public Class FileScanDialog
         ProgressBar.Maximum = everything.Count * 5
         ProgressBar.Value = 0
         StatusLabelMajor.Text = "Scanning for room files..."
-        StatusLabelMinor.Update()
+        StatusLabelMajor.Update()
         My.Settings.rooms_list = New Specialized.StringCollection
         For Each file In everything
             StatusLabelMinor.Text = "Checking " & file
@@ -47,13 +47,46 @@ Public Class FileScanDialog
             ProgressBar.Value += 1
         Next
         StatusLabelMajor.Text = "Scanning for item files..."
-        StatusLabelMinor.Update()
+        StatusLabelMajor.Update()
         My.Settings.items_list = New Specialized.StringCollection
         For Each file In everything
             StatusLabelMinor.Text = "Checking " & file
             StatusLabelMinor.Update()
             If file.EndsWith(".c") And My.Computer.FileSystem.ReadAllText(file).Contains("LIB_ITEM") Then
                 My.Settings.items_list.Add(file)
+            End If
+            ProgressBar.Value += 1
+        Next
+        StatusLabelMajor.Text = "Scanning for weapon files..."
+        StatusLabelMajor.Update()
+        My.Settings.weapon_list = New Specialized.StringCollection
+        For Each file In everything
+            StatusLabelMinor.Text = "Checking " & file
+            StatusLabelMinor.Update()
+            If file.EndsWith(".c") And My.Computer.FileSystem.ReadAllText(file).Contains("SetWeaponType") Then
+                My.Settings.weapon_list.Add(file)
+            End If
+            ProgressBar.Value += 1
+        Next
+        StatusLabelMajor.Text = "Scanning for armour files..."
+        StatusLabelMajor.Update()
+        My.Settings.armour_list = New Specialized.StringCollection
+        For Each file In everything
+            StatusLabelMinor.Text = "Checking " & file
+            StatusLabelMinor.Update()
+            If file.EndsWith(".c") And My.Computer.FileSystem.ReadAllText(file).Contains("LIB_ARMOUR") Then
+                My.Settings.armour_list.Add(file)
+            End If
+            ProgressBar.Value += 1
+        Next
+        StatusLabelMajor.Text = "Scanning for NPC files..."
+        StatusLabelMajor.Update()
+        My.Settings.NPC_list = New Specialized.StringCollection
+        For Each file In everything
+            StatusLabelMinor.Text = "Checking " & file
+            StatusLabelMinor.Update()
+            If file.EndsWith(".c") And My.Computer.FileSystem.ReadAllText(file).Contains("LIB_NPC") Then
+                My.Settings.NPC_list.Add(file)
             End If
             ProgressBar.Value += 1
         Next

@@ -22,9 +22,15 @@ Partial Class MainApplicationWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainApplicationWindow))
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewNPCToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewArmourToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewWeaponsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -56,11 +62,6 @@ Partial Class MainApplicationWindow
         Me.ArmourListBox = New System.Windows.Forms.ListBox()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.WindowStatusString = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.NewRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewNPCToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewArmourToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewWeaponsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -86,26 +87,56 @@ Partial Class MainApplicationWindow
         '
         Me.NewFileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewRoomToolStripMenuItem, Me.NewItemToolStripMenuItem, Me.NewNPCToolStripMenuItem, Me.NewArmourToolStripMenuItem, Me.NewWeaponsToolStripMenuItem})
         Me.NewFileToolStripMenuItem.Name = "NewFileToolStripMenuItem"
-        Me.NewFileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewFileToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.NewFileToolStripMenuItem.Text = "New File"
+        '
+        'NewRoomToolStripMenuItem
+        '
+        Me.NewRoomToolStripMenuItem.Name = "NewRoomToolStripMenuItem"
+        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NewRoomToolStripMenuItem.Text = "New Room"
+        '
+        'NewItemToolStripMenuItem
+        '
+        Me.NewItemToolStripMenuItem.Name = "NewItemToolStripMenuItem"
+        Me.NewItemToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NewItemToolStripMenuItem.Text = "New Item"
+        '
+        'NewNPCToolStripMenuItem
+        '
+        Me.NewNPCToolStripMenuItem.Name = "NewNPCToolStripMenuItem"
+        Me.NewNPCToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NewNPCToolStripMenuItem.Text = "New NPC"
+        '
+        'NewArmourToolStripMenuItem
+        '
+        Me.NewArmourToolStripMenuItem.Name = "NewArmourToolStripMenuItem"
+        Me.NewArmourToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NewArmourToolStripMenuItem.Text = "New Armour"
+        '
+        'NewWeaponsToolStripMenuItem
+        '
+        Me.NewWeaponsToolStripMenuItem.Name = "NewWeaponsToolStripMenuItem"
+        Me.NewWeaponsToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.NewWeaponsToolStripMenuItem.Text = "New Weapons"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(116, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.infoIcon
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.AboutToolStripMenuItem.Text = "About..."
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Image = Global.Deadsouls_Creator.My.Resources.Resources.redCrossIcon
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'DomainToolStripMenuItem
@@ -371,36 +402,6 @@ Partial Class MainApplicationWindow
         Me.WindowStatusString.Size = New System.Drawing.Size(107, 17)
         Me.WindowStatusString.Text = "Dead Souls Creator"
         '
-        'NewRoomToolStripMenuItem
-        '
-        Me.NewRoomToolStripMenuItem.Name = "NewRoomToolStripMenuItem"
-        Me.NewRoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NewRoomToolStripMenuItem.Text = "New Room"
-        '
-        'NewItemToolStripMenuItem
-        '
-        Me.NewItemToolStripMenuItem.Name = "NewItemToolStripMenuItem"
-        Me.NewItemToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NewItemToolStripMenuItem.Text = "New Item"
-        '
-        'NewNPCToolStripMenuItem
-        '
-        Me.NewNPCToolStripMenuItem.Name = "NewNPCToolStripMenuItem"
-        Me.NewNPCToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NewNPCToolStripMenuItem.Text = "New NPC"
-        '
-        'NewArmourToolStripMenuItem
-        '
-        Me.NewArmourToolStripMenuItem.Name = "NewArmourToolStripMenuItem"
-        Me.NewArmourToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NewArmourToolStripMenuItem.Text = "New Armour"
-        '
-        'NewWeaponsToolStripMenuItem
-        '
-        Me.NewWeaponsToolStripMenuItem.Name = "NewWeaponsToolStripMenuItem"
-        Me.NewWeaponsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NewWeaponsToolStripMenuItem.Text = "New Weapons"
-        '
         'MainApplicationWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -408,6 +409,7 @@ Partial Class MainApplicationWindow
         Me.ClientSize = New System.Drawing.Size(934, 461)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.MenuStrip)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "MainApplicationWindow"
         Me.Text = "Dead Souls Creator"

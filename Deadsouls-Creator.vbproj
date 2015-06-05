@@ -26,7 +26,7 @@
     <TargetCulture>en</TargetCulture>
     <ProductName>Deadsouls Creator</ProductName>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -79,6 +79,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Editor.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -287,6 +290,20 @@
     <None Include="Resources\redCrossIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\armour.png" />
+    <Content Include="Resources\ArmourTemplate.c">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ball.png" />
+    <Content Include="Resources\house.png" />
+    <Content Include="Resources\armour.ico" />
+    <Content Include="Resources\think.ico" />
+    <Content Include="Resources\ball.ico" />
+    <Content Include="Resources\think.png" />
+    <Content Include="Resources\Weps.ico" />
+    <Content Include="Resources\House.ico" />
+    <Content Include="Resources\Editor.ico" />
+    <Content Include="Resources\EditorIcon.png" />
     <Content Include="Resources\ItemTemplate.c">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -299,6 +316,7 @@
     <Content Include="Resources\WeaponTemplate.c">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\weps.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

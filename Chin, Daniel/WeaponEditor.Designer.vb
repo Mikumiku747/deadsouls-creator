@@ -22,6 +22,7 @@ Partial Class WeaponEditor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WeaponEditor))
         Me.StatusLabel = New System.Windows.Forms.StatusStrip()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FIleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -306,9 +307,9 @@ Partial Class WeaponEditor
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.EditLPCCodeButton)
-        Me.GroupBox4.Location = New System.Drawing.Point(317, 3)
+        Me.GroupBox4.Location = New System.Drawing.Point(318, 3)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(116, 192)
+        Me.GroupBox4.Size = New System.Drawing.Size(115, 192)
         Me.GroupBox4.TabIndex = 3
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Misc"
@@ -330,6 +331,7 @@ Partial Class WeaponEditor
         Me.Controls.Add(Me.StatusLabel)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "WeaponEditor"
         Me.Text = "WeaponEditor"

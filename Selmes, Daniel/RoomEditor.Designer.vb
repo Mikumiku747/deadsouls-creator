@@ -22,6 +22,7 @@ Partial Class RoomEditor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RoomEditor))
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewRoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -729,6 +730,7 @@ Partial Class RoomEditor
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.MenuStrip)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip
         Me.MinimumSize = New System.Drawing.Size(900, 600)
         Me.Name = "RoomEditor"

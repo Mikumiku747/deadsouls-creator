@@ -121,17 +121,365 @@
   <data name="TableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;TableLayoutPanel2.Name" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="KeyNameTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ShortNameTextBox" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label3" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="IDTextBox" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label4" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="AdjectivesTextBox" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label5" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DescriptionTextBox" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="GroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 268</value>
+  </data>
+  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>Name and Description</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
+    <value>TableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.Name" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label7" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label8" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="MassNumBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="DamageNumBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ValueNumBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="DestroySellCheckBox" Row="3" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="GroupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 3</value>
+  </data>
+  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 131</value>
+  </data>
+  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="GroupBox2.Text" xml:space="preserve">
+    <value>Object Properties</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
+    <value>TableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel4.Name" xml:space="preserve">
+    <value>TableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel4.Parent" xml:space="preserve">
+    <value>GroupBox3</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="EditLPCCodeButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="StatusStrip" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="GroupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="GroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 277</value>
+  </data>
+  <data name="GroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 132</value>
+  </data>
+  <data name="GroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GroupBox3.Text" xml:space="preserve">
+    <value>Code Editor (Advanced)</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.Name" xml:space="preserve">
+    <value>GroupBox3</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.Parent" xml:space="preserve">
+    <value>TableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.Name" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="AllTypeTextBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="WeaponTypeTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ArmourTypeTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LightTypeTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="FoodTypeTextBox" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DrinkTypeTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="MagicTypeTextBox" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="FishingTypeTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="PlantTypeTextBox" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="HerbTypeTextBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ContrabandTypeTextBox" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TreasureTypeTextBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="GroupBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="GroupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 140</value>
+  </data>
+  <data name="GroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 269</value>
+  </data>
+  <data name="GroupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="GroupBox4.Text" xml:space="preserve">
+    <value>Item types (Shops that trade this item)</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.Name" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.Parent" xml:space="preserve">
+    <value>TableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="TableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>711, 412</value>
+  </data>
+  <data name="TableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel1.Name" xml:space="preserve">
+    <value>TableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="GroupBox1" Row="0" RowSpan="2" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox4" Row="1" RowSpan="2" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="TableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;KeyNameTextBox.Name" xml:space="preserve">
+    <value>KeyNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;KeyNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeyNameTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;KeyNameTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ShortNameTextBox.Name" xml:space="preserve">
+    <value>ShortNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;ShortNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ShortNameTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;ShortNameTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;IDTextBox.Name" xml:space="preserve">
+    <value>IDTextBox</value>
+  </data>
+  <data name="&gt;&gt;IDTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IDTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;IDTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;AdjectivesTextBox.Name" xml:space="preserve">
+    <value>AdjectivesTextBox</value>
+  </data>
+  <data name="&gt;&gt;AdjectivesTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AdjectivesTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;AdjectivesTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextBox.Name" xml:space="preserve">
+    <value>DescriptionTextBox</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;DescriptionTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="TableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="TableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="TableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 249</value>
+  </data>
+  <data name="TableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.Name" xml:space="preserve">
+    <value>TableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.Parent" xml:space="preserve">
+    <value>GroupBox1</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="KeyNameTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ShortNameTextBox" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label3" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="IDTextBox" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label4" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="AdjectivesTextBox" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label5" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DescriptionTextBox" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
@@ -399,65 +747,122 @@
   <data name="&gt;&gt;DescriptionTextBox.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="TableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="TableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="TableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 249</value>
-  </data>
-  <data name="TableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel2.Name" xml:space="preserve">
-    <value>TableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel2.Parent" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="KeyNameTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label2" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ShortNameTextBox" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label3" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="IDTextBox" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label4" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="AdjectivesTextBox" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label5" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DescriptionTextBox" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="GroupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="GroupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="GroupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 268</value>
-  </data>
-  <data name="GroupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="GroupBox1.Text" xml:space="preserve">
-    <value>Name and Description</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Name" xml:space="preserve">
-    <value>GroupBox1</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;GroupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="TableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;Label6.Name" xml:space="preserve">
+    <value>Label6</value>
+  </data>
+  <data name="&gt;&gt;Label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
+    <value>Label7</value>
+  </data>
+  <data name="&gt;&gt;Label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
+  </data>
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;MassNumBox.Name" xml:space="preserve">
+    <value>MassNumBox</value>
+  </data>
+  <data name="&gt;&gt;MassNumBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MassNumBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;MassNumBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DamageNumBox.Name" xml:space="preserve">
+    <value>DamageNumBox</value>
+  </data>
+  <data name="&gt;&gt;DamageNumBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DamageNumBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;DamageNumBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ValueNumBox.Name" xml:space="preserve">
+    <value>ValueNumBox</value>
+  </data>
+  <data name="&gt;&gt;ValueNumBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ValueNumBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;ValueNumBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DestroySellCheckBox.Name" xml:space="preserve">
+    <value>DestroySellCheckBox</value>
+  </data>
+  <data name="&gt;&gt;DestroySellCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DestroySellCheckBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;DestroySellCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="TableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="TableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 112</value>
+  </data>
+  <data name="TableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.Name" xml:space="preserve">
+    <value>TableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label7" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label8" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="MassNumBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="DamageNumBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ValueNumBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="DestroySellCheckBox" Row="3" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -648,83 +1053,11 @@
   <data name="&gt;&gt;DestroySellCheckBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="TableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="TableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="TableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 112</value>
-  </data>
-  <data name="TableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.Name" xml:space="preserve">
-    <value>TableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.Parent" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Label6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label7" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Label8" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="MassNumBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="DamageNumBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ValueNumBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="DestroySellCheckBox" Row="3" RowSpan="1" Column="0" ColumnSpan="2" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="GroupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="GroupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 3</value>
-  </data>
-  <data name="GroupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 131</value>
-  </data>
-  <data name="GroupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="GroupBox2.Text" xml:space="preserve">
-    <value>Object Properties</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Name" xml:space="preserve">
-    <value>GroupBox2</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;GroupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
+  <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
   <data name="TableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="EditLPCCodeButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="EditLPCCodeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="EditLPCCodeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="EditLPCCodeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 23</value>
-  </data>
-  <data name="EditLPCCodeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="EditLPCCodeButton.Text" xml:space="preserve">
-    <value>Edit LPC Code (Advanced Users Only)</value>
   </data>
   <data name="&gt;&gt;EditLPCCodeButton.Name" xml:space="preserve">
     <value>EditLPCCodeButton</value>
@@ -737,27 +1070,6 @@
   </data>
   <data name="&gt;&gt;EditLPCCodeButton.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <data name="StatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 15</value>
-  </data>
-  <data name="StatusLabel.Text" xml:space="preserve">
-    <value>Deadsouls Item Editor</value>
-  </data>
-  <data name="StatusStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 93</value>
-  </data>
-  <data name="StatusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 20</value>
-  </data>
-  <data name="StatusStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="StatusStrip.Text" xml:space="preserve">
-    <value>StatusStrip</value>
   </data>
   <data name="&gt;&gt;StatusStrip.Name" xml:space="preserve">
     <value>StatusStrip</value>
@@ -801,35 +1113,245 @@
   <data name="TableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="EditLPCCodeButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="StatusStrip" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="GroupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="EditLPCCodeButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="GroupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 277</value>
+  <data name="EditLPCCodeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="GroupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>349, 132</value>
+  <data name="EditLPCCodeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="GroupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="EditLPCCodeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 23</value>
   </data>
-  <data name="GroupBox3.Text" xml:space="preserve">
-    <value>Code Editor (Advanced)</value>
+  <data name="EditLPCCodeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;GroupBox3.Name" xml:space="preserve">
-    <value>GroupBox3</value>
+  <data name="EditLPCCodeButton.Text" xml:space="preserve">
+    <value>Edit LPC Code (Advanced Users Only)</value>
   </data>
-  <data name="&gt;&gt;GroupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;EditLPCCodeButton.Name" xml:space="preserve">
+    <value>EditLPCCodeButton</value>
   </data>
-  <data name="&gt;&gt;GroupBox3.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
+  <data name="&gt;&gt;EditLPCCodeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GroupBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;EditLPCCodeButton.Parent" xml:space="preserve">
+    <value>TableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;EditLPCCodeButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <data name="StatusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 93</value>
+  </data>
+  <data name="StatusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 20</value>
+  </data>
+  <data name="StatusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="StatusStrip.Text" xml:space="preserve">
+    <value>StatusStrip</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.Name" xml:space="preserve">
+    <value>StatusStrip</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.Parent" xml:space="preserve">
+    <value>TableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="StatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 15</value>
+  </data>
+  <data name="StatusLabel.Text" xml:space="preserve">
+    <value>Deadsouls Item Editor</value>
   </data>
   <data name="TableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;AllTypeTextBox.Name" xml:space="preserve">
+    <value>AllTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;AllTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AllTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;AllTypeTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;WeaponTypeTextBox.Name" xml:space="preserve">
+    <value>WeaponTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;WeaponTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WeaponTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;WeaponTypeTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ArmourTypeTextBox.Name" xml:space="preserve">
+    <value>ArmourTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;ArmourTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ArmourTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;ArmourTypeTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LightTypeTextBox.Name" xml:space="preserve">
+    <value>LightTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;LightTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LightTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;LightTypeTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;FoodTypeTextBox.Name" xml:space="preserve">
+    <value>FoodTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;FoodTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FoodTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;FoodTypeTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DrinkTypeTextBox.Name" xml:space="preserve">
+    <value>DrinkTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;DrinkTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DrinkTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;DrinkTypeTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MagicTypeTextBox.Name" xml:space="preserve">
+    <value>MagicTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;MagicTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MagicTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;MagicTypeTextBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;FishingTypeTextBox.Name" xml:space="preserve">
+    <value>FishingTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;FishingTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FishingTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;FishingTypeTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PlantTypeTextBox.Name" xml:space="preserve">
+    <value>PlantTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;PlantTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlantTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;PlantTypeTextBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;HerbTypeTextBox.Name" xml:space="preserve">
+    <value>HerbTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;HerbTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HerbTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;HerbTypeTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ContrabandTypeTextBox.Name" xml:space="preserve">
+    <value>ContrabandTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;ContrabandTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContrabandTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;ContrabandTypeTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;TreasureTypeTextBox.Name" xml:space="preserve">
+    <value>TreasureTypeTextBox</value>
+  </data>
+  <data name="&gt;&gt;TreasureTypeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TreasureTypeTextBox.Parent" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;TreasureTypeTextBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="TableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 250</value>
+  </data>
+  <data name="TableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.Name" xml:space="preserve">
+    <value>TableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.Parent" xml:space="preserve">
+    <value>GroupBox4</value>
+  </data>
+  <data name="&gt;&gt;TableLayoutPanel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="AllTypeTextBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="WeaponTypeTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ArmourTypeTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LightTypeTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="FoodTypeTextBox" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DrinkTypeTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="MagicTypeTextBox" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="FishingTypeTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="PlantTypeTextBox" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="HerbTypeTextBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ContrabandTypeTextBox" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TreasureTypeTextBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="AllTypeTextBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1155,96 +1677,39 @@
   <data name="&gt;&gt;TreasureTypeTextBox.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="TableLayoutPanel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="TableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="TableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>344, 250</value>
-  </data>
-  <data name="TableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel5.Name" xml:space="preserve">
-    <value>TableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel5.Parent" xml:space="preserve">
-    <value>GroupBox4</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="AllTypeTextBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="WeaponTypeTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ArmourTypeTextBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LightTypeTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="FoodTypeTextBox" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="DrinkTypeTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="MagicTypeTextBox" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="FishingTypeTextBox" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="PlantTypeTextBox" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="HerbTypeTextBox" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ContrabandTypeTextBox" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TreasureTypeTextBox" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,AutoSize,0,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="GroupBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="GroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 140</value>
-  </data>
-  <data name="GroupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 269</value>
-  </data>
-  <data name="GroupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="GroupBox4.Text" xml:space="preserve">
-    <value>Item types (Shops that trade this item)</value>
-  </data>
-  <data name="&gt;&gt;GroupBox4.Name" xml:space="preserve">
-    <value>GroupBox4</value>
-  </data>
-  <data name="&gt;&gt;GroupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox4.Parent" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;GroupBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="TableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="TableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
-  </data>
-  <data name="TableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="TableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>711, 412</value>
-  </data>
-  <data name="TableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.Name" xml:space="preserve">
-    <value>TableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="GroupBox1" Row="0" RowSpan="2" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="GroupBox4" Row="1" RowSpan="2" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>711, 24</value>
+  </data>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
   <data name="NewItemToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+N</value>
   </data>
@@ -1293,11 +1758,11 @@
   <data name="QuitToolStripMenuItem.Text" xml:space="preserve">
     <value>Quit</value>
   </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
+  <data name="ItemTypesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
   </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>File</value>
+  <data name="ItemTypesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Item Types</value>
   </data>
   <data name="MiscAllToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+A</value>
@@ -1317,36 +1782,6 @@
   <data name="ClearToolStripMenuItem.Text" xml:space="preserve">
     <value>Clear</value>
   </data>
-  <data name="ItemTypesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
-  </data>
-  <data name="ItemTypesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Item Types</value>
-  </data>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>711, 24</value>
-  </data>
-  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="MenuStrip1.Text" xml:space="preserve">
-    <value>MenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
-    <value>MenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1355,6 +1790,865 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>711, 436</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAgIAAAAAAGAAoyAAAFgAAACgAAACAAAAAAAEAAAEAGAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8AAAAAAAAAAAAA
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAA
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAA
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAA
+        AAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAA
+        AAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8AAAAAAAAA0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8AAAAAAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8A
+        CP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        AAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8AAAAAAAAA
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAA
+        AAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8A
+        CP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8AAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        AAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAA
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAA
+        AAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAA
+        AAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/
+        AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        AAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/
+        AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAD/AAj/AAj/AAj/AAj/
+        AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAj/AAj/AAgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAA
+        AAD/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8AAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAj/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAD/AAj/AAgAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        AAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8AAAAAAAD/AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA0P8A
+        0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A
+        0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA
+        AAAA0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAAAAAA0P8A0P8A0P8A0P8A0P8A0P8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAA
+        AAAAAAAA0P8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8A
+        CP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8ACP8AAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////4AD////////////
+        /////+AAAA////////////////8AAAAB///////////////4AAAAAD//////////////4AAAAAAP////
+        /////////wAAAAAAAf////////////wAAAAAAAB////////////4AAAAAAAAP///////////4AAAAAAA
+        AA///////////8AAAAAAAAAH//////////8AAAAAAAAAAf/////////+AAAAAAAAAAD//////////AAA
+        AAAAAAAAf/////////gAAAAAAAAAAD/////////wAAAAAAAAAAAf////////4AAAAAAAAAAAD///////
+        /8AAAAAAAAAAAAf///////+AAAAAAAAAAAAD////////AAAAAAAAAAAAAf///////gAAAAAAAAAAAAD/
+        //////wAAAAAAAAAAAAAf//////8AAAAAAAAAAAAAH//////+AAAAAAAAAAAAAA///////AAAAAAAAAA
+        AAAAH//////wAAAAAAAAAAAAAB//////4AAAAAAAAAAAAAAP/////8AAAAAAAAAAAAAAB//////AAAAA
+        AAAAAAAAAAf/////gAAAAAAAAAAAAAAD/////4AAAAAAAAAAAAAAA/////+AAAAAAAAAAAAAAAP/////
+        AAAAAAAAAAAAAAAB/////wAAAAAAAAAAAAAAAf////4AAAAAAAAAAAAAAAD////+AAAAAAAAAAAAAAAA
+        /////gAAAAAAAAAAAAAAAP////wAAAAAAAAAAAAAAAB////8AAAAAAAAAAAAAAAAf////AAAAAAAAAAA
+        AAAAAH////gAAAAAAAAAAAAAAAA////4AAAAAAAAAAAAAAAAP///+AAAAAAAAAAAAAAAAD////gAAAAA
+        AAAAAAAAAAA////4AAAAAAAAAAAAAAAAP///+AAAAAAAAAAAAAAAAD////AAAAAAAAAAAAAAAAAf///w
+        AAAAAAAAAAAAAAAAH///8AAAAAAAAAAAAAAAAB////AAAAAAAAAAAAAAAAAf///wAAAAAAAAAAAAAAAA
+        H///8AAAAAAAAAAAAAAAAB////AAAAAAAAAAAAAAAAAf///wAAAAAAAAAAAAAAAAH///8AAAAAAAAAAA
+        AAAAAB////AAAAAAAAAAAAAAAAAf///wAAAAAAAAAAAAAAAAH///8AAAAAAAAAAAAAAAAB////AAAAAA
+        AAAAAAAAAAAf///4AAAAAAAAAAAAAAAAP///+AAAAAAAAAAAAAAAAD////gAAAAAAAAAAAAAAAA////4
+        AAAAAAAAAAAAAAAAP///+AAAAAAAAAAAAAAAAD////gAAAAAAAAAAAAAAAA////8AAAAAAAAAAAAAAAA
+        f////AAAAAAAAAAAAAAAAH////wAAAAAAAAAAAAAAAB////+AAAAAAAAAAAAAAAA/////gAAAAAAAAAA
+        AAAAAP////4AAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAB/////wAAAAAAAAAAAAAAAf////+AAAAA
+        AAAAAAAAAAP/////gAAAAAAAAAAAAAAD/////4AAAAAAAAAAAAAAA//////AAAAAAAAAAAAAAAf/////
+        wAAAAAAAAAAAAAAH/////+AAAAAAAAAAAAAAD//////wAAAAAAAAAAAAAB//////8AAAAAAAAAAAAAAf
+        //////gAAAAAAAAAAAAAP//////8AAAAAAAAAAAAAH///////AAAAAAAAAAAAAB///////4AAAAAAAAA
+        AAAA////////AAAAAAAAAAAAAf///////4AAAAAAAAAAAAP////////AAAAAAAAAAAAH////////4AAA
+        AAAAAAAAD/////////AAAAAAAAAAAB/////////4AAAAAAAAAAA//////////AAAAAAAAAAAf///////
+        //4AAAAAAAAAAP//////////AAAAAAAAAAH//////////8AAAAAAAAAH///////////gAAAAAAAAD///
+        ////////+AAAAAAAAD////////////wAAAAAAAB/////////////AAAAAAAB/////////////+AAAAAA
+        D//////////////4AAAAAD///////////////wAAAAH////////////////gAAAP////////////////
+        /4AD////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////w==
+</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>727, 475</value>

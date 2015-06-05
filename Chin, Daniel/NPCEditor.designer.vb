@@ -22,6 +22,7 @@ Partial Class NPCEditor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NPCEditor))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Language = New System.Windows.Forms.ComboBox()
@@ -85,7 +86,7 @@ Partial Class NPCEditor
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.29921!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.70079!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox3, 0, 1)
@@ -240,7 +241,7 @@ Partial Class NPCEditor
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox2.Location = New System.Drawing.Point(317, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(238, 267)
+        Me.GroupBox2.Size = New System.Drawing.Size(237, 267)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "NPC Inventory"
@@ -309,7 +310,7 @@ Partial Class NPCEditor
         Me.LongDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.LongDesc.Size = New System.Drawing.Size(269, 68)
         Me.LongDesc.TabIndex = 12
-        Me.LongDesc.Text = "The dog is biting ankles nursing its own nastiness under the floor boards of the " & _
+        Me.LongDesc.Text = "The dog is biting ankles nursing its own nastiness under the floor boards of the " &
     "pub it is said to have an army of mongrels"
         '
         'Label5
@@ -373,7 +374,7 @@ Partial Class NPCEditor
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox4.Location = New System.Drawing.Point(317, 276)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(238, 292)
+        Me.GroupBox4.Size = New System.Drawing.Size(237, 292)
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "NPC Stats"
@@ -446,9 +447,9 @@ Partial Class NPCEditor
         Me.GroupBox6.Controls.Add(Me.EditLPCCodeButton)
         Me.GroupBox6.Controls.Add(Me.CombatCheck)
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox6.Location = New System.Drawing.Point(561, 3)
+        Me.GroupBox6.Location = New System.Drawing.Point(560, 3)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(143, 267)
+        Me.GroupBox6.Size = New System.Drawing.Size(144, 267)
         Me.GroupBox6.TabIndex = 6
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "NPC Combat"
@@ -549,6 +550,7 @@ Partial Class NPCEditor
         Me.Controls.Add(Me.StatusLabel)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MinimumSize = New System.Drawing.Size(500, 600)
         Me.Name = "NPCEditor"
